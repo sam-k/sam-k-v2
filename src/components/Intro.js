@@ -6,25 +6,23 @@ class Typewriter extends React.Component {
         const { strings } = this.props
         const options = {
             strings: strings,
-            typeSpeed: 60,
-            backSpeed: 40,
+            typeSpeed: 50,
+            backSpeed: 35,
             backDelay: 1500,
             loop: true
         }
-
+        // this.el refers to the <span> in the render() method
         this.typed = new Typed(this.el, options)
     }
 
     componentWillUnmount() {
+        // Prevent memory leak
         this.typed.destroy()
     }
 
     render() {
         return (
-            <span
-                style={{ whiteSpace: 'pre' }}
-                ref={(el) => { this.el = el; }}
-            />
+            <span style={{ whiteSpace: 'pre' }} ref={(el) => { this.el = el }} />
         )
     }
 }
@@ -32,14 +30,18 @@ class Typewriter extends React.Component {
 class Intro extends React.Component {
     render() {
         return (
-            <div>
-                <h1>Sam, I am.</h1>
-                <h2>I love to <Typewriter strings={[
-                    "<span style='color: red'>develop</span>.",
-                    "<span style='color: red'>write</span>."
-                ]} /></h2>
-                <p className='profile-desc'>I’m a <span className='code'>computational</span> <span className='code'>biologist</span>, a <span className='code'>software</span> <span className='code'>engineer</span> and a junior at Duke University. I believe that technology is the answer to treating and curing more people, and at a much lower cost.</p>
-            </div >
+            <div className='intro-wrapper'>
+                <div className='profile'>
+                    <h1>Sam, I am.</h1>
+                    <h2>I love to <Typewriter strings={[
+                        "<span style='color: #ec8c24'>develop</span>.",
+                        "<span style='color: #6ebede'>write</span>.",
+                        "<span style='color: #4ec866'>research</span>."
+                    ]} /></h2>
+                    <p>I’m a <span className='code'>computational</span> <span className='code'>biologist</span>, a <span className='code'>software</span> <span className='code'>engineer</span> and a third-year student at Duke University. I believe that technology is the answer to treating and curing more people, and at a much lower cost.</p>
+                </div>
+                <div className='intro-card'></div>
+            </div>
         )
     }
 }
