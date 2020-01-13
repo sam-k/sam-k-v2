@@ -1,9 +1,8 @@
 import React from "react"
 
 const CardComponent = (props) =>
-    <p class={props.type} style={{ gridRow: props.index + 1 }}>
+    <p class={props.type} style={{ gridRow: props.row }}>
         <a href={props.link}
-            id={props.type + props.index}
             style={{ color: props.color }}
             onMouseEnter={() => props.updateColor("#007bff")}
             onMouseLeave={() => props.updateColor("hsl(0, 0%, 20%)")}>
@@ -16,7 +15,7 @@ class IntroCardItem extends React.Component {
         super(props)
         this.state = {
             type: props.type,
-            index: props.index,
+            row: props.row,
             icon: props.icon,
             text: props.text,
             link: props.link,
@@ -35,15 +34,15 @@ class IntroCardItem extends React.Component {
             <>
                 <CardComponent
                     type='icon'
-                    index={this.state.index}
-                    content={<i class={this.state.icon}></i>}
+                    row={this.state.row}
+                    content={<i class={this.state.icon} />}
                     link={this.state.link}
                     color={this.state.color}
                     updateColor={this.updateColor}
                 />
                 <CardComponent
                     type='text'
-                    index={this.state.index}
+                    row={this.state.row}
                     content={this.state.text}
                     link={this.state.link}
                     color={this.state.color}
@@ -56,15 +55,15 @@ class IntroCardItem extends React.Component {
 
 class IntroCard extends React.Component {
     render() {
-        const icons = ["fa fa-envelope", "fab fa-linkedin-in", "fa fa-code-branch", "fa fa-location-arrow"]
-        const texts = ["sam.kim@duke.edu", "linkedin.com/in/sdk", "github.com/sam-k", "Durham, N.C."]
-        const links = ["mailto:sam.kim@duke.edu", "https://www.linkedin.com/in/sdk/", "https://github.com/sam-k/", "#"]
+        const icons = ["fa fa-envelope", "fab fa-linkedin-in", "fa fa-code-branch"]
+        const texts = ["sam.kim@duke.edu", "linkedin.com/in/sdk", "github.com/sam-k"]
+        const links = ["mailto:sam.kim@duke.edu", "https://www.linkedin.com/in/sdk/", "https://github.com/sam-k/"]
 
         const items = []
         for (let i = 0; i < links.length; i++) {
             items.push(
                 <IntroCardItem
-                    index={i}
+                    row={i + 1}
                     icon={icons[i]}
                     text={texts[i]}
                     link={links[i]}
@@ -76,6 +75,10 @@ class IntroCard extends React.Component {
             <div className='intro-card'>
                 <div className='intro-card-text'>
                     {items}
+                    <p class='icon' style={{ gridRow: -1 }}>
+                        <i class="fa fa-location-arrow" />
+                    </p>
+                    <p class='text' style={{ gridRow: -1 }}>Durham, N.C.</p>
                 </div>
             </div>
         )
