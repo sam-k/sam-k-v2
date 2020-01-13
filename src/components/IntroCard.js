@@ -32,6 +32,44 @@ class IntroCardItem extends React.Component {
     }
 }
 
+class IntroCard2 extends React.Component {
+    render() {
+        const icons = ["fa fa-envelope", "fab fa-linkedin-in", "fa fa-code-branch", "fa fa-location-arrow"]
+        const texts = ["sam.kim@duke.edu", "linkedin.com/in/sdk", "github.com/sam-k", "Durham, N.C."]
+        const links = ["mailto:sam.kim@duke.edu", "https://www.linkedin.com/in/sdk/", "https://github.com/sam-k/", "#"]
+
+        const iconItems = []
+        const textItems = []
+        for (let i = 0; i < links.length; i++) {
+            iconItems.push(
+                <IntroCardItem
+                    type="icon"
+                    index={i}
+                    content={<i class={icons[i]}></i>}
+                    link={links[i]}
+                />
+            )
+            textItems.push(
+                <IntroCardItem
+                    type="text"
+                    index={i}
+                    content={texts[i]}
+                    link={links[i]}
+                />
+            )
+        }
+
+        return (
+            <div className='intro-card'>
+                <div className='intro-card-text'>
+                    {iconItems}
+                    {textItems}
+                </div>
+            </div>
+        )
+    }
+}
+
 class IntroCard extends React.Component {
     changeColor(index, color) {
         if (document.getElementById("icon" + index) &&
