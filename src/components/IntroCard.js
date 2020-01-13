@@ -34,7 +34,7 @@ class IntroCardItem extends React.Component {
         return (
             <>
                 <CardComponent
-                    type="icon"
+                    type='icon'
                     index={this.state.index}
                     content={<i class={this.state.icon}></i>}
                     link={this.state.link}
@@ -42,7 +42,7 @@ class IntroCardItem extends React.Component {
                     updateColor={this.updateColor}
                 />
                 <CardComponent
-                    type="text"
+                    type='text'
                     index={this.state.index}
                     content={this.state.text}
                     link={this.state.link}
