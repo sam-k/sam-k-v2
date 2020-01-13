@@ -1,5 +1,6 @@
-import React from 'react'
-import Typed from 'typed.js'
+import React from "react"
+import Typed from "typed.js"
+import IntroCard from "./IntroCard"
 
 class Typewriter extends React.Component {
     componentDidMount() {
@@ -8,7 +9,7 @@ class Typewriter extends React.Component {
             strings: strings,
             typeSpeed: 50,
             backSpeed: 35,
-            backDelay: 1500,
+            backDelay: 1800,
             loop: true
         }
         // this.el refers to the <span> in the render() method
@@ -40,8 +41,8 @@ class Intro extends React.Component {
                     ]} /></h2>
                     <p>I’m a <span className='code'>computational</span> <span className='code'>biologist</span>, a <span className='code'>software</span> <span className='code'>engineer</span> and a third-year student at Duke University. I believe that technology is the answer to treating and curing more people, and at a much lower cost.</p>
                 </div>
-                <div className='intro-card'></div>
-            </div>
+                <IntroCard />
+            </div >
         )
     }
 }
