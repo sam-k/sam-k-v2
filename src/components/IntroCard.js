@@ -1,4 +1,5 @@
 import React from "react"
+import headshot from "../profile.jpeg"
 
 const CardComponent = (props) =>
     <p class={props.type} style={{ gridRow: props.row }}>
@@ -63,7 +64,7 @@ class IntroCard extends React.Component {
         for (let i = 0; i < links.length; i++) {
             items.push(
                 <IntroCardItem
-                    row={i + 1}
+                    row={i + 2}
                     icon={icons[i]}
                     text={texts[i]}
                     link={links[i]}
@@ -73,6 +74,9 @@ class IntroCard extends React.Component {
 
         return (
             <div className='intro-card'>
+                <div class='intro-card-img'>
+                    <img src={headshot} alt="headshot" />
+                </div>
                 <div className='intro-card-text'>
                     {items}
                     <p class='icon' style={{ gridRow: -1 }}>
