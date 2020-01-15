@@ -32,16 +32,18 @@ class Intro extends React.Component {
     render() {
         return (
             <div className='intro-wrapper'>
-                <div className='profile'>
-                    <h1>Sam, I am.</h1>
-                    <h2>I love to <Typewriter strings={[
-                        "<span style='color: #ec8c24'>develop</span>.",
-                        "<span style='color: #6ebede'>write</span>.",
-                        "<span style='color: #4ec866'>research</span>."
-                    ]} /></h2>
-                    <p>I’m a <span className='code'>computational</span> <span className='code'>biologist</span>, a <span className='code'>software</span> <span className='code'>engineer</span> and a third-year student at Duke University. I believe that technology is the answer to treating and curing more people, and at a much lower cost.</p>
+                <div className='intro'>
+                    <div className='profile'>
+                        <h1>Sam, I am.</h1>
+                        <h2>I love to <Typewriter strings={[
+                            "<span style='color: #ec8c24'>develop</span>.",
+                            "<span style='color: #6ebede'>write</span>.",
+                            "<span style='color: #4ec866'>research</span>."
+                        ]} /></h2>
+                        <p>I’m a <span className='code'>computational</span> <span className='code'>biologist</span>, a <span className='code'>software</span> <span className='code'>engineer</span> and a third-year student at Duke University. I believe that technology is the answer to treating and curing more people, and at a much lower cost.</p>
+                    </div>
+                    <IntroCard />
                 </div>
-                <IntroCard />
             </div >
         )
     }
