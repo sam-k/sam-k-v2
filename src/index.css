@@ -62,7 +62,6 @@ span.code {
 
 .intro-wrapper {
   margin: 0 calc(6vw - var(--intro-margin));
-  /* background-color: var(--light-gray) */
 }
 
 .intro {
@@ -81,8 +80,13 @@ span.code {
   margin: 0 var(--intro-margin);
 }
 
+.profile h1 {
+  /* Vertically center */
+  padding-top: 0.3em;
+}
+
 .profile p {
-  padding: 1em 0;
+  padding: 1em 0 1.5em 0;
   font-size: 1.3em;
 }
 
