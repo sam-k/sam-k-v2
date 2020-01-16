@@ -5,7 +5,7 @@
   --light-gray: #cccccc;
   --dark-gray: #444444;
   --text-black: hsl(0, 0%, 20%);
-  --intro-margin: 2.25vw;
+  --side-margin: 2.25vw;
 }
 
 * {
@@ -56,7 +56,7 @@ span.code {
   color: var(--duke-blue);
 }
 
-@media (max-width: 978px) {
+@media (max-width: 600px) {
   body {
     max-width: none;
   }
@@ -103,6 +103,8 @@ span.code {
   list-style: none;
   display: flex;
   flex-wrap: no-wrap;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
 }
 
 #nav a {
@@ -127,19 +129,20 @@ span.code {
   padding-left: 1em;
 }
 
-#navbar .break {
+#break-navbar {
   width: 100%;
-  padding: 2vh 0;
+  padding: 1.25vh 0;
 }
 
-@media (max-width: 978px) {
+@media (max-width: 600px) {
   #navbar {
-    margin: calc(6vw - var(--intro-margin)) 0;
+    margin: calc(6vw - var(--side-margin)) 0;
     justify-content: center;
   }
 
   #navbar #home {
     margin: 0;
+    padding: 0 10vw;
   }
 
   #navbar #home a {
@@ -155,9 +158,9 @@ span.code {
     padding-bottom: 0.25em;
   }
 
-  #navbar .break {
-    padding: 0;
-    padding-bottom: 1vh;
+  #break-navbar {
+    padding: 0.5vh 0;
+    border-top: 0.25px solid var(--light-gray);
   }
 }
 
@@ -166,10 +169,8 @@ span.code {
  ***************/
 
 #intro-wrapper {
-  margin: 0 calc(6vw - var(--intro-margin));
-}
+  margin: 0 calc(6vw - var(--side-margin));
 
-#intro {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -182,7 +183,7 @@ span.code {
   flex: 1 1 35vw;
 
   /* Symmetric to keep centered when wrapped. Same as intro-card */
-  margin: 0 var(--intro-margin);
+  margin: 0 var(--side-margin);
 }
 
 #profile h1 {
@@ -197,7 +198,7 @@ span.code {
 
 #intro-card {
   /* Symmetric to keep centered when wrapped. Same as profile */
-  margin: 0 var(--intro-margin);
+  margin: 0 var(--side-margin);
 
   width: 175px;
   padding: 2.5% 5%;
@@ -237,7 +238,7 @@ span.code {
 }
 
 #resume-button {
-  width: 5vw;
+  width: 4em;
   padding: 0.625em 2.75em;
   margin: 0 auto 3.5vh auto;
   text-align: center;
@@ -253,12 +254,12 @@ span.code {
   text-decoration: none;
 }
 
-#intro-wrapper .break {
+#break-intro {
   width: 100%;
-  padding: 2vh 0;
+  padding: 4vh 0;
 }
 
-@media (max-width: 978px) {
+@media (max-width: 600px) {
   #intro-card {
     padding: 2.5vh 10vw;
   }
@@ -276,5 +277,10 @@ span.code {
 
 #project-wrapper {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 2vw;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projectCard {
+  background-color: var(--light-gray);
 }

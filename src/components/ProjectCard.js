@@ -1,9 +1,20 @@
 import React from 'react'
 
-function ProjectCard(props) {
-    return (
-        <div className='projectCard'></div>
-    )
+class ProjectCard extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+
+        }
+    }
+
+    render() {
+        return (
+            <div className='projectCard'>
+                <p>Test</p>
+            </div>
+        )
+    }
 }
 
 export default ProjectCard

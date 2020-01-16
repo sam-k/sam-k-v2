@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react"
+import ProjectCard from "./ProjectCard"
 
-function Projects() {
-    return (
-        <div></div>
-    )
+class Projects extends React.Component {
+    render() {
+        return (
+            <div id='project-wrapper' >
+                <ProjectCard />
+                <ProjectCard />
+                <ProjectCard />
+            </div>
+        )
+    }
 }
 
 export default Projects
