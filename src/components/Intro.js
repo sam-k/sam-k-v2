@@ -1,6 +1,7 @@
 import React from "react"
 import Typed from "typed.js"
 import IntroCard from "./IntroCard"
+import Button from "./Button"
 
 class Typewriter extends React.Component {
     componentDidMount() {
@@ -31,9 +32,9 @@ class Typewriter extends React.Component {
 class Intro extends React.Component {
     render() {
         return (
-            <div className='intro-wrapper'>
-                <div className='intro'>
-                    <div className='profile'>
+            <div id='intro-wrapper'>
+                <div id='intro'>
+                    <div id='profile'>
                         <h1>Sam, I am.</h1>
                         <h2>I love to <Typewriter strings={[
                             "<span style='color: #ec8c24'>develop</span>.",
@@ -41,9 +42,18 @@ class Intro extends React.Component {
                             "<span style='color: #4ec866'>research</span>."
                         ]} /></h2>
                         <p>I’m a <span className='code'>computational</span> <span className='code'>biologist</span>, a <span className='code'>software</span> <span className='code'>engineer</span> and a third-year student at Duke University. I believe that technology is the answer to treating and curing more people, and at a much lower cost.</p>
+                        <Button
+                            text="Resume"
+                            color="#444444"
+                            colorHover="black"
+                            bgColor="white"
+                            bgColorHover="#cdcdcd"
+                            borderColor="hsl(0, 0%, 20%)"
+                        />
                     </div>
                     <IntroCard />
                 </div>
+                <div className='break' />
             </div >
         )
     }

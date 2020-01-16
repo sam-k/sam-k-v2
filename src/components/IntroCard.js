@@ -73,16 +73,16 @@ class IntroCard extends React.Component {
         }
 
         return (
-            <div className='intro-card'>
-                <div class='intro-card-img'>
+            <div id='intro-card'>
+                <div id='intro-card-img'>
                     <img src={headshot} alt="headshot" />
                 </div>
-                <div className='intro-card-text'>
+                <div id='intro-card-text'>
                     {items}
-                    <p class='icon' style={{ gridRow: -1 }}>
-                        <i class="fa fa-location-arrow" />
+                    <p className='icon' style={{ gridRow: -1 }}>
+                        <i className="fa fa-location-arrow" />
                     </p>
-                    <p class='text' style={{ gridRow: -1 }}>Durham, N.C.</p>
+                    <p className='text' style={{ gridRow: -1 }}>Durham, N.C.</p>
                 </div>
             </div>
         )
