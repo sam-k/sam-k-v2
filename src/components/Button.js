@@ -32,9 +32,7 @@ class Button extends React.Component {
                     bgColor: this.state.bgColorLeave
                 })}
             >
-                <a href="#"
-                    style={{ color: this.state.color }}
-                >
+                <a href={this.state.link} style={{ color: this.state.color }}>
                     {this.state.text}
                 </a>
             </div>
