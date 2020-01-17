@@ -4,6 +4,7 @@ class Button extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
+            id: props.id,
             text: props.text,
             color: props.color,
             colorHover: props.colorHover,
@@ -18,7 +19,7 @@ class Button extends React.Component {
     render() {
         return (
             <div
-                id='resume-button'
+                id={this.state.id}
                 style={{
                     backgroundColor: this.state.bgColor,
                     borderColor: this.state.borderColor
