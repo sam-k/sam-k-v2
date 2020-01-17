@@ -40,6 +40,18 @@ h2 {
   font-size: 2.5em;
 }
 
+h3 {
+  font-family: 'Source Sans Pro', 'Helvetiva Neue', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+h4 {
+  font-family: 'Source Sans Pro', 'Helvetiva Neue', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
 p {
   font-size: 1.2em;
   color: var(--text-black);
@@ -159,7 +171,7 @@ span.code {
   }
 
   #break-navbar {
-    padding: 0.5vh 0;
+    padding: 0.05vh 0;
     border-top: 0.25px solid var(--light-gray);
   }
 }
@@ -256,7 +268,7 @@ span.code {
 
 #break-intro {
   width: 100%;
-  padding: 4vh 0;
+  padding: 5.5vh 0;
 }
 
 @media (max-width: 600px) {
@@ -277,10 +289,13 @@ span.code {
 
 #project-wrapper {
   display: grid;
-  grid-gap: 2vw;
+  grid-gap: 2.5vw;
   grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 40vw;
 }
 
-.projectCard {
-  background-color: var(--light-gray);
+.project-card {
+  padding: 2.5vw;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25), 0 0 12px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
 }
