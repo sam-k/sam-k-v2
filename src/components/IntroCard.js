@@ -61,10 +61,10 @@ class IntroCard extends React.Component {
         const links = ["mailto:sam.kim@duke.edu", "https://www.linkedin.com/in/sdk/", "https://github.com/sam-k/"]
 
         const items = []
-        for (let i = 0; i < links.length; i++) {
+        for (var i = 0; i < links.length; i++) {
             items.push(
                 <IntroCardItem
-                    row={i + 2}
+                    row={i + 1}
                     icon={icons[i]}
                     text={texts[i]}
                     link={links[i]}
@@ -79,10 +79,10 @@ class IntroCard extends React.Component {
                 </div>
                 <div id='intro-card-text'>
                     {items}
-                    <p className='icon' style={{ gridRow: -1 }}>
+                    <p className='icon' style={{ gridRow: i + 1 }}>
                         <i className="fa fa-location-arrow" />
                     </p>
-                    <p className='text' style={{ gridRow: -1 }}>Durham, N.C.</p>
+                    <p className='text' style={{ gridRow: i + 1 }}>Durham, N.C.</p>
                 </div>
             </div>
         )

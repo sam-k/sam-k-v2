@@ -213,7 +213,7 @@ span.code {
   margin: 0 var(--side-margin);
 
   width: 175px;
-  padding: 2.5% 5%;
+  padding: 1.4em 2.8em;
   background-color: var(--light-blue);
   box-shadow: 3px 3px 3px -1px var(--dark-gray);
   border-radius: 10px;
@@ -222,14 +222,14 @@ span.code {
 #intro-card-img img {
   display: block;
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 1.2em auto;
   border: .5em outset var(--bright-blue);
   border-radius: 100%;
 }
 
 #intro-card-text {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
   grid-template-columns: 1fr 7.5% 3fr;
 }
 
@@ -250,8 +250,8 @@ span.code {
 }
 
 .resume-button {
-  width: 4em;
-  margin: 0 auto 3.5vh auto;
+  margin: 0 auto 40px auto;
+  text-align: center;
 }
 
 .resume-button a {
@@ -266,7 +266,7 @@ span.code {
 
 #break-intro {
   width: 100%;
-  padding: 5.5vh 0;
+  padding: 4.5vh 0;
 }
 
 @media (max-width: 600px) {
@@ -274,10 +274,9 @@ span.code {
     padding: 2.5vh 10vw;
   }
 
-  #resume-button {
-    width: 35vw;
-    padding: 0.75em 0;
-    margin-bottom: 5vh;
+  .resume-button {
+    margin-top: 1.5vh;
+    margin-bottom: 6.5vh;
   }
 }
 
