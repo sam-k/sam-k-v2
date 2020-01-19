@@ -10,7 +10,7 @@ class Typewriter extends React.Component {
             strings: strings,
             typeSpeed: 50,
             backSpeed: 35,
-            backDelay: 1800,
+            backDelay: 2000,
             loop: true
         }
         // this.el refers to the <span> in the render() method
@@ -49,7 +49,7 @@ class Intro extends React.Component {
                         bgColor="white"
                         bgColorHover="#cdcdcd"
                         borderColor="hsl(0, 0%, 20%)"
-                        link="#"
+                        link="https://drive.google.com/file/d/1M0rskmHcZrd6pbAoDjvfuzy3e2dXhaO9/view"
                     />
                 </div>
                 <IntroCard />
