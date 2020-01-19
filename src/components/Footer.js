@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react"
 
-function Footer() {
-    return (
-        <div></div>
-    )
+class Footer extends React.Component {
+    render() {
+        return (
+            <div></div>
+        )
+    }
 }
 
 export default Footer
