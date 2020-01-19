@@ -15,8 +15,8 @@ class Projects extends React.Component {
                         <p>This app was requested by and built for <a href='https://realityministriesinc.org/'>Reality Ministries</a>, which serves developmentally disabled adults.</p>
                     </>}
                     tools={{
-                        "Mapbox API": "https://www.mapbox.com/",
                         "JS": "https://www.javascript.com/",
+                        "Mapbox API": "https://www.mapbox.com/",
                         "Proto.io": "https://proto.io/"
                     }}
                     links={{
@@ -36,6 +36,7 @@ class Projects extends React.Component {
                     </>}
                     tools={{
                         "R": "https://www.r-project.org/",
+                        "mlr": "https://mlr.mlr-org.com/",
                         "PL/SQL": "https://www.oracle.com/database/technologies/appdev/plsql.html"
                     }}
                     links={{
@@ -45,17 +46,18 @@ class Projects extends React.Component {
                 />
 
                 <ProjectCard
-                    title="iOS/Android app for combat medics"
+                    title="Investigating a new hypothesis for carcinogenesis"
                     subtitle={
-                        <span>Internship at <a href="https://www.nsin.us/x-force/">Department of Defense</a></span>
+                        <span>Research project at <a href="http://gordanlab.cs.duke.edu/">Duke Center for Genomic and Computational Biology</a></span>
                     }
                     text={<>
-                        <p>Replacing Special Ops medics’ outdated books and database with customized, up-to-date medical reference materials.</p>
-                        <p>I worked through <a href="https://www.nsin.us/">National Security Innovation Network</a> as a 2019 X-Force Fellow.</p>
+                        <p>Analyzing genome data to find if transcription factor-binding blocks repair enzymes from accessing damaged DNA.</p>
+                        <p>I am working under Prof. Raluca Gordan in her lab.</p>
                     </>}
                     tools={{
-                        "C#": "http://csharp.net/",
-                        "Xamarin": "https://dotnet.microsoft.com/apps/xamarin"
+                        "Python": "https://www.python.org/",
+                        "Bash": "https://www.gnu.org/software/bash/",
+                        "bedtools": "https://bedtools.readthedocs.io/en/latest/"
                     }}
                     links={{
                         "GitHub": ""
@@ -63,23 +65,7 @@ class Projects extends React.Component {
                     img=""
                 />
 
-                <ProjectCard
-                    title="My website"
-                    subtitle={
-                        <span>Personal project</span>
-                    }
-                    text={<>
-                        <p>Building </p>
-                    </>}
-                    tools={{
-                        "React": "https://reactjs.org/",
-                        "JS": "https://www.javascript.com/"
-                    }}
-                    links={{
-                        "GitHub": ""
-                    }}
-                    img=""
-                />
+                <ProjectCard id='placeholder' />
             </div>
         )
     }

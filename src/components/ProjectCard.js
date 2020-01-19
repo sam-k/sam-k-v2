@@ -5,6 +5,7 @@ class ProjectCard extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
+            id: props.id,
             title: props.title,
             subtitle: props.subtitle,
             text: props.text,
@@ -33,7 +34,7 @@ class ProjectCard extends React.Component {
         }
 
         return (
-            <div className='project-card'>
+            <div className='project-card' id={this.state.id}>
                 <h3>{this.state.title}</h3>
                 <h4>{this.state.subtitle}</h4>
                 {this.state.text}
