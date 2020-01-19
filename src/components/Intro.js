@@ -42,13 +42,14 @@ class Intro extends React.Component {
                     ]} /></h2>
                     <p>I’m a <span className='code'>computational</span> <span className='code'>biologist</span>, a <span className='code'>software</span> <span className='code'>engineer</span> and a third-year student at Duke University. I believe that technology is the answer to treating and curing more people, and at a much lower cost.</p>
                     <Button
-                        id='resume-button'
+                        className='resume-button'
                         text="Resume"
                         color="#444444"
                         colorHover="black"
                         bgColor="white"
                         bgColorHover="#cdcdcd"
                         borderColor="hsl(0, 0%, 20%)"
+                        link="#"
                     />
                 </div>
                 <IntroCard />
