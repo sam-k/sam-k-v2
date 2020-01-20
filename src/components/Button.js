@@ -13,7 +13,9 @@ class Button extends React.Component {
             bgColor: props.bgColor,
             bgColorHover: props.bgColorHover,
             bgColorLeave: props.bgColor,
-            borderColor: props.borderColor
+            borderColor: props.borderColor,
+            borderColorHover: props.borderColorHover,
+            borderColorLeave: props.borderColor
         }
     }
 
@@ -31,11 +33,13 @@ class Button extends React.Component {
                     href={this.state.link}
                     onMouseEnter={() => this.setState({
                         color: this.state.colorHover,
-                        bgColor: this.state.bgColorHover
+                        bgColor: this.state.bgColorHover,
+                        borderColor: this.state.borderColorHover
                     })}
                     onMouseLeave={() => this.setState({
                         color: this.state.colorLeave,
-                        bgColor: this.state.bgColorLeave
+                        bgColor: this.state.bgColorLeave,
+                        borderColor: this.state.borderColorLeave
                     })}
                 >
                     {this.state.text}
