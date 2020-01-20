@@ -7,12 +7,15 @@ class Button extends React.Component {
             className: props.className,
             text: props.text,
             link: props.link,
+
             color: props.color,
             colorHover: props.colorHover,
             colorLeave: props.color,
+
             bgColor: props.bgColor,
             bgColorHover: props.bgColorHover,
             bgColorLeave: props.bgColor,
+
             borderColor: props.borderColor,
             borderColorHover: props.borderColorHover,
             borderColorLeave: props.borderColor
