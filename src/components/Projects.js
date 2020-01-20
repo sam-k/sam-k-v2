@@ -46,12 +46,12 @@ class Projects extends React.Component {
                 />
 
                 <ProjectCard
-                    title="Investigating a new hypothesis for carcinogenesis"
+                    title="A new hypothesis for cancer formation"
                     subtitle={
                         <span>Research project at <a href="http://gordanlab.cs.duke.edu/">Duke Center for Genomic and Computational Biology</a></span>
                     }
                     text={<>
-                        <p>Analyzing genome data to find if transcription factor-binding blocks repair enzymes from accessing damaged DNA.</p>
+                        <p>Analyzing genome data to find if transcription factor binding prevents repair enzymes from accessing damaged DNA, causing mutations.</p>
                         <p>I am working under Prof. Raluca Gordan in her lab.</p>
                     </>}
                     tools={{

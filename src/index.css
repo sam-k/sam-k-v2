@@ -105,6 +105,10 @@ span.code {
   margin-right: auto;
 }
 
+#navbar #home a:hover {
+  color: var(--duke-blue);
+}
+
 #navbar #home a {
   font-size: 1.4em;
   font-weight: 600;
@@ -125,6 +129,10 @@ span.code {
   padding-bottom: 0.4em;
   color: var(--dark-gray);
   text-decoration: none;
+}
+
+#nav a:hover {
+  color: var(--duke-blue);
 }
 
 .nav-item-start a {
