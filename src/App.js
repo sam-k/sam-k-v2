@@ -14,6 +14,7 @@ function App() {
       <Intro />
       <div id='break-intro' />
       <Projects />
+      <div id='break-projects' />
       <Skills />
       <Footer />
     </div>

@@ -152,7 +152,7 @@ span.code {
 
 #break-navbar {
   width: 100%;
-  margin: 6vh 0;
+  margin: 10vh 0;
 }
 
 @media (max-width: 600px) {
@@ -276,7 +276,7 @@ span.code {
 
 #break-intro {
   width: 100%;
-  margin: 6vh 0;
+  margin: 10vh 0;
 }
 
 @media (max-width: 600px) {
@@ -297,7 +297,7 @@ span.code {
      Projects
  ***************/
 
-#project-wrapper {
+#project-card-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -368,6 +368,26 @@ span.code {
   font-size: 0.9em;
   color: var(--dark-gray);
   text-decoration: none;
+}
+
+.all-projects-button {
+  margin: 60px auto;
+  text-align: center;
+}
+
+.all-projects-button a {
+  padding: 0.625em 2.75em;
+  border: 2px solid;
+  border-radius: 10px;
+
+  font-family: 'Lato', 'Helvetiva Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+#break-projects {
+  width: 100%;
+  margin: 10vh 0;
 }
 
 @media (max-width: 600px) {
