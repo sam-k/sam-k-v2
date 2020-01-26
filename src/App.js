@@ -2,7 +2,7 @@ import React from "react"
 
 import Navbar from "./components/Navbar"
 import Intro from "./components/Intro"
-import Skills from "./components/Skills"
+import Experience from "./components/Experience"
 import Projects from "./components/Projects"
 import Footer from "./components/Footer"
 
@@ -15,7 +15,7 @@ function App() {
       <div id='break-intro' />
       <Projects />
       <div id='break-projects' />
-      <Skills />
+      <Experience />
       <Footer />
     </div>
   )

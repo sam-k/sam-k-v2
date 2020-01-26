@@ -13,7 +13,7 @@ class Projects extends React.Component {
                             <span>Best nonprofit hack co-winner at <a href="https://hackduke.org/">HackDuke: Code for Good 2019</a></span>
                         }
                         text={<>
-                            <p>Serving a local nonprofit group’s ridesharing needs. Includes navigation, interactive map and Uber-like matching platform.</p>
+                            <p>Serving a local nonprofit’s ridesharing needs. Includes navigation, interactive map and Uber-like matching platform.</p>
                             <p>This app was requested by and built for <a href="https://realityministriesinc.org/">Reality Ministries</a>, which serves developmentally disabled adults.</p>
                         </>}
                         tools={{

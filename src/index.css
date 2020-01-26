@@ -152,7 +152,7 @@ span.code {
 
 #break-navbar {
   width: 100%;
-  margin: 10vh 0;
+  margin: 4em 0;
 }
 
 @media (max-width: 600px) {
@@ -276,7 +276,8 @@ span.code {
 
 #break-intro {
   width: 100%;
-  margin: 10vh 0;
+  margin: 2em 0;
+  padding: 1px 0;
 }
 
 @media (max-width: 600px) {
@@ -387,7 +388,8 @@ span.code {
 
 #break-projects {
   width: 100%;
-  margin: 10vh 0;
+  margin: 2.5em 0;
+  padding: 1px 0;
 }
 
 @media (max-width: 600px) {
@@ -397,4 +399,71 @@ span.code {
     margin: 0 20px 20px 20px;
     padding: 6vw;
   }
+
+  #project-card-wrapper #placeholder {
+    margin: 0;
+    padding: 0;
+  }
+
+  .all-projects-button {
+    margin: 0 auto;
+  }
+
+  #break-projects {
+    margin: 5em 0 3.5em 0;
+    border-top: 0.25px solid var(--light-gray);
+  }
+}
+
+/***************
+    Experience
+ ***************/
+
+#experience-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+#skills-wrapper {
+  min-width: 40%;
+  flex: 1 1 40%;
+  margin: 10px;
+}
+
+#skills-wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  vertical-align: middle;
+  margin: 0.75em 0;
+  list-style: none;
+  font-size: 1.2em;
+}
+
+.skill-header {
+  margin-right: 0.15em;
+}
+
+.skill-item {
+  margin: 0.15em 0.2em;
+}
+
+.skill-item a {
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  border: 1px solid;
+
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-size: 0.85em;
+  color: var(--text-black);
+  text-decoration: none;
+}
+
+#work-wrapper {
+  min-width: 20%;
+  flex: 1 1 20%;
+  margin: 10px;
+  background-color: yellow;
 }
