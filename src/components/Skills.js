@@ -1,35 +1,18 @@
 import React from "react"
-import Button from "./Button"
 
-function toRGBA(rgb, a) {
-    rgb = rgb.replace("#", "")
-    return "rgba("
-        + parseInt(rgb.slice(0, 2), 16) + ", "
-        + parseInt(rgb.slice(2, 4), 16) + ", "
-        + parseInt(rgb.slice(4), 16) + ", "
-        + a + "%)"
-}
-
-function buildList(skills, colorHover) {
+function buildList(skills, className) {
     const skillsList = []
     for (let [skill, link] of Object.entries(skills)) {
         skillsList.push(
             <li>
-                <Button
-                    className='skill-item'
-                    text={skill}
-                    link={link}
-                    colorHover={colorHover}
-                    bgColor="rgba(0, 0, 0, 0.08)"
-                    bgColorHover={toRGBA(colorHover, 10)}
-                    borderColor="rgba(0, 0, 0, 0.2)"
-                    borderColorHover={colorHover}
-                />
+                <a href={link} className={'skill-item ' + className}>
+                    {skill}
+                </a>
             </li>
         )
-        // skillsList.push(<li>,&nbsp;</li>)
+        skillsList.push(<li>,&nbsp;</li>)
     }
-    // skillsList.pop()
+    skillsList.pop()
     return skillsList
 }
 
@@ -56,9 +39,9 @@ class SkillsList extends React.Component {
             "Gel electrophoresis": ""
         }
 
-        const fullStackSkills = buildList(fullStack, "#ec8c24")
-        const dataMLSkills = buildList(dataML, "#4fb2eb")
-        const wetLabSkills = buildList(wetLab, "#36c552")
+        const fullStackSkills = buildList(fullStack, "fullstack")
+        const dataMLSkills = buildList(dataML, "data")
+        const wetLabSkills = buildList(wetLab, "wetlab")
 
         return (
             <>

@@ -423,7 +423,6 @@ span.code {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-
 }
 
 #skills-wrapper {
@@ -447,18 +446,33 @@ span.code {
 }
 
 .skill-item {
-  margin: 0.15em 0.2em;
+  margin: 0 0.05em;
+  padding: 0 0.2em;
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.1);
+
+  color: var(--text-black);
+  background-color: rgba(0, 0, 0, 0.06);
+  line-height: 1.75em;
+  text-decoration: none;
 }
 
-.skill-item a {
-  padding: 0.2em 0.4em;
-  border-radius: 6px;
-  border: 1px solid;
+.skill-item.fullstack:hover {
+  color: rgba(226, 131, 30);
+  background-color: rgba(226, 131, 30, 10%);
+  border-color: rgba(226, 131, 30, 50%);
+}
 
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-  font-size: 0.85em;
-  color: var(--text-black);
-  text-decoration: none;
+.skill-item.data:hover {
+  color: rgba(79, 178, 235);
+  background-color: rgba(79, 178, 235, 10%);
+  border-color: rgba(79, 178, 235, 50%);
+}
+
+.skill-item.wetlab:hover {
+  color: rgba(54, 197, 82);
+  background-color: rgba(54, 197, 82, 10%);
+  border-color: rgba(54, 197, 82, 50%);
 }
 
 #work-wrapper {
