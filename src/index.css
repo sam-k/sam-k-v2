@@ -152,7 +152,8 @@ span.code {
 
 #break-navbar {
   width: 100%;
-  margin: 4em 0;
+  margin: 2.35em 0;
+  padding: 1px 0;
 }
 
 @media (max-width: 600px) {
@@ -276,7 +277,7 @@ span.code {
 
 #break-intro {
   width: 100%;
-  margin: 2em 0;
+  margin: 2.35em 0;
   padding: 1px 0;
 }
 
@@ -388,7 +389,7 @@ span.code {
 
 #break-projects {
   width: 100%;
-  margin: 2.5em 0;
+  margin: 3.5em 0;
   padding: 1px 0;
 }
 
