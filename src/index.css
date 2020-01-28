@@ -481,3 +481,7 @@ span.code {
   margin: 10px;
   background-color: yellow;
 }
+
+#work-grid {
+  display: flex;
+}
