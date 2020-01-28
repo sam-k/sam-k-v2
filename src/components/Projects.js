@@ -30,7 +30,7 @@ class Projects extends React.Component {
                     <ProjectCard
                         title="Describing the NIH-funded research workforce"
                         subtitle={
-                            <span>Internship at <a href="https://blog.codingitforward.com/introducing-the-2019-civic-digital-fellows-41469f28561d">National Institutes of Health</a></span>
+                            <span>Fellowship at <a href="https://blog.codingitforward.com/introducing-the-2019-civic-digital-fellows-41469f28561d">National Institutes of Health</a></span>
                         }
                         text={<>
                             <p>Led project to characterize scientists funded by the NIH, using machine-learning techniques. Results may help inform Congress and automate future analyses.</p>
