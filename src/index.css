@@ -21,10 +21,6 @@
 
 body {
   font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 70vw;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -87,33 +83,47 @@ span.code {
       Navbar
  ***************/
 
-#navbar {
-  width: 100%;
-  margin: 5vh 0;
-  list-style: none;
-  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1.3em;
-  font-weight: 400;
+#navbar-bg-wrapper {
+  /* position: fixed;
+  top: 0;
+  width: 100%; */
+  padding: 5vh 0;
+  background-color: #eef7fe;
+  box-shadow: 0 3px 10px 0 var(--light-gray);
+}
 
+#navbar-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70vw;
+}
+
+#navbar {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
+  width: 100%;
+
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  list-style: none;
 }
 
 #navbar #home {
   margin-right: auto;
 }
 
-#navbar #home a:hover {
-  color: var(--duke-blue);
-}
-
 #navbar #home a {
   font-size: 1.4em;
   font-weight: 600;
-  color: black;
   text-decoration: none;
+  color: black;
+}
+
+#navbar #home a:hover {
+  color: var(--bright-blue);
 }
 
 #nav {
@@ -127,12 +137,12 @@ span.code {
 #nav a {
   padding-top: 0.4em;
   padding-bottom: 0.4em;
-  color: var(--dark-gray);
   text-decoration: none;
+  color: black;
 }
 
 #nav a:hover {
-  color: var(--duke-blue);
+  color: var(--bright-blue);
 }
 
 .nav-item-start a {
@@ -150,13 +160,15 @@ span.code {
   padding-left: 1em;
 }
 
-#break-navbar {
-  width: 100%;
-  margin: 2.35em 0;
-  padding: 1px 0;
-}
-
 @media (max-width: 600px) {
+  #navbar-bg-wrapper {
+    padding: 2vh 0;
+  }
+
+  #navbar-wrapper {
+    max-width: 100%;
+  }
+
   #navbar {
     margin: calc(6vw - var(--side-margin)) 0;
     justify-content: center;
@@ -179,19 +191,23 @@ span.code {
     padding-top: 0.25em;
     padding-bottom: 0.25em;
   }
-
-  #break-navbar {
-    margin: 0;
-    padding: 0.05vh 0;
-    border-top: 0.25px solid var(--light-gray);
-  }
 }
 
 /***************
       Intro
  ***************/
 
+#intro-bg-wrapper {
+  padding: calc(10vh - 40px) 0;
+}
+
 #intro-wrapper {
+  margin: 0 auto;
+  /* padding-top: calc(10vh + 1.4em); */
+  max-width: 70vw;
+}
+
+#intro {
   margin: 0 calc(7.5vw - var(--side-margin));
 
   display: flex;
@@ -210,12 +226,11 @@ span.code {
 }
 
 #profile h1 {
-  /* Vertically center */
-  margin-top: 3.5vh;
+  margin-top: 40px;
 }
 
 #profile p {
-  padding: 1em 0 1.5em 0;
+  padding: 1em 0;
   font-size: 1.3em;
 }
 
@@ -262,6 +277,7 @@ span.code {
 
 .resume-button {
   margin: 0 auto 40px auto;
+  padding: 0.625em 0;
   text-align: center;
 }
 
@@ -275,13 +291,24 @@ span.code {
   font-weight: 700;
 }
 
-#break-intro {
-  width: 100%;
-  margin: 2.35em 0;
-  padding: 1px 0;
-}
-
 @media (max-width: 600px) {
+  #intro-bg-wrapper {
+    padding: 10vh 0;
+  }
+
+  #intro-wrapper {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  #profile {
+    margin: 0;
+  }
+
+  #profile h1 {
+    margin-top: 0;
+  }
+
   #intro-card {
     padding: 2.5vh 10vw;
   }
@@ -289,15 +316,23 @@ span.code {
   .resume-button {
     margin-bottom: 10vw;
   }
-
-  #break-intro {
-    border-top: 0.25px solid var(--light-gray);
-  }
 }
 
 /***************
      Projects
  ***************/
+
+#project-bg-wrapper {
+  padding: 10vh 0;
+  background-color: #eef7fe;
+  box-shadow: 0 -3px 10px 0 var(--light-gray),
+    0 3px 10px 0 var(--light-gray);
+}
+
+#project-wrapper {
+  margin: 0 auto;
+  max-width: 70vw;
+}
 
 #project-card-wrapper {
   display: flex;
@@ -315,7 +350,14 @@ span.code {
 .project-card:not(#placeholder) {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.25), 0 0 12px rgba(0, 0, 0, 0.05);
   border-radius: 30px;
-  /* background-color: var(--light-blue-transparent); */
+  background-color: white;
+}
+
+.project-card#placeholder {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .project-card h4 {
@@ -373,7 +415,8 @@ span.code {
 }
 
 .all-projects-button {
-  margin: 60px auto;
+  margin: 5vh auto 0 auto;
+  padding: 0.625em 0;
   text-align: center;
 }
 
@@ -387,32 +430,24 @@ span.code {
   font-weight: 700;
 }
 
-#break-projects {
-  width: 100%;
-  margin: 3.5em 0;
-  padding: 1px 0;
-}
-
 @media (max-width: 600px) {
+  #project-wrapper {
+    max-width: 100%;
+  }
+
   .project-card {
-    min-width: 50%;
-    flex: 1 1 50%;
+    min-width: 60%;
+    flex: 1 1 60%;
     margin: 0 20px 20px 20px;
     padding: 6vw;
   }
 
-  #project-card-wrapper #placeholder {
-    margin: 0;
-    padding: 0;
+  .project-card#placeholder {
+    display: none;
   }
 
   .all-projects-button {
     margin: 0 auto;
-  }
-
-  #break-projects {
-    margin: 5em 0 3.5em 0;
-    border-top: 0.25px solid var(--light-gray);
   }
 }
 
@@ -420,7 +455,13 @@ span.code {
     Experience
  ***************/
 
+#experience-bg-wrapper {
+  padding: 10vh 0;
+}
+
 #experience-wrapper {
+  margin: 0 auto;
+  max-width: 70vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -485,4 +526,16 @@ span.code {
 
 #work-grid {
   display: flex;
+}
+
+@media (max-width: 600px) {
+  #experience-wrapper {
+    max-width: 100%;
+  }
+
+  #skills-wrapper {
+    min-width: 80%;
+    flex: 1 1 80%;
+    margin: 0 20px 20px 20px;
+  }
 }

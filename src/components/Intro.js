@@ -32,28 +32,34 @@ class Typewriter extends React.Component {
 class Intro extends React.Component {
     render() {
         return (
-            <div id='intro-wrapper'>
-                <div id='profile'>
-                    <h1>Sam, I am.</h1>
-                    <h2>I love to <Typewriter strings={[
-                        "<span style='color: #ec8c24'>develop</span>.",
-                        "<span style='color: #6ebede'>write</span>.",
-                        "<span style='color: #4ec866'>research</span>."
-                    ]} /></h2>
-                    <p>I’m a <span className='code'>computational</span> <span className='code'>biologist</span>, a <span className='code'>software</span> <span className='code'>engineer</span> and a third-year student at Duke University. I believe that technology is the answer to treating and curing more people, and at a much lower cost.</p>
-                    <Button
-                        className='resume-button'
-                        text="Resume"
-                        color="#444444"
-                        colorHover="black"
-                        bgColor="white"
-                        bgColorHover="#cdcdcd"
-                        borderColor="hsl(0, 0%, 20%)"
-                        link="https://drive.google.com/file/d/1M0rskmHcZrd6pbAoDjvfuzy3e2dXhaO9/view"
-                    />
+            <div id='intro-bg-wrapper'>
+                <div id='intro-wrapper'>
+                    <div id='intro'>
+                        <div id='profile'>
+                            <h1>Sam, I am.</h1>
+                            <h2>I love to <Typewriter strings={[
+                                "<span style='color: #ec8c24'>develop</span>.",
+                                "<span style='color: #6ebede'>write</span>.",
+                                "<span style='color: #4ec866'>research</span>."
+                            ]} /></h2>
+                            <p>I’m a <span className='code'>computational</span> <span className='code'>biologist</span>, a <span className='code'>software</span> <span className='code'>engineer</span> and a third-year student at Duke University. I believe that technology is the answer to treating and curing more people, and at a much lower cost.</p>
+                            <Button
+                                className='resume-button'
+                                text="Resume"
+                                link="https://drive.google.com/file/d/1M0rskmHcZrd6pbAoDjvfuzy3e2dXhaO9/view"
+
+                                color="#444444"
+                                colorHover="#007bff"
+                                bgColor="white"
+                                bgColorHover="rgba(0, 123, 255, 15%)"
+                                borderColor="hsl(0, 0%, 20%)"
+                                borderColorHover="hsl(0, 0%, 20%)"
+                            />
+                        </div>
+                        <IntroCard />
+                    </div>
                 </div>
-                <IntroCard />
-            </div >
+            </div>
         )
     }
 }
