@@ -192,7 +192,7 @@ span.code {
  ***************/
 
 #intro-wrapper {
-  margin: 0 calc(6vw - var(--side-margin));
+  margin: 0 calc(7.5vw - var(--side-margin));
 
   display: flex;
   flex-wrap: wrap;
@@ -202,8 +202,8 @@ span.code {
 
 #profile {
   /* profile shrinks to min-width, then wraps to full width */
-  min-width: 35vw;
-  flex: 1 1 35vw;
+  min-width: 30vw;
+  flex: 1 1 30vw;
 
   /* Symmetric to keep centered when wrapped. Same as intro-card */
   margin: 0 var(--side-margin);
@@ -224,7 +224,7 @@ span.code {
   margin: 0 var(--side-margin);
 
   width: 175px;
-  padding: 1.4em 2.8em;
+  padding: 1.4em 2em;
   background-color: var(--light-blue);
   box-shadow: 3px 3px 3px -1px var(--dark-gray);
   border-radius: 10px;
