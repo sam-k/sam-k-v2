@@ -68,7 +68,25 @@ class Projects extends React.Component {
                             img=""
                         />
 
-                        <ProjectCard id='placeholder' />
+                        <ProjectCard
+                            title="This website right here"
+                            subtitle="Personal project"
+                            text={<>
+                                <p>Showcasing my skills and experience, as well as the (many) writings from my undergraduate career.</p>
+                                <p>This was an exercise in responsive web design and mobile front-end development. I built all components from scratch; no CSS frameworks like Bootstrap were used.</p>
+                            </>}
+                            tools={{
+                                "React": "https://reactjs.org/",
+                                "Django": "https://www.djangoproject.com/",
+                                "CSS": "https://www.w3.org/Style/CSS/"
+                            }}
+                            links={{
+                                "GitHub": ""
+                            }}
+                            img=""
+                        />
+
+                        {/* <ProjectCard id='placeholder' /> */}
                     </div>
 
                     <Button
@@ -76,10 +94,10 @@ class Projects extends React.Component {
                         text="See All Projects"
                         link="#"
 
-                        color="#444444"
-                        colorHover="#007bff"
+                        color="hsl(0, 0%, 27%)"
+                        colorHover="rgb(0, 123, 255)"
                         bgColor="white"
-                        bgColorHover="rgba(0, 123, 255, 15%)"
+                        bgColorHover="rgb(224, 236, 254)"
                         borderColor="hsl(0, 0%, 20%)"
                         borderColorHover="hsl(0, 0%, 20%)"
                     />

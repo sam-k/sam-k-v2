@@ -23,10 +23,10 @@ class ProjectCard extends React.Component {
                         className='project-tool-item'
                         text={tool}
                         link={link}
-                        color="rgba(0, 0, 0, 0.4)"
-                        colorHover="#007bff"
-                        bgColor="rgba(0, 0, 0, 0.08)"
-                        bgColorHover="rgba(0, 123, 255, 15%)"
+                        color="hsl(0, 0%, 55%)"
+                        colorHover="rgb(0, 123, 255)"
+                        bgColor="hsl(0, 0%, 92%)"
+                        bgColorHover="rgb(224, 236, 254)"
                     />
                 </li>
             )

@@ -1,11 +1,12 @@
 :root {
-  --bright-blue: #007bff;
-  --duke-blue: #00539b;
-  --light-blue: rgb(243, 246, 259);
-  --light-blue-transparent: rgba(243, 246, 252, 35%);
-  --light-gray: #cccccc;
-  --dark-gray: #444444;
-  --text-black: hsl(0, 0, 20%);
+  --bright-blue: rgb(0, 123, 255);
+  --duke-blue: rgb(0, 83, 155);
+  --dark-gray: hsl(0, 0%, 27%);
+  --text-black: hsl(0, 0%, 20%);
+  --bg-color: rgb(27, 47, 80);
+  --bg-card-color: rgba(0, 123, 255, 10%);
+  --shadow-color: rgba(0, 0, 0, 50%);
+  --nav-text-color: white;
   --side-margin: 2.25vw;
 }
 
@@ -87,9 +88,9 @@ span.code {
   /* position: fixed;
   top: 0;
   width: 100%; */
-  padding: 5vh 0;
-  background-color: #eef7fe;
-  box-shadow: 0 3px 10px 0 var(--light-gray);
+  padding: 4vh 0;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 10px 0 var(--shadow-color);
 }
 
 #navbar-wrapper {
@@ -119,7 +120,7 @@ span.code {
   font-size: 1.4em;
   font-weight: 600;
   text-decoration: none;
-  color: black;
+  color: var(--nav-text-color);
 }
 
 #navbar #home a:hover {
@@ -138,7 +139,7 @@ span.code {
   padding-top: 0.4em;
   padding-bottom: 0.4em;
   text-decoration: none;
-  color: black;
+  color: var(--nav-text-color);
 }
 
 #nav a:hover {
@@ -147,13 +148,13 @@ span.code {
 
 .nav-item-start a {
   padding-right: 1em;
-  border-right: 0.25px solid var(--light-gray);
+  border-right: 0.75px solid var(--nav-text-color);
 }
 
 .nav-item a {
   padding-left: 1em;
   padding-right: 1em;
-  border-right: 0.25px solid var(--light-gray);
+  border-right: 0.75px solid var(--nav-text-color);
 }
 
 .nav-item-end a {
@@ -198,12 +199,11 @@ span.code {
  ***************/
 
 #intro-bg-wrapper {
-  padding: calc(10vh - 40px) 0;
+  padding: calc(12vh - 40px) 0;
 }
 
 #intro-wrapper {
   margin: 0 auto;
-  /* padding-top: calc(10vh + 1.4em); */
   max-width: 70vw;
 }
 
@@ -218,12 +218,13 @@ span.code {
 
 #profile {
   /* profile shrinks to min-width, then wraps to full width */
-  min-width: 30vw;
-  flex: 1 1 30vw;
+  min-width: 52%;
+  flex: 1 1 52%;
 
   /* Symmetric to keep centered when wrapped. Same as intro-card */
   margin: 0 var(--side-margin);
 }
+
 
 #profile h1 {
   margin-top: 40px;
@@ -236,11 +237,11 @@ span.code {
 
 #intro-card {
   /* Symmetric to keep centered when wrapped. Same as profile */
-  margin: 0 var(--side-margin);
+  margin: 40px var(--side-margin);
 
   width: 175px;
   padding: 1.4em 2em;
-  background-color: var(--light-blue);
+  background-color: var(--bg-card-color);
   box-shadow: 3px 3px 3px -1px var(--dark-gray);
   border-radius: 10px;
 }
@@ -310,6 +311,7 @@ span.code {
   }
 
   #intro-card {
+    margin-top: 0;
     padding: 2.5vh 10vw;
   }
 
@@ -323,10 +325,10 @@ span.code {
  ***************/
 
 #project-bg-wrapper {
-  padding: 10vh 0;
-  background-color: #eef7fe;
-  box-shadow: 0 -3px 10px 0 var(--light-gray),
-    0 3px 10px 0 var(--light-gray);
+  padding: 8vh 0;
+  background-color: var(--bg-color);
+  box-shadow: 0 -3px 10px 0 var(--shadow-color),
+    0 3px 10px 0 var(--shadow-color);
 }
 
 #project-wrapper {
@@ -348,7 +350,7 @@ span.code {
 }
 
 .project-card:not(#placeholder) {
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25), 0 0 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 25%), 0 0 12px rgba(0, 0, 0, 5%);
   border-radius: 30px;
   background-color: white;
 }
@@ -491,28 +493,28 @@ span.code {
   margin: 0 0.05em;
   padding: 0 0.2em;
   border: 1px solid;
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 10%);
 
   color: var(--text-black);
-  background-color: rgba(0, 0, 0, 0.06);
+  background-color: rgba(0, 0, 0, 6%);
   line-height: 1.75em;
   text-decoration: none;
 }
 
 .skill-item.fullstack:hover {
-  color: rgba(226, 131, 30);
+  color: rgb(226, 131, 30);
   background-color: rgba(226, 131, 30, 10%);
   border-color: rgba(226, 131, 30, 50%);
 }
 
 .skill-item.data:hover {
-  color: rgba(79, 178, 235);
+  color: rgb(79, 178, 235);
   background-color: rgba(79, 178, 235, 10%);
   border-color: rgba(79, 178, 235, 50%);
 }
 
 .skill-item.wetlab:hover {
-  color: rgba(54, 197, 82);
+  color: rgb(54, 197, 82);
   background-color: rgba(54, 197, 82, 10%);
   border-color: rgba(54, 197, 82, 50%);
 }

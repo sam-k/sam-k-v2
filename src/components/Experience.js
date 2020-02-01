@@ -12,7 +12,7 @@ class Experience extends React.Component {
                         <Skills />
                     </div>
                     <div id='work-wrapper'>
-                        <h2>Work</h2>
+                        <h2>Where I’ve Worked</h2>
                         <Work />
                     </div>
                 </div>

@@ -48,10 +48,10 @@ class Intro extends React.Component {
                                 text="Resume"
                                 link="https://drive.google.com/file/d/1M0rskmHcZrd6pbAoDjvfuzy3e2dXhaO9/view"
 
-                                color="#444444"
-                                colorHover="#007bff"
+                                color="hsl(0, 0%, 27%)"
+                                colorHover="rgb(0, 123, 255)"
                                 bgColor="white"
-                                bgColorHover="rgba(0, 123, 255, 15%)"
+                                bgColorHover="rgb(224, 236, 254)"
                                 borderColor="hsl(0, 0%, 20%)"
                                 borderColorHover="hsl(0, 0%, 20%)"
                             />

@@ -5,7 +5,7 @@ const CardComponent = (props) =>
     <p class={props.type} style={{ gridRow: props.row }}>
         <a href={props.link}
             style={{ color: props.color }}
-            onMouseEnter={() => props.updateColor("#007bff")}
+            onMouseEnter={() => props.updateColor("rgb(0, 123, 255)")}
             onMouseLeave={() => props.updateColor("hsl(0, 0%, 20%)")}>
             {props.content}
         </a>
