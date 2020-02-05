@@ -10,11 +10,8 @@ function App() {
   return (
     <div id='App'>
       <Navbar />
-      <div id='break-navbar' />
       <Intro />
-      <div id='break-intro' />
       <Projects />
-      <div id='break-projects' />
       <Experience />
       <Footer />
     </div>
