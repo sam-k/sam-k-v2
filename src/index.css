@@ -87,7 +87,7 @@ span.code {
       Navbar
  ***************/
 
-#navbar-bg-wrapper {
+#navbar {
   width: 100%;
   padding: 3.5vh 0;
   background-color: var(--bg-color);
@@ -100,7 +100,7 @@ span.code {
   max-width: 70vw;
 }
 
-#navbar {
+#nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -113,22 +113,22 @@ span.code {
   list-style: none;
 }
 
-#navbar #home {
+#nav-home {
   margin-right: auto;
 }
 
-#navbar #home a {
+#nav-home a {
   font-size: 1.4em;
   font-weight: 600;
   text-decoration: none;
   color: var(--nav-text-color);
 }
 
-#navbar #home a:hover {
+#nav-home a:hover {
   color: var(--bright-blue);
 }
 
-#nav {
+#nav-other {
   list-style: none;
   display: flex;
   flex-wrap: no-wrap;
@@ -136,14 +136,14 @@ span.code {
   padding-bottom: 0.4em;
 }
 
-#nav a {
+#nav-other a {
   padding-top: 0.4em;
   padding-bottom: 0.4em;
   text-decoration: none;
   color: var(--nav-text-color);
 }
 
-#nav a:hover {
+#nav-other a:hover {
   color: var(--bright-blue);
 }
 
@@ -163,7 +163,7 @@ span.code {
 }
 
 @media (max-width: 600px) {
-  #navbar-bg-wrapper {
+  #navbar {
     padding: 2vh 0;
   }
 
@@ -171,25 +171,25 @@ span.code {
     max-width: 100%;
   }
 
-  #navbar {
+  #nav {
     margin: calc(6vw - var(--side-margin)) 0;
     justify-content: center;
   }
 
-  #navbar #home {
+  #nav-home {
     margin: 0;
     padding: 0 10vw;
   }
 
-  #navbar #home a {
+  #nav-home a {
     font-size: 2em;
   }
 
-  #nav {
+  #nav-other {
     margin-top: 1.75vh;
   }
 
-  #nav a {
+  #nav-other a {
     padding-top: 0.25em;
     padding-bottom: 0.25em;
   }
@@ -199,7 +199,7 @@ span.code {
       Intro
  ***************/
 
-#intro-bg-wrapper {
+#bio {
   padding: var(--large-v-padding) 0;
 }
 
@@ -289,7 +289,7 @@ span.code {
 }
 
 @media (max-width: 600px) {
-  #intro-bg-wrapper {
+  #bio {
     padding: 10vh 0;
   }
 
@@ -320,7 +320,7 @@ span.code {
      Projects
  ***************/
 
-#project-bg-wrapper {
+#projects {
   padding: 6vh 0;
   background-color: var(--bg-color);
   box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
@@ -452,12 +452,12 @@ span.code {
     Experience
  ***************/
 
-#experience-bg-wrapper {
+#experiences {
   padding: var(--large-v-padding) 0;
 }
 
 #experience-wrapper {
-  margin: 0 auto;
+  margin: 0 auto -1.5em auto;
   max-width: 70vw;
   display: flex;
   flex-wrap: wrap;
@@ -558,10 +558,27 @@ span.code {
     margin: 0 20px 20px 20px;
   }
 
+  .skill-item.fullstack {
+    color: rgb(226, 131, 30);
+    background-color: rgba(226, 131, 30, 10%);
+    border-color: rgba(226, 131, 30, 50%);
+  }
+
+  .skill-item.data {
+    color: rgb(79, 178, 235);
+    background-color: rgba(79, 178, 235, 10%);
+    border-color: rgba(79, 178, 235, 50%);
+  }
+
+  .skill-item.wetlab {
+    color: rgb(54, 197, 82);
+    background-color: rgba(54, 197, 82, 10%);
+    border-color: rgba(54, 197, 82, 50%);
+  }
+
   #work-wrapper {
     min-width: 80%;
     flex: 1 1 80%;
-    margin: 0 20px 20px 20px;
   }
 
   #work-icons {
@@ -579,7 +596,7 @@ span.code {
  ***************/
 
 
-#footer-bg-wrapper {
+#footer {
   padding: 6vh 0;
   background-color: var(--bg-color);
   box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) var(--shadow-color);

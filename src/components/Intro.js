@@ -32,7 +32,7 @@ class Typewriter extends React.Component {
 class Intro extends React.Component {
     render() {
         return (
-            <div id='intro-bg-wrapper'>
+            <div id='bio'>
                 <div id='intro-wrapper'>
                     <div id='intro'>
                         <div id='profile'>

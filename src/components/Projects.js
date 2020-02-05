@@ -5,7 +5,7 @@ import Button from "./Button"
 class Projects extends React.Component {
     render() {
         return (
-            <div id='project-bg-wrapper'>
+            <div id='projects'>
                 <div id='project-wrapper'>
                     <div id='project-card-wrapper'>
                         <ProjectCard
