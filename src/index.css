@@ -577,3 +577,16 @@ span.code {
 /***************
       Footer
  ***************/
+
+
+#footer-bg-wrapper {
+  padding: 6vh 0;
+  background-color: var(--bg-color);
+  box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
+}
+
+#footer-wrapper {
+  margin: 0 auto;
+  max-width: 70vw;
+  color: white;
+}
