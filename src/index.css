@@ -495,24 +495,36 @@ span.code {
   background-color: rgba(0, 0, 0, 6%);
   line-height: 1.75em;
   text-decoration: none;
+
+  -webkit-transition: color 0.25s linear, border-color 0.25s linear;
+  transition: background-color 0.25s linear, border-color 0.25s linear;
 }
 
 .skill-item.fullstack:hover {
   color: rgb(226, 131, 30);
   background-color: rgba(226, 131, 30, 10%);
   border-color: rgba(226, 131, 30, 50%);
+
+  -webkit-transition: none;
+  transition: none;
 }
 
 .skill-item.data:hover {
   color: rgb(79, 178, 235);
   background-color: rgba(79, 178, 235, 10%);
   border-color: rgba(79, 178, 235, 50%);
+
+  -webkit-transition: none;
+  transition: none;
 }
 
 .skill-item.wetlab:hover {
   color: rgb(54, 197, 82);
   background-color: rgba(54, 197, 82, 10%);
   border-color: rgba(54, 197, 82, 50%);
+
+  -webkit-transition: none;
+  transition: none;
 }
 
 #work-wrapper {
@@ -535,16 +547,25 @@ span.code {
   margin: 0 1em 1.5em 0;
 }
 
+.work-icon-img a {
+  -webkit-filter: grayscale(100%) contrast(200%);
+  filter: grayscale(100%) contrast(200%);
+
+  -webkit-transition: filter 0.5s linear;
+  transition: filter 0.5s linear;
+}
+
+.work-icon-img a:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+
+  -webkit-transition: none;
+  transition: none;
+}
+
 .work-icon-img img {
   width: 100%;
   padding: auto 0;
-  -webkit-filter: grayscale(100%) contrast(200%);
-  filter: grayscale(100%) contrast(200%);
-}
-
-.work-icon-img img:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
 }
 
 @media (max-width: 600px) {
