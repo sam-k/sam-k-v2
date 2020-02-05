@@ -21,14 +21,14 @@ class Work extends React.Component {
                     link="https://www.nih.gov/"
                 />
                 <WorkIcon
-                    name="National Security Innovation Network"
-                    icon={logoNSIN}
-                    link="https://www.nsin.us/"
-                />
-                <WorkIcon
                     name="Duke University School of Medicine"
                     icon={logoDukeMed}
                     link="https://medschool.duke.edu/"
+                />
+                <WorkIcon
+                    name="National Security Innovation Network"
+                    icon={logoNSIN}
+                    link="https://www.nsin.us/"
                 />
                 <WorkIcon
                     name="Duke Center for Genomic and Computational Biology"

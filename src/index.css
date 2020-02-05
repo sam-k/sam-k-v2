@@ -557,4 +557,23 @@ span.code {
     flex: 1 1 80%;
     margin: 0 20px 20px 20px;
   }
+
+  #work-wrapper {
+    min-width: 80%;
+    flex: 1 1 80%;
+    margin: 0 20px 20px 20px;
+  }
+
+  #work-icons {
+    margin-top: 2em;
+  }
+
+  .work-icon-img img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
 }
+
+/***************
+      Footer
+ ***************/
