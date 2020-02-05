@@ -461,13 +461,14 @@ span.code {
   max-width: 70vw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #skills-wrapper {
   min-width: 40%;
   flex: 1 1 40%;
   margin: 10px;
+  padding-right: 1em;
 }
 
 #skills-wrapper ul {
@@ -515,14 +516,35 @@ span.code {
 }
 
 #work-wrapper {
-  min-width: 20%;
-  flex: 1 1 20%;
+  min-width: 23%;
+  flex: 1 1 23%;
   margin: 10px;
-  background-color: yellow;
 }
 
-#work-grid {
+#work-icons {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5em;
+}
+
+.work-icon-img {
+  display: flex;
+  align-items: center;
+  min-width: 40%;
+  flex: 1 1 40%;
+  margin: 0 1em 1.5em 0;
+}
+
+.work-icon-img img {
+  width: 100%;
+  padding: auto 0;
+  -webkit-filter: grayscale(100%) contrast(200%);
+  filter: grayscale(100%) contrast(200%);
+}
+
+.work-icon-img img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 @media (max-width: 600px) {

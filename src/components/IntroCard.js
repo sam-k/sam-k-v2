@@ -1,5 +1,6 @@
 import React from "react"
-import headshot from "../profile.jpeg"
+import headshot from "../images/profile.jpg"
+// import headshot from "../images_original/profile.jpg"
 
 const CardComponent = (props) =>
     <p class={props.type} style={{ gridRow: props.row }}>
