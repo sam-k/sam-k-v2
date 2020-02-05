@@ -6,7 +6,10 @@
   --bg-color: rgb(27, 47, 80);
   --bg-card-color: rgb(234, 242, 254);
   --shadow-color: rgba(0, 0, 0, 50%);
+  --shadow-blur: 20px;
+  --shadow-spread: 5px;
   --nav-text-color: white;
+  --large-v-padding: 12vh;
   --side-margin: 2.25vw;
 }
 
@@ -85,12 +88,10 @@ span.code {
  ***************/
 
 #navbar-bg-wrapper {
-  /* position: fixed;
-  top: 0;
-  width: 100%; */
-  padding: 4vh 0;
+  width: 100%;
+  padding: 3.5vh 0;
   background-color: var(--bg-color);
-  box-shadow: 0 3px 10px 0 var(--shadow-color);
+  box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
 }
 
 #navbar-wrapper {
@@ -199,7 +200,7 @@ span.code {
  ***************/
 
 #intro-bg-wrapper {
-  padding: calc(12vh - 40px) 0;
+  padding: var(--large-v-padding) 0;
 }
 
 #intro-wrapper {
@@ -225,11 +226,6 @@ span.code {
   margin: 0 var(--side-margin);
 }
 
-
-#profile h1 {
-  margin-top: 40px;
-}
-
 #profile p {
   padding: 1em 0;
   font-size: 1.3em;
@@ -237,7 +233,7 @@ span.code {
 
 #intro-card {
   /* Symmetric to keep centered when wrapped. Same as profile */
-  margin: 40px var(--side-margin);
+  margin: 40px var(--side-margin) calc(40px - 5em/4) var(--side-margin);
 
   width: 175px;
   padding: 1.4em 2em;
@@ -277,7 +273,7 @@ span.code {
 }
 
 .resume-button {
-  margin: 0 auto 40px auto;
+  /* margin: 0 auto 40px auto; */
   padding: 0.625em 0;
   text-align: center;
 }
@@ -325,10 +321,9 @@ span.code {
  ***************/
 
 #project-bg-wrapper {
-  padding: 8vh 0;
+  padding: 6vh 0;
   background-color: var(--bg-color);
-  box-shadow: 0 -3px 10px 0 var(--shadow-color),
-    0 3px 10px 0 var(--shadow-color);
+  box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
 }
 
 #project-wrapper {
@@ -458,7 +453,7 @@ span.code {
  ***************/
 
 #experience-bg-wrapper {
-  padding: 10vh 0;
+  padding: var(--large-v-padding) 0;
 }
 
 #experience-wrapper {
