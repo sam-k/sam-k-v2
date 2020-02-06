@@ -5,11 +5,12 @@
   --text-black: hsl(0, 0%, 20%);
   --bg-color: rgb(27, 47, 80);
   --bg-card-color: rgb(234, 242, 254);
+  --inverted-color: white;
   --shadow-color: rgba(0, 0, 0, 50%);
   --shadow-blur: 20px;
   --shadow-spread: 5px;
-  --nav-text-color: white;
-  --large-v-padding: 12vh;
+  --small-v-padding: 6vh;
+  --large-v-padding: 12.25vh;
   --side-margin: 2.25vw;
 }
 
@@ -23,10 +24,15 @@
   background: transparent;
 }
 
+html {
+  background-color: var(--bg-color);
+}
+
 body {
   font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
 }
 
 h1 {
@@ -121,7 +127,7 @@ span.code {
   font-size: 1.4em;
   font-weight: 600;
   text-decoration: none;
-  color: var(--nav-text-color);
+  color: var(--inverted-color);
 }
 
 #nav-home a:hover {
@@ -140,7 +146,7 @@ span.code {
   padding-top: 0.4em;
   padding-bottom: 0.4em;
   text-decoration: none;
-  color: var(--nav-text-color);
+  color: var(--inverted-color);
 }
 
 #nav-other a:hover {
@@ -149,13 +155,13 @@ span.code {
 
 .nav-item-start a {
   padding-right: 1em;
-  border-right: 0.75px solid var(--nav-text-color);
+  border-right: 0.75px solid var(--inverted-color);
 }
 
 .nav-item a {
   padding-left: 1em;
   padding-right: 1em;
-  border-right: 0.75px solid var(--nav-text-color);
+  border-right: 0.75px solid var(--inverted-color);
 }
 
 .nav-item-end a {
@@ -321,7 +327,7 @@ span.code {
  ***************/
 
 #projects {
-  padding: 6vh 0;
+  padding: var(--small-v-padding) 0;
   background-color: var(--bg-color);
   box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
 }
@@ -375,7 +381,7 @@ span.code {
 }
 
 .project-card p a {
-  color: #ec8c24;
+  color: rgb(236, 140, 36);
   text-decoration: none;
 }
 
@@ -616,15 +622,52 @@ span.code {
       Footer
  ***************/
 
-
 #footer {
-  padding: 6vh 0;
+  padding: var(--small-v-padding) 0;
   background-color: var(--bg-color);
   box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
 }
 
 #footer-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 70vw;
-  color: white;
+}
+
+#footer-wrapper * {
+  color: var(--inverted-color);
+}
+
+#footer-wrapper a {
+  text-decoration: none;
+}
+
+#footer-wrapper a:hover {
+  color: var(--bright-blue);
+}
+
+#contact h2 {
+  margin-bottom: 0.36em;
+}
+
+#copyright ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.36em;
+}
+
+#copyright li {
+  display: inline;
+  margin-left: 1em;
+  list-style: none;
+}
+
+#copyright i:hover {
+  color: var(--bright-blue);
+}
+
+#copyright p {
+  text-align: right;
 }
