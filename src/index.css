@@ -612,7 +612,7 @@ span.code {
     margin-top: 2em;
   }
 
-  .work-icon-img img {
+  .work-icon-img a {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
   }
@@ -629,45 +629,126 @@ span.code {
 }
 
 #footer-wrapper {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
   margin: 0 auto;
   max-width: 70vw;
 }
 
-#footer-wrapper * {
+#footer-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#footer-content * {
   color: var(--inverted-color);
 }
 
-#footer-wrapper a {
+#footer-content a {
   text-decoration: none;
 }
 
-#footer-wrapper a:hover {
+#footer-content a:hover {
   color: var(--bright-blue);
+}
+
+#copyright-icons li {
+  display: inline;
+  margin-left: 1em;
+  list-style: none;
+}
+
+#contact {
+  padding-right: var(--side-margin);
 }
 
 #contact h2 {
   margin-bottom: 0.36em;
 }
 
-#copyright ul {
+#copyright-icons {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 1.36em;
 }
 
-#copyright li {
+#copyright-icons li {
   display: inline;
   margin-left: 1em;
   list-style: none;
 }
 
-#copyright i:hover {
+#copyright-icons i:hover {
   color: var(--bright-blue);
 }
 
-#copyright p {
+#copyright-lines {
   text-align: right;
+}
+
+#copyright-lines li {
+  font-size: 1.2em;
+  list-style: none;
+}
+
+@media (max-width: 900px) {
+  #copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.36em;
+  }
+
+  #copyright-icons {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  #copyright-icons li {
+    display: inline;
+    margin-left: 0;
+    margin-right: 1em;
+  }
+
+  #copyright-lines li {
+    display: inline;
+  }
+}
+
+@media (max-width: 600px) {
+  #footer-wrapper {
+    max-width: 100%;
+  }
+
+  #footer-content {
+    margin: 0 20px;
+  }
+
+  #contact {
+    padding: 0;
+  }
+
+  #copyright {
+    display: block;
+    margin-top: 2.72em;
+  }
+
+  #copyright-icons {
+    justify-content: center;
+  }
+
+  #copyright-icons li {
+    margin: 0 0.5em;
+  }
+
+  #copyright-lines {
+    margin-top: 0.68em;
+    text-align: center;
+    font-size: 0.75em;
+  }
+
+  /* #copyright-lines li {
+    display: block;
+  } */
 }
