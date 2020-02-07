@@ -520,7 +520,7 @@ span.code {
   transition: none;
 }
 
-#skills-data:hover {
+#skills-data a:hover {
   color: rgb(79, 178, 235);
   background-color: rgba(79, 178, 235, 10%);
   border-color: rgba(79, 178, 235, 50%);
@@ -529,7 +529,7 @@ span.code {
   transition: none;
 }
 
-#skills-wetlab:hover {
+#skills-wetlab a:hover {
   color: rgb(54, 197, 82);
   background-color: rgba(54, 197, 82, 10%);
   border-color: rgba(54, 197, 82, 50%);
