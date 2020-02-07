@@ -2,11 +2,6 @@ import React from "react"
 import ProjectCard from "./ProjectCard"
 import Button from "./Button"
 
-import projectGenome from "../images/project-genome.jpg"
-import projectHandoff from "../images/project-handoff.png"
-import projectEnumeration from "../images/project-enumeration.jpg"
-import projectWebsite from "../images/project-website.png"
-
 class Projects extends React.Component {
     render() {
         return (
@@ -30,7 +25,7 @@ class Projects extends React.Component {
                             links={{
                                 "GitHub": ""
                             }}
-                            img={projectHandoff}
+                            img=""
                         />
 
                         <ProjectCard
@@ -50,7 +45,7 @@ class Projects extends React.Component {
                             links={{
                                 "GitHub": ""
                             }}
-                            img={projectEnumeration}
+                            img=""
                         />
 
                         <ProjectCard
@@ -70,25 +65,25 @@ class Projects extends React.Component {
                             links={{
                                 "GitHub": ""
                             }}
-                            img={projectGenome}
+                            img=""
                         />
 
                         <ProjectCard
                             title="This website right here"
                             subtitle="Personal project"
                             text={<>
-                                <p>Showcasing my skills and experience, as well as my writings from my undergraduate career.</p>
+                                <p>Showcasing my skills and experience, as well as the (many) writings from my undergraduate career.</p>
                                 <p>This was an exercise in responsive web design and mobile front-end development. I built all components from scratch, without any CSS frameworks like Bootstrap.</p>
                             </>}
                             tools={{
                                 "React": "https://reactjs.org/",
-                                "JS": "https://www.javascript.com/",
+                                "Django": "https://www.djangoproject.com/",
                                 "CSS": "https://www.w3.org/Style/CSS/"
                             }}
                             links={{
                                 "GitHub": ""
                             }}
-                            img={projectWebsite}
+                            img=""
                         />
 
                         {/* <ProjectCard id='placeholder' /> */}

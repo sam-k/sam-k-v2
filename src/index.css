@@ -389,11 +389,6 @@ span.code {
   text-decoration: underline;
 }
 
-.project-card img {
-  width: 100%;
-  margin-top: 0.25em;
-}
-
 .project-tools {
   display: flex;
   flex-wrap: wrap;
