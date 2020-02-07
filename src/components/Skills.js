@@ -5,9 +5,7 @@ function buildList(skills, className) {
     for (let [skill, link] of Object.entries(skills)) {
         skillsList.push(
             <li>
-                <a href={link} className={'skill-item skill-item-' + className}>
-                    {skill}
-                </a>
+                <a href={link}>{skill}</a>
             </li>
         )
         skillsList.push(<li>,&nbsp;</li>)
@@ -39,21 +37,21 @@ class SkillsList extends React.Component {
             "Gel electrophoresis": ""
         }
 
-        const fullStackSkills = buildList(fullStack, "fullstack")
-        const dataMLSkills = buildList(dataML, "data")
-        const wetLabSkills = buildList(wetLab, "wetlab")
+        const fullStackSkills = buildList(fullStack)
+        const dataMLSkills = buildList(dataML)
+        const wetLabSkills = buildList(wetLab)
 
         return (
             <>
-                <ul>
+                <ul id='skills-fullstack' className='skill-list'>
                     <li className='skill-header'><span style={{ fontWeight: 600 }}>Full-Stack Development</span> in</li>
                     {fullStackSkills}
                 </ul>
-                <ul>
+                <ul id='skills-data' className='skill-list'>
                     <li className='skill-header'><span style={{ fontWeight: 600 }}>Data & Machine Learning</span> in</li>
                     {dataMLSkills}
                 </ul>
-                <ul>
+                <ul id='skills-wetlab' className='skill-list'>
                     <li className='skill-header'><span style={{ fontWeight: 600 }}>Wet Lab</span> in</li>
                     {wetLabSkills}
                 </ul>
