@@ -1,6 +1,6 @@
 import React from "react"
 
-function buildList(skills, className) {
+function buildList(skills) {
     const skillsList = []
     for (let [skill, link] of Object.entries(skills)) {
         skillsList.push(
