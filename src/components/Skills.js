@@ -1,12 +1,23 @@
 import React from "react"
+import Button from "./Button"
 
-function buildList(skills) {
+function buildList(skills, color) {
     const skillsList = []
     for (let [skill, link] of Object.entries(skills)) {
         skillsList.push(
-            <li>
-                <a href={link}>{skill}</a>
-            </li>
+            <Button
+                className="skill-item"
+                text={skill}
+                link={link}
+
+                color="hsl(0, 0%, 20%)"
+                bgColor="rgba(0, 0, 0, 6%)"
+                borderColor="rgba(0, 0, 0, 10%)"
+
+                colorHover={color}
+                bgColorHover={color + "1a"}
+                borderColorHover={color + "80"}
+            />
         )
         skillsList.push(<li>,&nbsp;</li>)
     }
@@ -37,21 +48,21 @@ class SkillsList extends React.Component {
             "Gel electrophoresis": ""
         }
 
-        const fullStackSkills = buildList(fullStack)
-        const dataMLSkills = buildList(dataML)
-        const wetLabSkills = buildList(wetLab)
+        const fullStackSkills = buildList(fullStack, "#e2831e")
+        const dataMLSkills = buildList(dataML, "#4fb2eb")
+        const wetLabSkills = buildList(wetLab, "#36c552")
 
         return (
             <>
-                <ul id='skills-fullstack' className='skills-list'>
+                <ul id='skills-fullstack'>
                     <li className='skill-header'><span style={{ fontWeight: 600 }}>Full-Stack Development</span> in</li>
                     {fullStackSkills}
                 </ul>
-                <ul id='skills-data' className='skills-list'>
+                <ul id='skills-data'>
                     <li className='skill-header'><span style={{ fontWeight: 600 }}>Data & Machine Learning</span> in</li>
                     {dataMLSkills}
                 </ul>
-                <ul id='skills-wetlab' className='skills-list'>
+                <ul id='skills-wetlab'>
                     <li className='skill-header'><span style={{ fontWeight: 600 }}>Wet Lab</span> in</li>
                     {wetLabSkills}
                 </ul>

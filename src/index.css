@@ -496,42 +496,17 @@ span.code {
   margin-right: 0.15em;
 }
 
-#skills-fullstack a:hover {
-  color: rgb(226, 131, 30) !important;
-  background-color: rgba(226, 131, 30, 10%) !important;
-  border-color: rgba(226, 131, 30, 50%) !important;
-
+.skill-item a:hover {
   -webkit-transition: none;
   transition: none;
 }
 
-#skills-data a:hover {
-  color: rgb(79, 178, 235) !important;
-  background-color: rgba(79, 178, 235, 10%) !important;
-  border-color: rgba(79, 178, 235, 50%) !important;
-
-  -webkit-transition: none;
-  transition: none;
-}
-
-#skills-wetlab a:hover {
-  color: rgb(54, 197, 82) !important;
-  background-color: rgba(54, 197, 82, 10%) !important;
-  border-color: rgba(54, 197, 82, 50%) !important;
-
-  -webkit-transition: none;
-  transition: none;
-}
-
-.skills-list li a {
+.skill-item a {
   margin: 0 0.05em;
   padding: 0 0.2em;
   border: 1px solid;
   line-height: 1.75em;
   text-decoration: none;
-  color: hsl(0, 0%, 20%);
-  background-color: rgba(0, 0, 0, 6%);
-  border-color: rgba(0, 0, 0, 10%);
 
   -webkit-transition: color 0.25s linear, border-color 0.25s linear;
   transition: background-color 0.25s linear, border-color 0.25s linear;
@@ -589,22 +564,22 @@ span.code {
     margin: 0 20px 20px 20px;
   }
 
-  .skill-item.fullstack {
-    color: rgb(226, 131, 30);
-    background-color: rgba(226, 131, 30, 10%);
-    border-color: rgba(226, 131, 30, 50%);
+  #skills-fullstack .skill-item a {
+    color: rgb(226, 131, 30) !important;
+    background-color: rgba(226, 131, 30, 10%) !important;
+    border-color: rgba(226, 131, 30, 50%) !important;
   }
 
-  .skill-item.data {
-    color: rgb(79, 178, 235);
-    background-color: rgba(79, 178, 235, 10%);
-    border-color: rgba(79, 178, 235, 50%);
+  #skills-data .skill-item a {
+    color: rgb(79, 178, 235) !important;
+    background-color: rgba(79, 178, 235, 10%) !important;
+    border-color: rgba(79, 178, 235, 50%) !important;
   }
 
-  .skill-item.wetlab {
-    color: rgb(54, 197, 82);
-    background-color: rgba(54, 197, 82, 10%);
-    border-color: rgba(54, 197, 82, 50%);
+  #skills-wetlab .skill-item a {
+    color: rgb(54, 197, 82) !important;
+    background-color: rgba(54, 197, 82, 10%) !important;
+    border-color: rgba(54, 197, 82, 50%) !important;
   }
 
   #work-wrapper {
