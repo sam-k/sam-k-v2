@@ -5,7 +5,7 @@ function buildList(skills, className) {
     for (let [skill, link] of Object.entries(skills)) {
         skillsList.push(
             <li>
-                <a href={link} className={'skill-item ' + className}>
+                <a href={link} className={'skill-item skill-item-' + className}>
                     {skill}
                 </a>
             </li>
