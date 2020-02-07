@@ -5,7 +5,11 @@ function buildList(skills) {
     for (let [skill, link] of Object.entries(skills)) {
         skillsList.push(
             <li>
-                <a href={link}>{skill}</a>
+                <a href={link} style={{
+                    color: "hsl(0, 0%, 20%)",
+                    backgroundColor: "rgba(0, 0, 0, 6%)",
+                    borderColor: "rgba(0, 0, 0, 10%)"
+                }}>{skill}</a>
             </li>
         )
         skillsList.push(<li>,&nbsp;</li>)
