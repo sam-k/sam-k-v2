@@ -496,7 +496,7 @@ span.code {
   margin-right: 0.15em;
 }
 
-#skills-fullstack li a:hover {
+#skills-fullstack a:hover {
   color: rgb(226, 131, 30) !important;
   background-color: rgba(226, 131, 30, 10%) !important;
   border-color: rgba(226, 131, 30, 50%) !important;
@@ -505,7 +505,7 @@ span.code {
   transition: none;
 }
 
-#skills-data li a:hover {
+#skills-data a:hover {
   color: rgb(79, 178, 235) !important;
   background-color: rgba(79, 178, 235, 10%) !important;
   border-color: rgba(79, 178, 235, 50%) !important;
@@ -514,7 +514,7 @@ span.code {
   transition: none;
 }
 
-#skills-wetlab li a:hover {
+#skills-wetlab a:hover {
   color: rgb(54, 197, 82) !important;
   background-color: rgba(54, 197, 82, 10%) !important;
   border-color: rgba(54, 197, 82, 50%) !important;
@@ -523,7 +523,7 @@ span.code {
   transition: none;
 }
 
-.skills-list a {
+.skills-list li a {
   margin: 0 0.05em;
   padding: 0 0.2em;
   border: 1px solid;
