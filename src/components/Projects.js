@@ -77,12 +77,12 @@ class Projects extends React.Component {
                             title="This website right here"
                             subtitle="Personal project"
                             text={<>
-                                <p>Showcasing my skills and experience, as well as the (many) writings from my undergraduate career.</p>
+                                <p>Showcasing my skills and experience, as well as the writings from my undergraduate career.</p>
                                 <p>This was an exercise in responsive web design and mobile front-end development. I built all components from scratch, without any CSS frameworks like Bootstrap.</p>
                             </>}
                             tools={{
                                 "React": "https://reactjs.org/",
-                                "Django": "https://www.djangoproject.com/",
+                                "JS": "https://www.javascript.com/",
                                 "CSS": "https://www.w3.org/Style/CSS/"
                             }}
                             links={{

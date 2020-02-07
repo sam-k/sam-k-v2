@@ -5,11 +5,7 @@ function buildList(skills) {
     for (let [skill, link] of Object.entries(skills)) {
         skillsList.push(
             <li>
-                <a href={link} style={{
-                    color: "hsl(0, 0%, 20%)",
-                    backgroundColor: "rgba(0, 0, 0, 6%)",
-                    borderColor: "rgba(0, 0, 0, 10%)"
-                }}>{skill}</a>
+                <a href={link}>{skill}</a>
             </li>
         )
         skillsList.push(<li>,&nbsp;</li>)
@@ -47,15 +43,15 @@ class SkillsList extends React.Component {
 
         return (
             <>
-                <ul id='skills-fullstack' className='skill-list'>
+                <ul id='skills-fullstack' className='skills-list'>
                     <li className='skill-header'><span style={{ fontWeight: 600 }}>Full-Stack Development</span> in</li>
                     {fullStackSkills}
                 </ul>
-                <ul id='skills-data' className='skill-list'>
+                <ul id='skills-data' className='skills-list'>
                     <li className='skill-header'><span style={{ fontWeight: 600 }}>Data & Machine Learning</span> in</li>
                     {dataMLSkills}
                 </ul>
-                <ul id='skills-wetlab' className='skill-list'>
+                <ul id='skills-wetlab' className='skills-list'>
                     <li className='skill-header'><span style={{ fontWeight: 600 }}>Wet Lab</span> in</li>
                     {wetLabSkills}
                 </ul>
