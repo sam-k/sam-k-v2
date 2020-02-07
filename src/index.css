@@ -564,24 +564,6 @@ span.code {
     margin: 0 20px 20px 20px;
   }
 
-  #skills-fullstack .skill-item a {
-    color: rgb(226, 131, 30) !important;
-    background-color: rgba(226, 131, 30, 10%) !important;
-    border-color: rgba(226, 131, 30, 50%) !important;
-  }
-
-  #skills-data .skill-item a {
-    color: rgb(79, 178, 235) !important;
-    background-color: rgba(79, 178, 235, 10%) !important;
-    border-color: rgba(79, 178, 235, 50%) !important;
-  }
-
-  #skills-wetlab .skill-item a {
-    color: rgb(54, 197, 82) !important;
-    background-color: rgba(54, 197, 82, 10%) !important;
-    border-color: rgba(54, 197, 82, 50%) !important;
-  }
-
   #work-wrapper {
     min-width: 80%;
     flex: 1 1 80%;
