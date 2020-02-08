@@ -1,6 +1,7 @@
 import React from "react"
 import Skills from "./Skills"
 import Work from "./Work"
+import Button from "./Button"
 
 class Experience extends React.Component {
     render() {
@@ -16,6 +17,19 @@ class Experience extends React.Component {
                         <Work />
                     </div>
                 </div>
+
+                <Button
+                    className='all-experiences-button'
+                    text="More About Me"
+                    link="#"
+
+                    color="hsl(0, 0%, 27%)"
+                    colorHover="rgb(0, 123, 255)"
+                    bgColor="white"
+                    bgColorHover="rgb(224, 236, 254)"
+                    borderColor="hsl(0, 0%, 20%)"
+                    borderColorHover="hsl(0, 0%, 20%)"
+                />
             </div>
         )
     }
