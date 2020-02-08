@@ -1,5 +1,6 @@
 import React from "react"
 import WorkIcon from "./WorkIcon"
+
 import logoDukeMed from "../images/logo-dukemed.png"
 import logoEpic from "../images/logo-epic.png"
 import logoGCB from "../images/logo-gcb.png"
