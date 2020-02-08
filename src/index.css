@@ -310,7 +310,7 @@ span.code {
 
 @media (max-width: 600px) {
   #bio {
-    padding: 10vh 0;
+    padding: calc(var(--large-v-padding) * 0.75) 0;
   }
 
   #intro-wrapper {
@@ -492,7 +492,7 @@ span.code {
  ***************/
 
 #experiences {
-  padding: var(--large-v-padding) 0;
+  padding: var(--large-v-padding) 0 calc(var(--large-v-padding) * 0.75) 0;
 }
 
 #experience-wrapper {
@@ -624,6 +624,10 @@ span.code {
 }
 
 @media (max-width: 600px) {
+  #experiences {
+    padding: calc(var(--large-v-padding) * 0.75) 0;
+  }
+
   #experience-wrapper {
     max-width: 100%;
   }
