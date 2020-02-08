@@ -567,6 +567,7 @@ span.code {
   #work-wrapper {
     min-width: 80%;
     flex: 1 1 80%;
+    margin: 0 20px;
   }
 
   #work-icons {
