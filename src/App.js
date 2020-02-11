@@ -1,20 +1,34 @@
 import React from "react"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+
 import Navbar from "./components/Navbar"
-import Intro from "./components/Intro"
-import Experience from "./components/Experience"
-import Projects from "./components/Projects"
+import HomePage from "./HomePage"
+import ProjectsPage from "./ProjectsPage"
+import AboutPage from "./AboutPage"
 import Footer from "./components/Footer"
 
-function App() {
-  return (
-    <div id='App'>
-      <Navbar />
-      <Intro />
-      <Projects />
-      <Experience />
-      <Footer />
-    </div>
-  )
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <div id='App'>
+          <Navbar />
+          <Switch>
+            <Route path="/projects">
+              <ProjectsPage />
+            </Route>
+            <Route path="/about">
+              <AboutPage />
+            </Route>
+            <Route path="/">
+              <HomePage />
+            </Route>
+          </Switch>
+          <Footer />
+        </div>
+      </Router>
+    )
+  }
 }
 
 export default App
