@@ -1,6 +1,6 @@
 :root {
   --bright-blue: rgb(0, 123, 255);
-  --duke-blue: rgb(0, 83, 155);
+  --duke-blue: rgba(0, 83, 155);
   --dark-gray: hsl(0, 0%, 27%);
   --text-black: hsl(0, 0%, 20%);
   --bg-color: rgb(27, 47, 80);
@@ -10,7 +10,7 @@
   --shadow-blur: 20px;
   --shadow-spread: 5px;
   --small-v-padding: 6vh;
-  --large-v-padding: 12.25vh;
+  --large-v-padding: 14vh;
   --side-margin: 2.25vw;
 }
 
@@ -29,38 +29,36 @@ html {
 }
 
 body {
-  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
 }
 
 h1 {
-  font-family: 'Lato', 'Helvetiva Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-weight: 700;
   font-size: 5em;
 }
 
 h2 {
-  font-family: 'Open Sans', 'Helvetiva Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 2.5em;
 }
 
 h3 {
-  font-family: 'Lato', 'Helvetiva Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-weight: 600;
   font-size: 1.7em;
 }
 
 h4 {
-  font-family: 'Source Sans Pro', 'Helvetiva Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 600;
   font-size: 1.3em;
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: var(--text-black);
 }
 
@@ -89,9 +87,9 @@ span.code {
   }
 }
 
-/***************
-      Navbar
- ***************/
+/*********************
+        Navbar
+ *********************/
 
 #navbar {
   width: 100%;
@@ -113,7 +111,7 @@ span.code {
   align-items: center;
   width: 100%;
 
-  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.3em;
   font-weight: 400;
   list-style: none;
@@ -201,9 +199,10 @@ span.code {
   }
 }
 
-/***************
+/*********************
       Intro
- ***************/
+      IntroCard
+ *********************/
 
 #bio {
   padding: var(--large-v-padding) 0;
@@ -289,7 +288,7 @@ span.code {
   border: 2px solid;
   border-radius: 10px;
 
-  font-family: 'Lato', 'Helvetiva Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.2em;
   font-weight: 700;
 
@@ -336,17 +335,20 @@ span.code {
   }
 }
 
-/***************
-     Projects
- ***************/
+/*********************
+    ProjectsFeatured
+    ProjectCard
+    ProjectsHeader
+    ProjectsList
+ *********************/
 
-#projects {
+#projects-featured {
   padding: var(--small-v-padding) 0;
   background-color: var(--bg-color);
   box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
 }
 
-#project-wrapper {
+#projects-featured-wrapper {
   margin: 0 auto;
   max-width: 70vw;
 }
@@ -447,7 +449,7 @@ span.code {
   border: 2px solid;
   border-radius: 10px;
 
-  font-family: 'Lato', 'Helvetiva Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.2em;
   font-weight: 700;
 
@@ -466,8 +468,18 @@ span.code {
   transition: none;
 }
 
+#projects-header {
+  padding: var(--large-v-padding) 0;
+  margin: 0 auto;
+  max-width: 70vw;
+}
+
+#projects-header-wrapper {
+  margin: 0 7.5vw;
+}
+
 @media (max-width: 600px) {
-  #project-wrapper {
+  #projects-featured-wrapper {
     max-width: 100%;
   }
 
@@ -487,16 +499,19 @@ span.code {
   }
 }
 
-/***************
-    Experience
- ***************/
+/*********************
+      Skills
+      WorkIcon
+      Work
+      Experience
+ *********************/
 
 #experiences {
   padding: var(--large-v-padding) 0 calc(var(--large-v-padding) * 0.75) 0;
 }
 
 #experience-wrapper {
-  margin: 0 auto -1.5em auto;
+  margin: 0 auto;
   max-width: 70vw;
   display: flex;
   flex-wrap: wrap;
@@ -517,7 +532,7 @@ span.code {
   vertical-align: middle;
   margin: 0.75em 0;
   list-style: none;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .skill-header {
@@ -604,7 +619,7 @@ span.code {
   border: 2px solid;
   border-radius: 10px;
 
-  font-family: 'Lato', 'Helvetiva Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.2em;
   font-weight: 700;
 
@@ -654,9 +669,9 @@ span.code {
   }
 }
 
-/***************
-      Footer
- ***************/
+/*********************
+        Footer
+ ********************/
 
 #footer {
   padding: var(--small-v-padding) 0;

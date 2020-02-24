@@ -1,7 +1,7 @@
 import React from "react"
 
 import Intro from "./components/Intro"
-import Projects from "./components/Projects"
+import Projects from "./components/ProjectsFeatured"
 import Experience from "./components/Experience"
 
 class Home extends React.Component {
@@ -9,7 +9,7 @@ class Home extends React.Component {
         return (
             <>
                 <Intro />
-                <Projects />
+                <Projects showButton="true" />
                 <Experience />
             </>
         )

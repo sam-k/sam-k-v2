@@ -18,6 +18,7 @@ class Experience extends React.Component {
                     </div>
                 </div>
 
+                {/*
                 <Button
                     className='all-experiences-button'
                     text="More About Me"
@@ -30,6 +31,7 @@ class Experience extends React.Component {
                     borderColor="hsl(0, 0%, 20%)"
                     borderColorHover="hsl(0, 0%, 20%)"
                 />
+                */}
             </div>
         )
     }

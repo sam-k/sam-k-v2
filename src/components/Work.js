@@ -4,7 +4,7 @@ import WorkIcon from "./WorkIcon"
 import logoDukeMed from "../images/logo-dukemed.png"
 import logoEpic from "../images/logo-epic.png"
 import logoGCB from "../images/logo-gcb.png"
-import logoNIH from "../images/logo-nih.jpg"
+import logoNIH from "../images/logo-nih.png"
 import logoNSIN from "../images/logo-nsin.png"
 
 class Work extends React.Component {

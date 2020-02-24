@@ -8,10 +8,17 @@ import projectEnumeration from "../images/project-enumeration.jpg"
 import projectWebsite from "../images/project-website.png"
 
 class Projects extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            showButton: props.showButton
+        }
+    }
+
     render() {
         return (
-            <div id='projects'>
-                <div id='project-wrapper'>
+            <div id='projects-featured'>
+                <div id='projects-featured-wrapper'>
                     <div id='project-card-wrapper'>
                         <ProjectCard
                             title="Ridesharing web app"
@@ -94,18 +101,20 @@ class Projects extends React.Component {
                         {/* <ProjectCard id='placeholder' /> */}
                     </div>
 
-                    <Button
-                        className='all-projects-button'
-                        text="See All Projects"
-                        link="#"
+                    {this.state.showButton &&
+                        <Button
+                            className='all-projects-button'
+                            text="See All Projects"
+                            link="#"
 
-                        color="hsl(0, 0%, 27%)"
-                        colorHover="rgb(0, 123, 255)"
-                        bgColor="white"
-                        bgColorHover="rgb(224, 236, 254)"
-                        borderColor="hsl(0, 0%, 20%)"
-                        borderColorHover="hsl(0, 0%, 20%)"
-                    />
+                            color="hsl(0, 0%, 27%)"
+                            colorHover="rgb(0, 123, 255)"
+                            bgColor="white"
+                            bgColorHover="rgb(224, 236, 254)"
+                            borderColor="hsl(0, 0%, 20%)"
+                            borderColorHover="hsl(0, 0%, 20%)"
+                        />
+                    }
                 </div>
             </div>
         )
