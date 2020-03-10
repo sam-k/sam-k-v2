@@ -29,13 +29,6 @@ function buildList(skills, color) {
 
 class SkillsList extends React.Component {
     render() {
-        const wetLab = {
-            "Next-gen sequencing": ["https://en.wikipedia.org/wiki/Massive_parallel_sequencing", "fa fa-dna"],
-            "PCR/real-time PCR": ["https://en.wikipedia.org/wiki/Polymerase_chain_reaction", "fa fa-dna"],
-            "DNA cloning": ["https://en.wikipedia.org/wiki/Molecular_cloning", "fa fa-flask"],
-            "Gel electrophoresis": ["https://en.wikipedia.org/wiki/Gel_electrophoresis", "fa fa-dna"]
-        }
-
         return (
             <>
                 <ul id='skills-fullstack'>

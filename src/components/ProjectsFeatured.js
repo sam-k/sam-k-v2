@@ -50,8 +50,8 @@ class Projects extends React.Component {
                             colorHover="rgb(0, 123, 255)"
                             bgColor="white"
                             bgColorHover="rgb(224, 236, 254)"
-                            borderColor="hsl(0, 0%, 20%)"
-                            borderColorHover="hsl(0, 0%, 20%)"
+                            borderColor="hsl(0, 0%, 75%)"
+                            borderColorHover="hsl(0, 0%, 50%)"
                         />
                     }
                 </div>
