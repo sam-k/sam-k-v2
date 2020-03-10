@@ -7,6 +7,7 @@ class Button extends React.Component {
             className: props.className,
             text: props.text,
             link: props.link,
+            icon: props.icon,
 
             color: props.color,
             colorHover: props.colorHover,
@@ -18,7 +19,10 @@ class Button extends React.Component {
 
             borderColor: props.borderColor,
             borderColorHover: props.borderColorHover,
-            borderColorLeave: props.borderColor
+            borderColorLeave: props.borderColor,
+
+            iconColor: props.iconColor,
+            iconColorLeave: props.iconColor
         }
     }
 
@@ -37,15 +41,23 @@ class Button extends React.Component {
                     onMouseEnter={() => this.setState({
                         color: this.state.colorHover,
                         bgColor: this.state.bgColorHover,
-                        borderColor: this.state.borderColorHover
+                        borderColor: this.state.borderColorHover,
+                        iconColor: this.state.colorHover
                     })}
                     onMouseLeave={() => this.setState({
                         color: this.state.colorLeave,
                         bgColor: this.state.bgColorLeave,
-                        borderColor: this.state.borderColorLeave
+                        borderColor: this.state.borderColorLeave,
+                        iconColor: this.state.iconColorLeave
                     })}
                 >
-                    {this.state.text}
+                    {this.state.icon &&
+                        <i
+                            className={this.state.icon}
+                            style={{ color: this.state.iconColor }}
+                        />
+                    }
+                    <span>{this.state.text}</span>
                 </a>
             </div>
         )

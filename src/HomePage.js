@@ -9,7 +9,7 @@ class Home extends React.Component {
         return (
             <>
                 <Intro />
-                <Projects showButton="true" />
+                <Projects inIntro="true" />
                 <Experience />
             </>
         )

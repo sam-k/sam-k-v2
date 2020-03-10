@@ -1,0 +1,37 @@
+{
+    "projects": [{
+            "name": "Personal Website v2",
+            "year": 2020,
+            "tools": "React, React Router, CSS",
+            "links": {
+                "link": "https://www.samkim.io/",
+                "github": "https://github.com/sam-k/sam-k.github.io"
+            }
+        },
+        {
+            "name": "Handoff",
+            "year": 2019,
+            "built": "HackDuke 2019",
+            "tools": "JS, Mapbox API, Proto.io"
+        },
+        {
+            "name": "Describing the National Research Workforce",
+            "year": 2019,
+            "built": "NIH",
+            "tools": "R, PL/SQL",
+            "links": {
+                "bio": "https://blog.codingitforward.com/meet-the-2019-fellows-national-institutes-of-health-c5cba191eb39",
+                "video": "https://govmatters.tv/exploring-civic-tech-at-the-coding-it-forward-demo-day/"
+            }
+        },
+        {
+            "name": "Personal Website v1",
+            "year": 2019,
+            "tools": "Bootstrap, CSS",
+            "links": {
+                "link": "https://www.samkim.io/sam-k-v1/",
+                "github": "https://github.com/sam-k/sam-k-v1"
+            }
+        }
+    ]
+}

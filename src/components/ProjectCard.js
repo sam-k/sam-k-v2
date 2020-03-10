@@ -16,6 +16,8 @@ class ProjectCard extends React.Component {
     }
 
     render() {
+        const images = require.context("../images")
+
         if (this.state.tools) {
             var toolItems = Object.entries(this.state.tools).map(([tool, link]) =>
                 <li>
@@ -30,18 +32,19 @@ class ProjectCard extends React.Component {
                     />
                 </li>
             )
-            // toolItems.unshift(<li className='project-tools-header'>TOOLS:</li>)
         }
 
         return (
             <div className='project-card' id={this.state.id}>
-                <h3>{this.state.title}</h3>
-                <h4>{this.state.subtitle}</h4>
-                {this.state.text}
-                <div className='project-tools'>
-                    {toolItems}
-                </div>
-                <img src={this.state.img} alt={this.state.title} />
+                {this.state.id !== 'placeholder' && <>
+                    <h3 dangerouslySetInnerHTML={{ __html: this.state.title }} />
+                    <h4 dangerouslySetInnerHTML={{ __html: this.state.subtitle }} />
+                    {this.state.text}
+                    <div className='project-tools'>
+                        {toolItems}
+                    </div>
+                    <img src={images(this.state.img)} alt={this.state.title} />
+                </>}
             </div>
         )
     }

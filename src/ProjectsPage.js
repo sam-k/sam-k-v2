@@ -7,11 +7,11 @@ import List from "./components/ProjectsList"
 class ProjectsPage extends React.Component {
     render() {
         return (
-            <>
+            <div id='projects-page'>
                 <Header />
                 <Featured />
                 <List />
-            </>
+            </div>
         )
     }
 }

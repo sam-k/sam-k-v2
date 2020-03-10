@@ -1,0 +1,70 @@
+{
+    "skills": [{
+            "name": "Python",
+            "subtitle": "<span>Best nonprofit hack co-winner at <a href='https://hackduke.org/'>HackDuke: Code for Good 2019</a></span>",
+            "text": [
+                "Serving a local nonprofit’s ridesharing needs. Includes navigation, interactive map and Uber-like matching platform.",
+                "This app was requested by and built for <a href='https://realityministriesinc.org/'>Reality Ministries</a>, which serves developmentally disabled adults."
+            ],
+            "tools": {
+                "JS": "https://www.javascript.com/",
+                "Mapbox API": "https://www.mapbox.com/",
+                "Proto.io": "https://proto.io/"
+            },
+            "img": "./project-handoff.png"
+        },
+        {
+            "title": "Describing the NIH-funded research workforce",
+            "subtitle": "<span>Fellowship at <a href='https://blog.codingitforward.com/introducing-the-2019-civic-digital-fellows-41469f28561d'>National Institutes of Health</a></span>",
+            "text": [
+                "Led project to characterize scientists funded by the NIH, using machine-learning techniques. Results may help inform Congress and automate future analyses.",
+                "I worked through <a href='https://www.codingitforward.com/'>Coding It Forward</a> as a 2019 Civic Digital Fellow."
+            ],
+            "tools": {
+                "R": "https://www.r-project.org/",
+                "mlr": "https://mlr.mlr-org.com/",
+                "PL/SQL": "https://www.oracle.com/database/technologies/appdev/plsql.html"
+            },
+            "links": {
+                "bio": "https://blog.codingitforward.com/meet-the-2019-fellows-national-institutes-of-health-c5cba191eb39",
+                "video": "https://govmatters.tv/exploring-civic-tech-at-the-coding-it-forward-demo-day/"
+            },
+            "img": "./project-enumeration.jpg"
+        },
+        {
+            "title": "A new hypothesis for cancer formation",
+            "subtitle": "<span>Research project at <a href='http://gordanlab.cs.duke.edu/'>Duke Center for Genomic and Computational Biology</a></span>",
+            "text": [
+                "Analyzing genome data to find if transcription factor binding prevents repair enzymes from accessing damaged DNA, causing mutations.",
+                "I am working under Prof. Raluca Gordân in her lab."
+            ],
+            "tools": {
+                "Python": "https://www.python.org/",
+                "Bash": "https://www.gnu.org/software/bash/",
+                "bedtools": "https://bedtools.readthedocs.io/en/latest/"
+            },
+            "links": {
+                "github": "https://github.com/sam-k/dna-repair-tf"
+            },
+            "img": "./project-genome.jpg"
+        },
+        {
+            "title": "This website right here",
+            "subtitle": "Personal project",
+            "text": [
+                "Showcasing my skills and experience, as well as the writings from my undergraduate career.",
+                "This was an exercise in responsive web design and mobile front-end development. I built all components from scratch, without any CSS frameworks like Bootstrap."
+            ],
+            "tools": {
+                "React": "https://reactjs.org/",
+                "JS": "https://www.javascript.com/",
+                "CSS": "https://www.w3.org/Style/CSS/"
+            },
+            "links": {
+                "link": "https://www.samkim.io/",
+                "github": "https://github.com/sam-k/sam-k.github.io"
+            },
+            "img": "./project-website.png"
+        }
+    ]
+}
