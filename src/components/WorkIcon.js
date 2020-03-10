@@ -5,16 +5,18 @@ class WorkIcon extends React.Component {
         super(props)
         this.state = {
             name: props.name,
-            icon: props.icon,
+            img: props.img,
             link: props.link
         }
     }
 
     render() {
+        const images = require.context("../images")
+
         return (
             <div class='work-icon-img'>
                 <a href={this.state.link}>
-                    <img src={this.state.icon} alt={this.state.name} />
+                    <img src={images(this.state.img)} alt={this.state.name} />
                 </a>
             </div >
         )

@@ -3,7 +3,6 @@ import ProjectCard from "./ProjectCard"
 import Button from "./Button"
 
 import data from "../data/projectsFeaturedData.json"
-const projectsFeaturedData = data.projects
 
 function renderText(text) {
     return text.map(line => <p dangerouslySetInnerHTML={{ __html: line }} />)
@@ -18,7 +17,7 @@ class Projects extends React.Component {
     }
 
     render() {
-        const projectsFeaturedItems = projectsFeaturedData.map(
+        const projectsFeaturedItems = data.projects.map(
             item => <ProjectCard
                 title={item.title}
                 subtitle={item.subtitle}
