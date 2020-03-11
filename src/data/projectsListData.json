@@ -1,37 +1,204 @@
 {
     "projects": [{
+            "name": "Do Transcription Factors Block DNA Repair?",
+            "year": 2020,
+            "built": {
+                "name": "Duke GCB",
+                "link": "http://gordanlab.cs.duke.edu/"
+            },
+            "tools": [{
+                "name": "Python",
+                "link": "https://www.python.org/"
+            }, {
+                "name": "Bash",
+                "link": "https://www.gnu.org/software/bash/"
+            }],
+            "links": [{
+                "name": "GitHub",
+                "icon": "fab fa-github",
+                "link": "https://github.com/sam-k/dna-repair-tf"
+            }]
+        },
+        {
             "name": "Personal Website v2",
             "year": 2020,
-            "tools": "React, React Router, CSS",
-            "links": {
-                "link": "https://www.samkim.io/",
-                "github": "https://github.com/sam-k/sam-k.github.io"
-            }
+            "tools": [{
+                "name": "React",
+                "link": "https://reactjs.org/"
+            }, {
+                "name": "CSS",
+                "link": "https://www.w3.org/Style/CSS/"
+            }],
+            "links": [{
+                "name": "Website",
+                "icon": "fa fa-external-link-alt",
+                "link": "https://www.samkim.io/"
+            }, {
+                "name": "GitHub",
+                "icon": "fab fa-github",
+                "link": "https://github.com/sam-k/sam-k.github.io"
+            }],
+            "website": "https://www.samkim.io/"
         },
         {
-            "name": "Handoff",
+            "name": "Prototype of Field Medic Reference App",
             "year": 2019,
-            "built": "HackDuke 2019",
-            "tools": "JS, Mapbox API, Proto.io"
+            "built": {
+                "name": "Dept. of Defense",
+                "link": "https://www.nsin.us/"
+            },
+            "tools": [{
+                "name": "C#",
+                "link": "https://docs.microsoft.com/en-us/dotnet/csharp/index"
+            }, {
+                "name": "Xamarin",
+                "link": "https://dotnet.microsoft.com/apps/xamarin"
+            }],
+            "links": [{
+                "name": "unlink",
+                "icon": "fa fa-unlink",
+                "desc": "Code is property of the Department of Defense."
+            }]
         },
         {
-            "name": "Describing the National Research Workforce",
+            "name": "Handoff – Ridesharing Web App",
             "year": 2019,
-            "built": "NIH",
-            "tools": "R, PL/SQL",
-            "links": {
-                "bio": "https://blog.codingitforward.com/meet-the-2019-fellows-national-institutes-of-health-c5cba191eb39",
-                "video": "https://govmatters.tv/exploring-civic-tech-at-the-coding-it-forward-demo-day/"
-            }
+            "built": {
+                "name": "HackDuke 2019",
+                "link": "https://hackduke.org/"
+            },
+            "tools": [{
+                "name": "JS",
+                "link": "https://www.javascript.com/"
+            }, {
+                "name": "Mapbox API",
+                "link": "https://www.mapbox.com/"
+            }],
+            "links": [{
+                "name": "none",
+                "desc": "Coming soon!"
+            }]
         },
         {
             "name": "Personal Website v1",
             "year": 2019,
-            "tools": "Bootstrap, CSS",
-            "links": {
-                "link": "https://www.samkim.io/sam-k-v1/",
-                "github": "https://github.com/sam-k/sam-k-v1"
-            }
+            "tools": [{
+                "name": "Bootstrap",
+                "link": "https://getbootstrap.com/"
+            }, {
+                "name": "CSS",
+                "link": "https://www.w3.org/Style/CSS/"
+            }],
+            "links": [{
+                "name": "Website",
+                "icon": "fa fa-external-link-alt",
+                "link": "https://www.samkim.io/sam-k-v1/"
+            }, {
+                "name": "GitHub",
+                "icon": "fab fa-github",
+                "link": "https://github.com/sam-k/sam-k-v1"
+            }],
+            "website": "https://www.samkim.io/sam-k-v1/"
+        },
+        {
+            "name": "Describing the National Research Workforce",
+            "year": 2019,
+            "built": {
+                "name": "NIH",
+                "link": "https://www.nih.gov/"
+            },
+            "tools": [{
+                "name": "R",
+                "link": "https://www.r-project.org/"
+            }, {
+                "name": "SQL",
+                "link": "https://www.oracle.com/database/technologies/appdev/plsql.html"
+            }],
+            "links": [{
+                "name": "Profile",
+                "icon": "fas fa-user",
+                "link": "https://blog.codingitforward.com/meet-the-2019-fellows-national-institutes-of-health-c5cba191eb39"
+            }, {
+                "name": "News coverage",
+                "icon": "fab fa-youtube",
+                "link": "https://govmatters.tv/exploring-civic-tech-at-the-coding-it-forward-demo-day/"
+            }, {
+                "name": "unlink",
+                "icon": "fa fa-unlink",
+                "desc": "Code is property of the National Institutes of Health and can be made available upon request."
+            }]
+        },
+        {
+            "name": "Pipeline to Determine DNA Compositions of Foods",
+            "year": 2019,
+            "built": {
+                "name": "Duke GCB",
+                "link": "http://el.ladlab.org:8080/"
+            },
+            "tools": [{
+                "name": "Python",
+                "link": "https://www.python.org/"
+            }],
+            "links": [{
+                "name": "GitHub",
+                "icon": "fab fa-github",
+                "link": "https://github.com/sam-k/seq-quality-trimming"
+            }]
+        },
+        {
+            "name": "CompareRx – Crowdsourcing Drug Pricing",
+            "year": 2019,
+            "built": {
+                "name": "THInC 2019",
+                "link": "http://www.thincweekend.org/"
+            },
+            "tools": [{
+                "name": "R",
+                "link": "https://www.r-project.org/"
+            }, {
+                "name": "ArcGIS",
+                "link": "https://www.arcgis.com/index.html"
+            }],
+            "links": [{
+                "name": "none",
+                "desc": "Coming soon!"
+            }]
+        },
+        {
+            "name": "Genomic Analysis of Malaria Transmission Patterns",
+            "year": 2019,
+            "built": {
+                "name": "Duke Med School",
+                "link": "https://medschool.duke.edu/"
+            },
+            "tools": [{
+                "name": "R",
+                "link": "https://www.r-project.org/"
+            }],
+            "links": [{
+                "name": "GitHub",
+                "icon": "fab fa-github",
+                "link": "https://github.com/sam-k/malaria-spat21-analysis"
+            }]
+        },
+        {
+            "name": "Campaign Finance Analysis",
+            "year": 2018,
+            "built": {
+                "name": "Duke Public Policy",
+                "link": "https://sanford.duke.edu/"
+            },
+            "tools": [{
+                "name": "VBA",
+                "link": "https://docs.microsoft.com/en-us/office/vba/api/overview/"
+            }, {
+                "name": "FEC Database",
+                "link": "https://www.fec.gov/"
+            }],
+            "links": [{
+                "name": "none",
+                "desc": "Coming soon!"
+            }]
         }
     ]
 }

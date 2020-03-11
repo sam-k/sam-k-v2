@@ -20,7 +20,7 @@ class ProjectCard extends React.Component {
 
         if (this.state.tools) {
             var toolItems = Object.entries(this.state.tools).map(([tool, link]) =>
-                <li>
+                <li key={tool}>
                     <Button
                         className='project-tool-item'
                         text={tool}

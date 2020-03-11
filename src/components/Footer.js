@@ -14,13 +14,19 @@ class Footer extends React.Component {
                         <div id='copyright'>
                             <ul id='copyright-icons'>
                                 <li>
-                                    <a href="mailto:sam.kim@duke.edu"><i class="fa fa-lg fa-envelope"></i></a>
+                                    <a href="mailto:sam.kim@duke.edu">
+                                        <i className="fa fa-lg fa-envelope" />
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.linkedin.com/in/sdk/"><i class="fab fa-lg fa-linkedin"></i></a>
+                                    <a href="https://www.linkedin.com/in/sdk/">
+                                        <i className="fab fa-lg fa-linkedin" />
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="https://github.com/sam-k"><i class="fab fa-lg fa-github"></i></a>
+                                    <a href="https://github.com/sam-k">
+                                        <i className="fab fa-lg fa-github" />
+                                    </a>
                                 </li>
                             </ul>
                             <ul id='copyright-lines'>

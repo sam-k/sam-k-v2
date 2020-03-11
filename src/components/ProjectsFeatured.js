@@ -5,7 +5,9 @@ import Button from "./Button"
 import data from "../data/projectsFeaturedData.json"
 
 function renderText(text) {
-    return text.map(line => <p dangerouslySetInnerHTML={{ __html: line }} />)
+    return text.map(line =>
+        <p key={line} dangerouslySetInnerHTML={{ __html: line }} />
+    )
 }
 
 class Projects extends React.Component {
@@ -19,6 +21,7 @@ class Projects extends React.Component {
     render() {
         const projectsFeaturedItems = data.projects.map(
             item => <ProjectCard
+                key={item.title}
                 title={item.title}
                 subtitle={item.subtitle}
                 text={renderText(item.text)}
