@@ -4,7 +4,7 @@
   --dark-gray: hsl(0, 0%, 27%);
   --text-black: hsl(0, 0%, 20%);
   --duke-bg-color: rgb(27, 47, 80);
-  --light-bg-color: #fafafa;
+  --light-bg-color: hsl(0, 0%, 98%);
   --bg-card-color: rgb(234, 242, 254);
   --inverted-color: white;
   --shadow-color: rgba(0, 0, 0, 50%);
@@ -491,7 +491,7 @@ span.code {
 
 #projects-header-wrapper p {
   padding: 1em 0 0 0;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 #projects-list h2 {
@@ -519,11 +519,16 @@ th {
 
 #projects-list th {
   font-family: var(--ff-subhead);
-  text-decoration-style: underline;
+}
+
+#projects-list tbody tr {
+  background-color: auto;
+  transition: background-color 0.2s linear;
 }
 
 #projects-list tbody tr:hover {
-  background-color: var(--light-bg-color);
+  background-color: hsl(0, 0%, 94%);
+  transition: background-color 0.1s linear;
 }
 
 #projects-list ul {
@@ -540,6 +545,7 @@ th {
 }
 
 #projects-list a:hover {
+  text-decoration: underline;
   color: var(--bright-blue);
 }
 
