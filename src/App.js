@@ -14,15 +14,9 @@ class App extends React.Component {
         <div id='App'>
           <Navbar />
           <Switch>
-            <Route path="/projects">
-              <ProjectsPage />
-            </Route>
-            <Route path="/about">
-              <AboutPage />
-            </Route>
-            <Route path="/">
-              <HomePage />
-            </Route>
+            <Route path="/projects" component={ProjectsPage} />
+            <Route path="/about" component={AboutPage} />
+            <Route path="/" component={HomePage} />
           </Switch>
           <Footer />
         </div>
