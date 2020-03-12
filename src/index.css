@@ -945,8 +945,12 @@ th {
 }
 
 #copyright-lines li {
-  font-size: 1.2em;
+  font-size: 1em;
   list-style: none;
+}
+
+#copyright-lines #heart {
+  color: rgb(214, 40, 57);
 }
 
 @media (max-width: 900px) {
