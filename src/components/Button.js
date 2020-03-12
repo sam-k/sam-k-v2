@@ -52,7 +52,7 @@ class Button extends React.Component {
         }
 
         let buttonElement = null
-        if (this.state.linkType) {
+        if (this.state.linkType === 'router') {
             buttonElement =
                 <Link
                     to={this.state.link}
