@@ -54,20 +54,18 @@ class Button extends React.Component {
         let buttonElement = null
         if (this.state.linkType === 'router') {
             buttonElement =
-                <Link to={this.state.link}>
-                    <div
-                        style={buttonProps.style}
-                        onMouseEnter={buttonProps.onMouseEnter}
-                        onMouseLeave={buttonProps.onMouseLeave}
-                    >
-                        {this.state.icon &&
-                            <i
-                                className={this.state.icon}
-                                style={{ color: this.state.iconColor }}
-                            />
-                        }
-                        <span>{this.state.text}</span>
-                    </div>
+                <Link to={this.state.link}
+                    style={buttonProps.style}
+                    onMouseEnter={buttonProps.onMouseEnter}
+                    onMouseLeave={buttonProps.onMouseLeave}
+                >
+                    {this.state.icon &&
+                        <i
+                            className={this.state.icon}
+                            style={{ color: this.state.iconColor }}
+                        />
+                    }
+                    <span>{this.state.text}</span>
                 </Link>
         } else {
             buttonElement =
