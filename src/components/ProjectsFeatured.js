@@ -48,6 +48,7 @@ class Projects extends React.Component {
                             className='all-projects-button'
                             text="See All Projects"
                             link="/projects"
+                            linkType='router'
 
                             color="hsl(0, 0%, 27%)"
                             colorHover="rgb(0, 123, 255)"

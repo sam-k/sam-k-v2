@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 class Button extends React.Component {
     constructor(props) {
@@ -7,6 +8,7 @@ class Button extends React.Component {
             className: props.className,
             text: props.text,
             link: props.link,
+            linkType: props.linkType,
             icon: props.icon,
 
             color: props.color,
@@ -27,29 +29,52 @@ class Button extends React.Component {
     }
 
     render() {
-        return (
-            <div className={this.state.className}>
+        const buttonProps = {
+            style: {
+                textDecoration: "none",
+                color: this.state.color,
+                backgroundColor: this.state.bgColor,
+                borderColor: this.state.borderColor,
+                cursor: "pointer"
+            },
+            onMouseEnter: () => this.setState({
+                color: this.state.colorHover,
+                bgColor: this.state.bgColorHover,
+                borderColor: this.state.borderColorHover,
+                iconColor: this.state.colorHover
+            }),
+            onMouseLeave: () => this.setState({
+                color: this.state.colorLeave,
+                bgColor: this.state.bgColorLeave,
+                borderColor: this.state.borderColorLeave,
+                iconColor: this.state.iconColorLeave
+            })
+        }
+
+        let buttonElement = null
+        if (this.state.linkType) {
+            buttonElement =
+                <Link
+                    to={this.state.link}
+                    style={buttonProps.style}
+                    onMouseEnter={buttonProps.onMouseEnter}
+                    onMouseLeave={buttonProps.onMouseLeave}
+                >
+                    {this.state.icon &&
+                        <i
+                            className={this.state.icon}
+                            style={{ color: this.state.iconColor }}
+                        />
+                    }
+                    <span>{this.state.text}</span>
+                </Link>
+        } else {
+            buttonElement =
                 <a
-                    style={{
-                        textDecoration: "none",
-                        color: this.state.color,
-                        backgroundColor: this.state.bgColor,
-                        borderColor: this.state.borderColor,
-                        cursor: "pointer"
-                    }}
                     href={this.state.link}
-                    onMouseEnter={() => this.setState({
-                        color: this.state.colorHover,
-                        bgColor: this.state.bgColorHover,
-                        borderColor: this.state.borderColorHover,
-                        iconColor: this.state.colorHover
-                    })}
-                    onMouseLeave={() => this.setState({
-                        color: this.state.colorLeave,
-                        bgColor: this.state.bgColorLeave,
-                        borderColor: this.state.borderColorLeave,
-                        iconColor: this.state.iconColorLeave
-                    })}
+                    style={buttonProps.style}
+                    onMouseEnter={buttonProps.onMouseEnter}
+                    onMouseLeave={buttonProps.onMouseLeave}
                 >
                     {this.state.icon &&
                         <i
@@ -59,7 +84,12 @@ class Button extends React.Component {
                     }
                     <span>{this.state.text}</span>
                 </a>
-            </div>
+        }
+
+        return (
+            <div className={this.state.className}>
+                {buttonElement}
+            </div >
         )
     }
 }
