@@ -92,13 +92,13 @@
             "links": [{
                 "name": "Website",
                 "icon": "fa fa-external-link-alt",
-                "link": "https://www.samkim.io/sam-k-v1/"
+                "link": "https://sam-k.github.io/sam-k-v1/"
             }, {
                 "name": "GitHub",
                 "icon": "fab fa-github",
                 "link": "https://github.com/sam-k/sam-k-v1"
             }],
-            "website": "https://www.samkim.io/sam-k-v1/"
+            "website": "https://sam-k.github.io/sam-k-v1/"
         },
         {
             "name": "Describing the National Research Workforce",
