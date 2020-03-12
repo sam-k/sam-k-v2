@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.c62954e6.chunk.css",
-    "main.js": "/static/js/main.75abff29.chunk.js",
-    "main.js.map": "/static/js/main.75abff29.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.5b50bb1e.js",
-    "runtime-main.js.map": "/static/js/runtime-main.5b50bb1e.js.map",
-    "static/js/2.22062839.chunk.js": "/static/js/2.22062839.chunk.js",
-    "static/js/2.22062839.chunk.js.map": "/static/js/2.22062839.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.352499cd1d77ba15e63768cf3eff127b.js": "/precache-manifest.352499cd1d77ba15e63768cf3eff127b.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.c62954e6.chunk.css.map": "/static/css/main.c62954e6.chunk.css.map",
-    "static/js/2.22062839.chunk.js.LICENSE": "/static/js/2.22062839.chunk.js.LICENSE",
-    "static/media/logo-gcb.png": "/static/media/logo-gcb.89b7f8de.png",
-    "static/media/logo-nih.png": "/static/media/logo-nih.e29d96b9.png",
-    "static/media/profile.jpg": "/static/media/profile.4fb7f257.jpg",
-    "static/media/project-enumeration.jpg": "/static/media/project-enumeration.6d016419.jpg",
-    "static/media/project-genome.jpg": "/static/media/project-genome.ec46d07b.jpg",
-    "static/media/project-handoff.png": "/static/media/project-handoff.4a0f7f67.png",
-    "static/media/project-website.png": "/static/media/project-website.6d4ad18e.png"
+    "main.css": "/sam-k-v2/static/css/main.c62954e6.chunk.css",
+    "main.js": "/sam-k-v2/static/js/main.6e86901a.chunk.js",
+    "main.js.map": "/sam-k-v2/static/js/main.6e86901a.chunk.js.map",
+    "runtime-main.js": "/sam-k-v2/static/js/runtime-main.efaf2ff6.js",
+    "runtime-main.js.map": "/sam-k-v2/static/js/runtime-main.efaf2ff6.js.map",
+    "static/js/2.22062839.chunk.js": "/sam-k-v2/static/js/2.22062839.chunk.js",
+    "static/js/2.22062839.chunk.js.map": "/sam-k-v2/static/js/2.22062839.chunk.js.map",
+    "index.html": "/sam-k-v2/index.html",
+    "precache-manifest.13d5990be24af4bc49393d1b8b70061f.js": "/sam-k-v2/precache-manifest.13d5990be24af4bc49393d1b8b70061f.js",
+    "service-worker.js": "/sam-k-v2/service-worker.js",
+    "static/css/main.c62954e6.chunk.css.map": "/sam-k-v2/static/css/main.c62954e6.chunk.css.map",
+    "static/js/2.22062839.chunk.js.LICENSE": "/sam-k-v2/static/js/2.22062839.chunk.js.LICENSE",
+    "static/media/logo-gcb.png": "/sam-k-v2/static/media/logo-gcb.89b7f8de.png",
+    "static/media/logo-nih.png": "/sam-k-v2/static/media/logo-nih.e29d96b9.png",
+    "static/media/profile.jpg": "/sam-k-v2/static/media/profile.4fb7f257.jpg",
+    "static/media/project-enumeration.jpg": "/sam-k-v2/static/media/project-enumeration.6d016419.jpg",
+    "static/media/project-genome.jpg": "/sam-k-v2/static/media/project-genome.ec46d07b.jpg",
+    "static/media/project-handoff.png": "/sam-k-v2/static/media/project-handoff.4a0f7f67.png",
+    "static/media/project-website.png": "/sam-k-v2/static/media/project-website.6d4ad18e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.5b50bb1e.js",
+    "static/js/runtime-main.efaf2ff6.js",
     "static/js/2.22062839.chunk.js",
     "static/css/main.c62954e6.chunk.css",
-    "static/js/main.75abff29.chunk.js"
+    "static/js/main.6e86901a.chunk.js"
   ]
 }
