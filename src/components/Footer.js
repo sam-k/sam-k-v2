@@ -30,7 +30,10 @@ class Footer extends React.Component {
                                 </li>
                             </ul>
                             <ul id='copyright-lines'>
-                                <li>Designed and built with <span id='heart'>♥</span> by </li>
+                                <li>Designed and built with <span
+                                    id='heart'
+                                    title="but also lots of frustration"
+                                >♥</span> by </li>
                                 <li>Sam Kim, © 2020</li>
                             </ul>
                         </div>
