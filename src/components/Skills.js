@@ -32,7 +32,7 @@ class SkillsList extends React.Component {
         return (
             <>
                 <ul id='skills-fullstack'>
-                    <li className='skill-header'><span style={{ fontWeight: 600 }}>Full-Stack Development</span> in</li>
+                    <li className='skill-header'><span style={{ fontWeight: 600 }}>Software & Full Stack</span> in</li>
                     {buildList(data.fullStack.skills, data.fullStack.color)}
                 </ul>
                 <ul id='skills-data'>
