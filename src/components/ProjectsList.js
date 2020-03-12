@@ -43,14 +43,14 @@ function buildLinksList(links) {
 function buildLinkContent(item) {
     let content
     switch (item.name) {
-        case "unlink":
-            content =
-                <span class='unlink' title={item.desc}>
-                    <i className={item.icon} />
-                </span>
-            break
         case "none":
             content = <span>{item.desc}</span>
+            break
+        case "private":
+            content =
+                <span class='private' title={item.desc}>
+                    <i className="fa fa-code" />
+                </span>
             break
         default:
             content =

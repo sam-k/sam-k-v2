@@ -606,7 +606,7 @@ th {
   color: hsl(0, 0%, 80%);
 }
 
-.projects-list-links .unlink:hover {
+.projects-list-links .private:hover {
   color: #ec8c24;
 }
 

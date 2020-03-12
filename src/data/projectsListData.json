@@ -55,8 +55,7 @@
                 "link": "https://dotnet.microsoft.com/apps/xamarin"
             }],
             "links": [{
-                "name": "unlink",
-                "icon": "fa fa-unlink",
+                "name": "private",
                 "desc": "Code is property of the U.S. Department of Defense and is not publicly available."
             }]
         },
@@ -123,8 +122,7 @@
                 "icon": "fab fa-youtube",
                 "link": "https://govmatters.tv/exploring-civic-tech-at-the-coding-it-forward-demo-day/"
             }, {
-                "name": "unlink",
-                "icon": "fa fa-unlink",
+                "name": "private",
                 "desc": "Code is property of the National Institutes of Health and can be made available upon request."
             }]
         },
