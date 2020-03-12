@@ -207,6 +207,7 @@ span.code {
 /*********************
       Intro
       IntroCard
+      AboutHeader
  *********************/
 
 #bio {
@@ -313,6 +314,21 @@ span.code {
   transition: none;
 }
 
+#about-header {
+  padding: var(--large-v-padding) 0;
+  margin: 0 auto;
+  max-width: 70vw;
+}
+
+#about-header-wrapper {
+  margin: 0 7.5vw;
+}
+
+#about-header-wrapper p {
+  padding: 1em 0 0 0;
+  font-size: 1.2em;
+}
+
 @media (max-width: 600px) {
   #bio {
     padding: calc(var(--large-v-padding) * 0.75) 0;
@@ -338,6 +354,16 @@ span.code {
 
   .resume-button {
     margin-bottom: 10vw;
+  }
+
+  #about-header {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: calc(var(--large-v-padding) * 0.75) 0;
+  }
+
+  #about-header-wrapper {
+    margin: 0 20px;
   }
 }
 
