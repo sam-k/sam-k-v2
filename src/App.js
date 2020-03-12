@@ -10,7 +10,7 @@ import Footer from "./components/Footer"
 class App extends React.Component {
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <div id='App'>
           <Navbar />
           <Switch>
