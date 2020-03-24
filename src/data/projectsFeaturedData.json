@@ -35,7 +35,7 @@
             "title": "A new hypothesis for cancer formation",
             "subtitle": "<span>Research project at <a href='http://gordanlab.cs.duke.edu/'>Duke Center for Genomic and Computational Biology</a></span>",
             "text": [
-                "Analyzing genome data to find if transcription factor binding prevents repair enzymes from accessing damaged DNA, causing mutations.",
+                "Analyzing genome data to confirm if transcription factor binding prevents repair enzymes from accessing damaged DNA, causing mutations.",
                 "I am working under Prof. Raluca Gordân in her lab."
             ],
             "tools": {
@@ -52,8 +52,8 @@
             "title": "This website right here",
             "subtitle": "Personal project",
             "text": [
-                "Showcasing my skills and experience, as well as the writings from my undergraduate career.",
-                "This was an exercise in responsive web design and mobile front-end development. I built all components from scratch, without any CSS frameworks like Bootstrap."
+                "Showcasing my skills and experience, as well as my writings from my undergraduate career.",
+                "This was an exercise in responsive web design and mobile front-end development. All components were built from scratch without any CSS frameworks."
             ],
             "tools": {
                 "React": "https://reactjs.org/",
