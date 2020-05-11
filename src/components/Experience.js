@@ -1,7 +1,6 @@
 import React from "react"
 import Skills from "./Skills"
 import Work from "./Work"
-import Button from "./Button"
 
 class Experience extends React.Component {
     render() {
