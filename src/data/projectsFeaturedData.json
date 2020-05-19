@@ -47,24 +47,6 @@
                 "github": "https://github.com/sam-k/dna-repair-tf"
             },
             "img": "./project-genome.jpg"
-        },
-        {
-            "title": "This website right here",
-            "subtitle": "Personal project",
-            "text": [
-                "Showcasing my skills and experience, as well as my writings from my undergraduate career.",
-                "This was an exercise in responsive web design and mobile front-end development. All components were built from scratch without any CSS frameworks."
-            ],
-            "tools": {
-                "React": "https://reactjs.org/",
-                "JS": "https://www.javascript.com/",
-                "CSS": "https://www.w3.org/Style/CSS/"
-            },
-            "links": {
-                "link": "https://www.samkim.io/",
-                "github": "https://github.com/sam-k/sam-k.github.io"
-            },
-            "img": "./project-website.png"
         }
     ]
 }

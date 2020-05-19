@@ -53,7 +53,7 @@ class Intro extends React.Component {
                                 bgColor="white"
                                 bgColorHover="rgb(224, 236, 254)"
                                 borderColor="hsl(0, 0%, 75%)"
-                                borderColorHover="hsl(0, 0%, 50%)"
+                                borderColorHover="hsl(0, 0%, 75%)"
                             />
                         </div>
                         <IntroCard />

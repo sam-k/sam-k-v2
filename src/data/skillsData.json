@@ -17,6 +17,11 @@
                 "icon": "fab fa-js-square"
             },
             {
+                "name": "Bash",
+                "link": "https://www.gnu.org/software/bash/",
+                "icon": "fa fa-terminal"
+            },
+            {
                 "name": "React",
                 "link": "https://reactjs.org/",
                 "icon": "fab fa-react"
@@ -25,11 +30,6 @@
                 "name": "HTML/CSS",
                 "link": "https://www.w3.org/Style/CSS/",
                 "icon": "fa fa-file-code"
-            },
-            {
-                "name": "Bash",
-                "link": "https://www.gnu.org/software/bash/",
-                "icon": "fa fa-terminal"
             }
         ]
     },

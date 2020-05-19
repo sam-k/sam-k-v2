@@ -1,7 +1,7 @@
 :root {
   --bright-blue: rgb(0, 123, 255);
   --duke-blue: rgb(0, 83, 155);
-  --dark-gray: hsl(0, 0%, 27%);
+  --dark-gray: hsl(0, 0%, 30%);
   --text-black: hsl(0, 0%, 20%);
   --duke-bg-color: rgb(27, 47, 80);
   --light-bg-color: hsl(0, 0%, 98%);
@@ -123,7 +123,7 @@ span.code {
   width: 100%;
 
   font-family: var(--ff-subhead);
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: 400;
   list-style: none;
 }
@@ -164,13 +164,13 @@ span.code {
 
 .nav-item-start a {
   padding-right: 1em;
-  border-right: 0.75px solid var(--inverted-color);
+  /* border-right: 0.75px solid var(--inverted-color); */
 }
 
 .nav-item a {
   padding-left: 1em;
   padding-right: 1em;
-  border-right: 0.75px solid var(--inverted-color);
+  /* border-right: 0.75px solid var(--inverted-color); */
 }
 
 .nav-item-end a {
@@ -254,9 +254,12 @@ span.code {
 
   width: 175px;
   padding: 1.4em 2em;
-  background-color: var(--bg-card-color);
+  background-color: white;
+  /* box-shadow: 0 0 6px rgba(0, 0, 0, 25%), 0 0 12px rgba(0, 0, 0, 5%); */
   box-shadow: 3px 3px 3px -1px var(--dark-gray);
   border-radius: 10px;
+  border: 1px solid;
+  border-color: hsl(0, 0%, 85%);
 }
 
 #intro-card-img img {
@@ -297,7 +300,7 @@ span.code {
 
 .resume-button a {
   padding: 0.625em 2.75em;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 25%), 0 0 12px rgba(0, 0, 0, 5%);
+  /* box-shadow: 0 0 6px rgba(0, 0, 0, 25%), 0 0 12px rgba(0, 0, 0, 5%); */
   border: 1px solid;
   border-radius: 10px;
 
@@ -409,7 +412,8 @@ span.code {
 }
 
 .project-card:not(#placeholder) {
-  box-shadow: 0 0 6px rgba(0, 0, 0, 25%), 0 0 12px rgba(0, 0, 0, 5%);
+  box-shadow: 3px 3px 3px -1px var(--dark-gray);
+  /* box-shadow: 0 0 6px rgba(0, 0, 0, 25%), 0 0 12px rgba(0, 0, 0, 5%); */
   border-radius: 10px;
   border: 1px solid;
   border-color: hsl(0, 0%, 85%);
@@ -490,7 +494,7 @@ span.code {
 
 .all-projects-button a {
   padding: 0.625em 2.75em;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 25%), 0 0 12px rgba(0, 0, 0, 5%);
+  /* box-shadow: 0 0 6px rgba(0, 0, 0, 25%), 0 0 12px rgba(0, 0, 0, 5%); */
   border: 1px solid;
   border-radius: 10px;
 
