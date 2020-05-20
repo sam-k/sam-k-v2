@@ -11,7 +11,8 @@
                 "Mapbox API": "https://www.mapbox.com/",
                 "Proto.io": "https://proto.io/"
             },
-            "img": "./project-handoff.png"
+            "img": "./project-handoff.png",
+            "mainLink": "http://handoff.online/"
         },
         {
             "title": "Describing the NIH-funded research workforce",
@@ -29,7 +30,8 @@
                 "bio": "https://blog.codingitforward.com/meet-the-2019-fellows-national-institutes-of-health-c5cba191eb39",
                 "video": "https://govmatters.tv/exploring-civic-tech-at-the-coding-it-forward-demo-day/"
             },
-            "img": "./project-enumeration.jpg"
+            "img": "./project-enumeration.jpg",
+            "mainLink": "https://blog.codingitforward.com/meet-the-2019-fellows-national-institutes-of-health-c5cba191eb39"
         },
         {
             "title": "A new hypothesis for cancer formation",
@@ -46,7 +48,8 @@
             "links": {
                 "github": "https://github.com/sam-k/dna-repair-tf"
             },
-            "img": "./project-genome.jpg"
+            "img": "./project-genome.jpg",
+            "mainLink": "https://drive.google.com/file/d/1X1BRZ5uJyIXnf7QLxU4nY6n9UEEKE0CR/view"
         }
     ]
 }

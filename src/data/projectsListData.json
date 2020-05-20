@@ -14,6 +14,10 @@
                 "link": "https://www.gnu.org/software/bash/"
             }],
             "links": [{
+                "name": "Website",
+                "icon": "fa fa-external-link-alt",
+                "link": "https://drive.google.com/file/d/1X1BRZ5uJyIXnf7QLxU4nY6n9UEEKE0CR/view"
+            }, {
                 "name": "GitHub",
                 "icon": "fab fa-github",
                 "link": "https://github.com/sam-k/dna-repair-tf"
@@ -37,8 +41,7 @@
                 "name": "GitHub",
                 "icon": "fab fa-github",
                 "link": "https://github.com/sam-k/sam-k.github.io"
-            }],
-            "website": "https://www.samkim.io/"
+            }]
         },
         {
             "name": "Prototype of Field Medic Reference App",
@@ -74,8 +77,13 @@
                 "link": "https://www.mapbox.com/"
             }],
             "links": [{
-                "name": "none",
-                "desc": "Coming soon!"
+                "name": "Website",
+                "icon": "fa fa-external-link-alt",
+                "link": "http://handoff.online/"
+            }, {
+                "name": "GitHub",
+                "icon": "fab fa-github",
+                "link": "https://github.com/devincmartin/Handoff"
             }]
         },
         {
@@ -96,8 +104,7 @@
                 "name": "GitHub",
                 "icon": "fab fa-github",
                 "link": "https://github.com/sam-k/sam-k-v1"
-            }],
-            "website": "https://sam-k.github.io/sam-k-v1/"
+            }]
         },
         {
             "name": "Describing the National Research Workforce",
@@ -141,6 +148,22 @@
                 "name": "GitHub",
                 "icon": "fab fa-github",
                 "link": "https://github.com/sam-k/seq-quality-trimming"
+            }]
+        },
+        {
+            "name": "Building a CPU from Scratch",
+            "year": 2019,
+            "built": {
+                "name": "Duke Comp. Sci.",
+                "link": "https://www.cs.duke.edu/"
+            },
+            "tools": [{
+                "name": "Assembly",
+                "link": "https://en.wikipedia.org/wiki/MIPS_architecture"
+            }],
+            "links": [{
+                "name": "private",
+                "desc": "Due to Duke University departmental policy, source code for this project cannot be made publicly available."
             }]
         },
         {

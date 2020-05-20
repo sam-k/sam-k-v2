@@ -28,6 +28,7 @@ class Projects extends React.Component {
                 tools={item.tools}
                 links={item.links}
                 img={item.img}
+                mainLink={item.mainLink}
             />
         )
 

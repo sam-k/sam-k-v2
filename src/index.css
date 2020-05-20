@@ -427,6 +427,15 @@ span.code {
   padding-bottom: 0;
 }
 
+.project-card a.title {
+  color: black;
+  text-decoration: none;
+}
+
+.project-card a.title:hover {
+  text-decoration: underline;
+}
+
 .project-card h4 {
   margin: 0.25em 0;
 }

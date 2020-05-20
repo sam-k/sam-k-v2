@@ -11,7 +11,8 @@ class ProjectCard extends React.Component {
             text: props.text,
             tools: props.tools,
             links: props.links,
-            img: props.img
+            img: props.img,
+            mainLink: props.mainLink
         }
     }
 
@@ -37,13 +38,17 @@ class ProjectCard extends React.Component {
         return (
             <div className='project-card' id={this.state.id}>
                 {this.state.id !== 'placeholder' && <>
-                    <h3 dangerouslySetInnerHTML={{ __html: this.state.title }} />
+                    <a class='title' href={this.props.mainLink}>
+                        <h3 dangerouslySetInnerHTML={{ __html: this.state.title }} />
+                    </a>
                     <h4 dangerouslySetInnerHTML={{ __html: this.state.subtitle }} />
                     {this.state.text}
                     <div className='project-tools'>
                         {toolItems}
                     </div>
-                    <img src={images(this.state.img)} alt={this.state.title} />
+                    <a class='img' href={this.state.mainLink}>
+                        <img src={images(this.state.img)} alt={this.state.title} />
+                    </a>
                 </>}
             </div>
         )
