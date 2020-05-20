@@ -121,13 +121,13 @@
                 "link": "https://www.oracle.com/database/technologies/appdev/plsql.html"
             }],
             "links": [{
+                "name": "Presentation",
+                "icon": "fa fa-external-link-alt",
+                "link": "https://github.com/codingitforward/cdfdemoday2019/blob/master/Characterizing_the_NIH_Research_Workforce.pdf"
+            }, {
                 "name": "Profile",
                 "icon": "fas fa-user",
                 "link": "https://blog.codingitforward.com/meet-the-2019-fellows-national-institutes-of-health-c5cba191eb39"
-            }, {
-                "name": "News coverage",
-                "icon": "fab fa-youtube",
-                "link": "https://govmatters.tv/exploring-civic-tech-at-the-coding-it-forward-demo-day/"
             }, {
                 "name": "private",
                 "desc": "Code is property of the National Institutes of Health and can be made available upon request."
