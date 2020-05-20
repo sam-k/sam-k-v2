@@ -1,0 +1,96 @@
+{
+    "news": {
+        "items": [{
+            "name": "New York Times",
+            "link": "https://www.nytimes.com/"
+        }, {
+            "name": "FiveThirtyEight",
+            "link": "https://fivethirtyeight.com/"
+        }, {
+            "name": "STAT",
+            "link": "https://www.statnews.com/"
+        }, {
+            "name": "Nature News & Comment",
+            "link": "https://www.nature.com/news"
+        }]
+    },
+    "tvShows": {
+        "items": [{
+            "name": "Person of Interest",
+            "link": "https://youtu.be/M8sCVE9EHE0"
+        }, {
+            "name": "Mr. Robot",
+            "link": "https://youtu.be/U94litUpZuc"
+        }, {
+            "name": "The Good Place",
+            "link": "https://youtu.be/RfBgT5djaQw"
+        }, {
+            "name": "Neon Genesis Evangelion",
+            "link": "https://youtu.be/13nSISwxrY4"
+        }]
+    },
+    "music": {
+        "items": [{
+            "name": "IU",
+            "link": "https://youtu.be/R3Fwdnij49o"
+        }, {
+            "name": "The Beatles",
+            "link": "https://youtu.be/nS5_EQgbuLc"
+        }, {
+            "name": "Miranda Lambert",
+            "link": "https://youtu.be/DQYNM6SjD_o"
+        }, {
+            "name": "Kendrick Lamar",
+            "link": "https://youtu.be/NLZRYQMLDW4"
+        }]
+    },
+    "podcasts": {
+        "items": [{
+            "name": "99% Invisible",
+            "link": "https://99percentinvisible.org/"
+        }, {
+            "name": "Rabbit Hole",
+            "link": "https://www.nytimes.com/column/rabbit-hole"
+        }, {
+            "name": "Cautionary Tales",
+            "link": "http://timharford.com/articles/cautionarytales/"
+        }, {
+            "name": "Pod Save the World",
+            "link": "https://crooked.com/podcast-series/pod-save-the-world/"
+        }]
+    },
+    "coffees": {
+        "items": [{
+            "name": "Iced Americano",
+            "link": "https://www.starbucks.com/menu/product/406/iced?parent=/drinks/cold-coffees/iced-americano"
+        }, {
+            "name": "Iced Dirty Chai",
+            "link": "https://www.starbucks.com/menu/product/466/iced?parent=/drinks/iced-teas/iced-chai-teas"
+        }, {
+            "name": "Matcha Latte w/ Extra Matcha",
+            "link": "https://www.starbucks.com/menu/product/468/hot?parent=/drinks/hot-teas/green-teas"
+        }, {
+            "name": "Sugar-Free Red Bull",
+            "link": "https://www.redbull.com/us-en/energydrink/red-bull-sugarfree"
+        }]
+    },
+    "books": {
+        "items": [{
+            "name": "The Martian",
+            "author": "Andy Weir",
+            "link": ""
+        }, {
+            "name": "",
+            "author": "",
+            "link": ""
+        }, {
+            "name": "",
+            "author": "",
+            "link": ""
+        }, {
+            "name": "",
+            "author": "",
+            "link": ""
+        }]
+    }
+}

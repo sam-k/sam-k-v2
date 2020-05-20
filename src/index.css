@@ -214,6 +214,8 @@ span.code {
       Intro
       IntroCard
       AboutHeader
+      AboutFavs
+      AboutWritings
  *********************/
 
 #bio {
@@ -338,6 +340,92 @@ span.code {
   font-size: 1.2em;
 }
 
+#about-header-wrapper a {
+  text-decoration: none;
+}
+
+#about-header-wrapper p#desc a {
+  font-weight: 700;
+  color: #ed3532;
+}
+
+#about-header-wrapper p:not(#desc) a {
+  color: var(--bright-blue);
+}
+
+#about-header-wrapper a:hover {
+  text-decoration: underline;
+}
+
+#about-favs {
+  padding: var(--small-v-padding) 0;
+  background-color: var(--light-bg-color);
+  box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
+}
+
+#about-favs-wrapper {
+  margin: 0 auto;
+  max-width: 70vw;
+}
+
+#about-favs-wrapper #desc {
+  margin: 1em 0;
+}
+
+#about-favs-wrapper .title {
+  margin: 1em 0;
+  font-weight: 700;
+}
+
+#about-favs-wrapper li {
+  list-style: none;
+}
+
+#about-favs-wrapper a {
+  text-decoration: none;
+  color: var(--text-black);
+}
+
+#about-favs-wrapper a:hover {
+  text-decoration: underline;
+}
+
+#about-favs-wrapper #news a:hover {
+  color: #4fb2eb;
+}
+
+#about-favs-wrapper #tvShows a:hover {
+  color: #36c552;
+}
+
+#about-favs-wrapper #music a:hover {
+  color: #ed3532;
+}
+
+#about-favs-wrapper #coffees a:hover {
+  color: #e2831e;
+}
+
+#favs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: auto-fill;
+}
+
+#about-writings {
+  padding: var(--large-v-padding) 0;
+}
+
+#about-writings-wrapper {
+  margin: 0 auto;
+  max-width: 70vw;
+}
+
+#about-writings-wrapper p {
+  padding: 1em 0 0 0;
+  font-size: 1.2em;
+}
+
 @media (max-width: 600px) {
   #bio {
     padding: calc(var(--large-v-padding) * 0.75) 0;
@@ -373,6 +461,21 @@ span.code {
 
   #about-header-wrapper {
     margin: 0 20px;
+  }
+
+  #about-favs {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  #about-favs-wrapper {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  #favs-grid {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto-fill;
   }
 }
 
@@ -651,10 +754,6 @@ th {
     display: none;
   }
 
-  .all-projects-button {
-    margin: 0 auto;
-  }
-
   #projects-header {
     margin: 0 auto;
     max-width: 100%;
@@ -691,37 +790,6 @@ th {
     display: none;
   }
 }
-
-/*@media (max-width: 600px) {
-  #experiences {
-    padding: calc(var(--large-v-padding) * 0.75) 0;
-  }
-
-  #experience-wrapper {
-    max-width: 100%;
-  }
-
-  #skills-wrapper {
-    min-width: 80%;
-    flex: 1 1 80%;
-    margin: 0 20px 20px 20px;
-  }
-
-  #work-wrapper {
-    min-width: 80%;
-    flex: 1 1 80%;
-    margin: 0 20px;
-  }
-
-  #work-icons {
-    margin-top: 2em;
-  }
-
-  .work-icon-img a {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-  }
-} */
 
 /*********************
       Skills
