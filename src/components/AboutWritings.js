@@ -7,7 +7,7 @@ class AboutWritings extends React.Component {
     render() {
         const projectsFeaturedItems = data.writings.map(
             item => <WritingCard
-                key={item.key}
+                id={item.id}
                 title={item.title}
                 date={item.date}
                 purpose={item.purpose}
