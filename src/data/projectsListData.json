@@ -203,7 +203,7 @@
             }]
         },
         {
-            "name": "Campaign Finance Analysis",
+            "name": "Analyzing Campaign Finances of U.S. Congressman",
             "year": 2018,
             "built": {
                 "name": "Duke Public Policy",
@@ -215,6 +215,25 @@
             }, {
                 "name": "FEC Database",
                 "link": "https://www.fec.gov/"
+            }],
+            "links": [{
+                "name": "none",
+                "desc": "Coming soon!"
+            }]
+        },
+        {
+            "name": "Investigating Unlawful Spending by N.C. State Senator",
+            "year": 2018,
+            "built": {
+                "name": "Duke Public Policy",
+                "link": "https://sanford.duke.edu/"
+            },
+            "tools": [{
+                "name": "VBA",
+                "link": "https://docs.microsoft.com/en-us/office/vba/api/overview/"
+            }, {
+                "name": "NCSBE Database",
+                "link": "https://www.ncsbe.gov/index.html"
             }],
             "links": [{
                 "name": "none",

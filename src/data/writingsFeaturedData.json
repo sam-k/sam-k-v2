@@ -1,0 +1,38 @@
+{
+    "writings": [{
+        "key": "tfbs-research-2020",
+        "title": "Creating and Measuring Mutation Profiles Within TFBSs",
+        "date": "May 2020",
+        "purpose": "Research Report for <a href='http://gordanlab.cs.duke.edu/'>Duke Center for Genomic & Computational Biology</a>",
+        "description": "We still do not fully understand how mutations arise within transcription factor binding sites. I aimed to replicate previous findings correlating these regions with elevated mutation rates, and to optimize this computationally expensive task of creating mutation profiles.",
+        "img": "./genome.jpg"
+    }, {
+        "key": "how-to",
+        "title": "How I Built This Website",
+        "date": "May 2020",
+        "purpose": "Blog Post",
+        "description": "Designing, building and hosting a website from scratch can seem like a daunting task. I wrote this guide to explain how I created mine, and to help others do the same.",
+        "img": ""
+    }, {
+        "key": "ngs-research-2019",
+        "title": "Characterizing Processed Foods Through Next-Gen Sequencing",
+        "date": "May 2019",
+        "purpose": "Research Report for <a href='http://el.ladlab.org:8080/'>Duke Molecular Genetics & Microbiology</a>",
+        "description": "Targeted amplicon sequencing can be used to qualitatively identify species components of a pooled DNA sample. I evaluated whether the food-species components of processed foods can be identified, and if the next-generation sequencing strategy is useful in quantification.",
+        "img": "./pcr.jpg"
+    }, {
+        "key": "nc-senate-spending",
+        "title": "Did Phil Berger Pay Himself $2,000 Each Month in Rent?",
+        "date": "Nov. 2018",
+        "purpose": "Fact-Check Article for <a href='https://sanford.duke.edu/'>Duke Sanford School of Public Policy</a>",
+        "description": "I disputed an opponent’s ad against the N.C. state senate leader, “the most powerful man in state politics.” But, along the way, I also discovered paper trails to potentially unlawful spending by his campaign—paying himself thousands of dollars each month in “rent” to his shell company.",
+        "img": "./llc-report.jpg"
+    }, {
+        "key": "dcc-fountain",
+        "title": "A Fountainhead of Woe at the Durham Convention Center",
+        "date": "Nov. 2017",
+        "purpose": "Feature Article for <a href='https://sanford.duke.edu/'>Duke Sanford School of Public Policy</a>",
+        "description": "Installed almost 30 years ago, the waterfall outside the local center's front doors have caused its administrators headaches for years, plagued by continual breakage and expensive repairs. City politics, expert interviews, oral history—I stopped at nothing to tap into this incredibly pressing issue.",
+        "img": "./fountain.jpg"
+    }]
+}

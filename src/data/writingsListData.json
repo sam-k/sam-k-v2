@@ -1,0 +1,88 @@
+{
+    "writings": [{
+        "key": "mut-profs-tfbs",
+        "title": "Creating and measuring mutation profiles within TFBSs",
+        "date": "May 2020",
+        "purpose": "Research report for <a href='http://gordanlab.cs.duke.edu/'>Duke GCB</a>"
+    }, {
+        "key": "ssri-mussels",
+        "title": "The SSRI fluoxetine causes shorter catch states for mussels in preliminary study",
+        "date": "April 2020",
+        "purpose": "Term paper for Duke University"
+    }, {
+        "key": "yokai-watch",
+        "title": "Magical lures and capitalist capture: Effects and counter-effects in ‘Yo-kai Watch’",
+        "date": "Dec. 2019",
+        "purpose": "Term paper for Duke University"
+    }, {
+        "key": "three-domain-system",
+        "title": "The eocyte hypothesis: Experimental and computational techniques allow rejection of the three-domain system",
+        "date": "Dec. 2019",
+        "purpose": "Term paper for Duke University"
+    }, {
+        "key": "pom-poko",
+        "title": "The nature–culture dependency, and mutual destruction, in ‘Pom Poko’",
+        "date": "Oct. 2019",
+        "purpose": "Term paper for Duke University"
+    }, {
+        "key": "ngs-foods",
+        "title": "Characterizing dietary components in processed foods through next-generation sequencing",
+        "date": "May 2019",
+        "purpose": "Research report for <a href='http://el.ladlab.org:8080/'>Duke MGM</a>"
+    }, {
+        "key": "christmas-tree-lobby",
+        "title": "How to hire a migrant: Christmas tree growers demand visa reform",
+        "date": "Dec. 2018",
+        "purpose": "Feature article for Duke Sanford School"
+    }, {
+        "key": "house-campaign",
+        "title": "G.K. Butterfield’s seat was safe. So why did he raise and spend so much money?",
+        "date": "Nov. 2018",
+        "purpose": "Investigative article for Duke Sanford School"
+    }, {
+        "key": "nc-senate-spending",
+        "title": "Did Phil Berger pay himself $2,000 each month in rent?",
+        "date": "Nov. 2018",
+        "purpose": "Fact-check article for Duke Sanford School"
+    }, {
+        "key": "house-bills-claim",
+        "title": "Did only 11 of G.K. Butterfield’s 92 bills become law?",
+        "date": "Oct. 2018",
+        "purpose": "Fact-check article for Duke Sanford School"
+    }, {
+        "key": "numeral-classifiers",
+        "title": "Comparison of numeral classifiers in Japanese and Korean",
+        "date": "April 2018",
+        "purpose": "Term paper for Duke University"
+    }, {
+        "key": "loanword-phonology",
+        "title": "Vowel phonology of American English loanwords in Korean",
+        "date": "March 2018",
+        "purpose": "Term paper for Duke University"
+    }, {
+        "key": "heroin-charges",
+        "title": "Kernersville man pleads not guilty to federal heroin charges",
+        "date": "Nov. 2017",
+        "purpose": "News article for Duke Sanford School"
+    }, {
+        "key": "dcc-fountain",
+        "title": "A fountainhead of woe at the Durham Convention Center",
+        "date": "Nov. 2017",
+        "purpose": "Feature article for Duke Sanford School"
+    }, {
+        "key": "durham-mayor-demographics",
+        "title": "The elusive youth vote: Why Pierce Freelon lost, and other mayoral primary demographics",
+        "date": "Oct. 2017",
+        "purpose": "Feature article for Duke Sanford School"
+    }, {
+        "key": "freelon-campaign",
+        "title": "See Pierce Freelon run: A political newcomer’s experience in campaign life",
+        "date": "Oct. 2017",
+        "purpose": "Feature article for Duke Sanford School"
+    }, {
+        "key": "ebola-bushmeat",
+        "title": "Banning West African bushmeat will not solve the Ebola crisis",
+        "date": "Oct. 2017",
+        "purpose": "Term paper for Duke University"
+    }]
+}

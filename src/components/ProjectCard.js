@@ -38,7 +38,7 @@ class ProjectCard extends React.Component {
         return (
             <div className='project-card' id={this.state.id}>
                 {this.state.id !== 'placeholder' && <>
-                    <a class='title' href={this.props.mainLink}>
+                    <a class='title' href={this.state.mainLink}>
                         <h3 dangerouslySetInnerHTML={{ __html: this.state.title }} />
                     </a>
                     <h4 dangerouslySetInnerHTML={{ __html: this.state.subtitle }} />

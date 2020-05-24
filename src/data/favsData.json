@@ -1,7 +1,7 @@
 {
     "news": {
         "items": [{
-            "name": "New York Times",
+            "name": "The New York Times",
             "link": "https://www.nytimes.com/"
         }, {
             "name": "FiveThirtyEight",
@@ -68,7 +68,7 @@
             "link": "https://www.starbucks.com/menu/product/466/iced?parent=/drinks/iced-teas/iced-chai-teas"
         }, {
             "name": "Matcha Latte w/ Extra Matcha",
-            "link": "https://www.starbucks.com/menu/product/468/hot?parent=/drinks/hot-teas/green-teas"
+            "link": "https://www.starbucks.com/menu/product/468/iced?parent=/drinks/iced-teas/iced-green-teas"
         }, {
             "name": "Sugar-Free Red Bull",
             "link": "https://www.redbull.com/us-en/energydrink/red-bull-sugarfree"

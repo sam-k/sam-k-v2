@@ -81,7 +81,6 @@ span.code {
   font-family: var(--ff-code);
   font-weight: bold;
   font-size: 0.9em;
-  color: var(--duke-blue);
 }
 
 @media (max-width: 600px) {
@@ -250,6 +249,10 @@ span.code {
   font-size: 1.2em;
 }
 
+#profile span.code {
+  color: var(--duke-blue);
+}
+
 #intro-card {
   /* Symmetric to keep centered when wrapped. Same as profile */
   margin: 40px var(--side-margin) calc(40px - 5em / 4) var(--side-margin);
@@ -357,6 +360,10 @@ span.code {
   text-decoration: underline;
 }
 
+#about-header-wrapper p>span.code {
+  color: var(--duke-blue);
+}
+
 #about-favs {
   padding: var(--small-v-padding) 0;
   background-color: var(--light-bg-color);
@@ -379,6 +386,7 @@ span.code {
 
 #about-favs-wrapper li {
   list-style: none;
+  margin-bottom: 0.25em;
 }
 
 #about-favs-wrapper a {
@@ -421,9 +429,93 @@ span.code {
   max-width: 70vw;
 }
 
-#about-writings-wrapper p {
-  padding: 1em 0 0 0;
-  font-size: 1.2em;
+#about-writings-wrapper h2 {
+  padding-bottom: calc(var(--small-v-padding) - 15px);
+}
+
+#about-writings-wrapper #desc {
+  padding: 1em 0 calc(2em - 10px) 0;
+}
+
+.writing-card {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 1.5vw;
+
+  box-shadow: 3px 3px 3px -1px var(--dark-gray);
+  /* box-shadow: 0 0 6px rgba(0, 0, 0, 25%), 0 0 12px rgba(0, 0, 0, 5%); */
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: hsl(0, 0%, 85%);
+}
+
+.writing-card .title-link {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+
+.writing-card .title-link:hover {
+  text-decoration: underline;
+}
+
+.writing-card .desc-link {
+  text-decoration: none;
+}
+
+.writing-card .desc-link p {
+  margin: 0.25em 0;
+}
+
+.writing-card li {
+  list-style: none;
+  display: inline-block;
+}
+
+.writing-card .purpose {
+  font-weight: 300;
+  color: var(--text-black);
+}
+
+.writing-card .purpose a {
+  text-decoration: none;
+  color: var(--bright-blue);
+}
+
+.writing-card .purpose a:hover {
+  text-decoration: underline;
+}
+
+.writing-card .sep {
+  margin: 0 0.5em;
+}
+
+.writing-card .flex-sep {
+  padding: 0 1em;
+}
+
+.writing-card img {
+  height: 9em;
+}
+
+@media (max-width: 900px) {
+  .writing-card {
+    display: block;
+    margin: 15px 0;
+    padding: 5vw;
+  }
+
+  .writing-card img {
+    height: auto;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .writing-card .desc-link p {
+    margin: 0.65em 0;
+  }
 }
 
 @media (max-width: 600px) {
@@ -476,6 +568,18 @@ span.code {
   #favs-grid {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: auto-fill;
+  }
+
+  #about-writings {
+    padding: calc(var(--large-v-padding) * 0.75) 0;
+  }
+
+  #about-writings-wrapper {
+    margin: 0 20px;
+  }
+
+  #about-writings-wrapper {
+    max-width: 100%;
   }
 }
 
@@ -737,10 +841,6 @@ th {
 @media (max-width: 600px) {
   #projects-featured-wrapper {
     max-width: 100%;
-  }
-
-  #projects-featured-wrapper h2 {
-    padding: 0 20px calc(var(--small-v-padding) - 15px) 20px;
   }
 
   .project-card {
