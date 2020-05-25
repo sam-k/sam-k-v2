@@ -1,16 +1,18 @@
 import React from "react"
+import ScrollToTop from "./ScrollToTop"
 
-import Header from "./components/ProjectsHeader"
-import Featured from "./components/ProjectsFeatured"
-import List from "./components/ProjectsList"
+import ProjectsHeader from "./components/ProjectsHeader"
+import ProjectsFeatured from "./components/ProjectsFeatured"
+import ProjectsList from "./components/ProjectsList"
 
 class ProjectsPage extends React.Component {
     render() {
         return (
             <div id='projects-page'>
-                <Header />
-                <Featured />
-                <List />
+                <ScrollToTop />
+                <ProjectsHeader />
+                <ProjectsFeatured />
+                <ProjectsList />
             </div>
         )
     }

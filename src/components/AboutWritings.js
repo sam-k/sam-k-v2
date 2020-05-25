@@ -5,7 +5,7 @@ import data from "../data/writingsFeaturedData.json"
 
 class AboutWritings extends React.Component {
     render() {
-        const projectsFeaturedItems = data.writings.map(
+        const writingsFeaturedItems = data.writings.map(
             item => <WritingCard
                 id={item.id}
                 title={item.title}
@@ -22,7 +22,7 @@ class AboutWritings extends React.Component {
                     <h2>Featured Writings</h2>
                     {/* <p id='desc'>Let’s skip the icebreakers. These are a few of my favorite things.</p> */}
                     <div id='writing-cards'>
-                        {projectsFeaturedItems}
+                        {writingsFeaturedItems}
                     </div>
                 </div>
             </div>

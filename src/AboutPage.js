@@ -1,4 +1,5 @@
 import React from "react"
+
 import AboutHeader from "./components/AboutHeader"
 import AboutFavs from "./components/AboutFavs"
 import AboutWritings from "./components/AboutWritings"
