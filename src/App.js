@@ -2,11 +2,11 @@ import React from "react"
 import { HashRouter, Route, Switch } from "react-router-dom"
 
 import Navbar from "./components/Navbar"
-import HomePage from "./HomePage"
-import ProjectsPage from "./ProjectsPage"
-import AboutPage from "./AboutPage"
-import WritingsPage from "./WritingsPage"
-import PostPage from "./PostPage"
+import HomePage from "./pages/HomePage"
+import ProjectsPage from "./pages/ProjectsPage"
+import AboutPage from "./pages/AboutPage"
+import WritingsPage from "./pages/WritingsPage"
+import PostPage from "./pages/PostPage"
 import Footer from "./components/Footer"
 
 // Each post needs its own page.

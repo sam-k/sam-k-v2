@@ -1,9 +1,9 @@
 import React from "react"
-import ScrollToTop from "./ScrollToTop"
+import ScrollToTop from "../components/ScrollToTop"
 
-import ProjectsHeader from "./components/ProjectsHeader"
-import ProjectsFeatured from "./components/ProjectsFeatured"
-import ProjectsList from "./components/ProjectsList"
+import ProjectsHeader from "../components/ProjectsHeader"
+import ProjectsFeatured from "../components/ProjectsFeatured"
+import ProjectsList from "../components/ProjectsList"
 
 class ProjectsPage extends React.Component {
     componentDidMount() {

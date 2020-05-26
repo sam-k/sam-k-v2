@@ -1,12 +1,12 @@
 import React from "react"
-import ScrollToTop from "./ScrollToTop"
+import ScrollToTop from "../components/ScrollToTop"
 
-import TfbsResearch2020 from "./posts/TfbsResearch2020"
-import HowTo2020 from "./posts/HowTo2020"
-import YokaiWatch2019 from "./posts/YokaiWatch2019"
-import NcSenateSpending2018 from "./posts/NcSenateSpending2018"
-import DccFountain2017 from "./posts/DccFountain2017"
-import NgsResearch2019 from "./posts/NgsResearch2019"
+import TfbsResearch2020 from "../posts/TfbsResearch2020"
+import HowTo2020 from "../posts/HowTo2020"
+import YokaiWatch2019 from "../posts/YokaiWatch2019"
+import NcSenateSpending2018 from "../posts/NcSenateSpending2018"
+import DccFountain2017 from "../posts/DccFountain2017"
+import NgsResearch2019 from "../posts/NgsResearch2019"
 
 function buildDescription(description) {
     const institution = (description.institution ?
