@@ -3,7 +3,7 @@ import React from "react"
 class DccFountain2017 extends React.Component {
     render() {
         return (<>
-            <div class='content'>
+            <div class='content' oncopy="return false" oncut="return false">
                 <div class='line-break' />
 
                 <p><b>DURHAM, N.C.</b> — An uneasy tension loomed over the Oct. 26 meeting of the Durham Convention Center Authority as directors, board members and representatives sparred over the future of a fountain.</p>

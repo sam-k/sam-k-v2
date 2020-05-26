@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar"
 import HomePage from "./HomePage"
 import ProjectsPage from "./ProjectsPage"
 import AboutPage from "./AboutPage"
+import WritingsPage from "./WritingsPage"
 import PostPage from "./PostPage"
 import Footer from "./components/Footer"
 
@@ -15,7 +16,7 @@ class App extends React.Component {
   render() {
     const postRoutes = writingsData.writings.map(
       item => <Route
-        path={"/posts/" + item.id}
+        path={"/post/" + item.id}
         render={
           (props) => <PostPage {...props}
             id={item.id}
@@ -37,6 +38,7 @@ class App extends React.Component {
           <Switch>
             <Route path="/projects" component={ProjectsPage} />
             <Route path="/about" component={AboutPage} />
+            <Route path="/posts" component={WritingsPage} />
             {postRoutes}
             <Route exact path="/" component={HomePage} />
           </Switch>

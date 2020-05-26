@@ -14,13 +14,13 @@ class WritingsFeatured extends React.Component {
 
     render() {
         const writingsFeaturedItems = data.writings.map(
-            item => (item.featured &&
+            item => (item.featured && item.imported &&
                 <WritingCard
                     id={item.id}
                     title={item.title}
                     date={item.date}
-                    purpose={item.purpose}
                     description={item.description}
+                    summary={item.summary}
                     img={item.img}
                 />
             )

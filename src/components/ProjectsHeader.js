@@ -1,6 +1,6 @@
 import React from "react"
 
-class ProjectHeader extends React.Component {
+class ProjectsHeader extends React.Component {
     render() {
         return (
             <div id='projects-header'>
@@ -14,4 +14,4 @@ class ProjectHeader extends React.Component {
     }
 }
 
-export default ProjectHeader
+export default ProjectsHeader

@@ -1,6 +1,18 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
+function buildDescription(date, description) {
+    const institution = (description.institution ?
+        " for " + (description.institutionLink ?
+            "<a href='" + description.institutionLink + "'>" + description.institution + "</a>" :
+            description.institution
+        ) :
+        ""
+    )
+    return description.type + institution + " &nbsp;|&nbsp; " +
+        date.month + " " + date.year
+}
+
 class WritingCard extends React.Component {
     constructor(props) {
         super(props)
@@ -8,8 +20,8 @@ class WritingCard extends React.Component {
             id: props.id,
             title: props.title,
             date: props.date,
-            purpose: props.purpose,
             description: props.description,
+            summary: props.summary,
             img: props.img
         }
     }
@@ -20,15 +32,17 @@ class WritingCard extends React.Component {
         return (
             <div class='writing-card'>
                 <div class='writing-card-text'>
-                    <Link class='title-link' to={"/posts/" + this.state.id}>
+                    <Link class='title-link' to={"/post/" + this.state.id}>
                         <p>{this.state.title}</p>
                     </Link>
-                    <p class='desc'>{this.state.description}</p>
-                    {(this.state.purpose && this.state.date) &&
+                    <p class='summary'>{this.state.summary}</p>
+                    {(this.state.description && this.state.date) &&
                         <p
-                            class='purpose'
+                            class='desc'
                             dangerouslySetInnerHTML={{
-                                __html: this.state.purpose + " &nbsp;|&nbsp; " + this.state.date
+                                __html: buildDescription(
+                                    this.state.date, this.state.description
+                                )
                             }}
                         />
                     }
@@ -36,7 +50,7 @@ class WritingCard extends React.Component {
                 {this.state.img &&
                     <>
                         <div class='flex-sep' />
-                        <Link class='img' to={"/posts/" + this.state.id}>
+                        <Link class='img' to={"/post/" + this.state.id}>
                             <img src={images(this.state.img)} alt={this.state.title} />
                         </Link>
                     </>

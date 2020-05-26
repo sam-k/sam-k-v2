@@ -5,9 +5,13 @@ import AboutFavs from "./components/AboutFavs"
 import WritingsFeatured from "./components/WritingsFeatured"
 
 class AboutPage extends React.Component {
+    componentDidMount() {
+        document.title = "Sam Kim | Bio";
+    }
+
     render() {
         return (
-            <div>
+            <div id='about-page'>
                 <AboutHeader />
                 <AboutFavs />
                 <WritingsFeatured showButton="true" />

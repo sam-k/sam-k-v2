@@ -8,6 +8,17 @@ import NcSenateSpending2018 from "./posts/NcSenateSpending2018"
 import DccFountain2017 from "./posts/DccFountain2017"
 import NgsResearch2019 from "./posts/NgsResearch2019"
 
+function buildDescription(description) {
+    const institution = (description.institution ?
+        " for " + (description.institutionLink ?
+            "<a href='" + description.institutionLink + "'>" + description.institution + "</a>" :
+            description.institution
+        ) :
+        ""
+    )
+    return description.type + institution
+}
+
 class PostPage extends React.Component {
     constructor(props) {
         super(props)
@@ -15,10 +26,14 @@ class PostPage extends React.Component {
             id: props.id,
             title: props.title,
             date: props.date,
-            purpose: props.purpose,
             description: props.description,
+            summary: props.summary,
             text: props.text
         }
+    }
+
+    componentDidMount() {
+        document.title = this.state.title + " | Sam Kim";
     }
 
     render() {
@@ -38,9 +53,11 @@ class PostPage extends React.Component {
                     <h2>{this.state.title}</h2>
 
                     <p class='purpose' dangerouslySetInnerHTML={{
-                        __html: this.state.purpose
+                        __html: buildDescription(this.state.description)
                     }} />
-                    <p class='date'>{this.state.date}</p>
+                    <p class='date'>
+                        {this.state.date.month + " " + this.state.date.year}
+                    </p>
 
                     {Posts[this.state.id]}
                 </div>
