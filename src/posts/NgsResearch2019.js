@@ -23,7 +23,7 @@ class NgsResearch2019 extends React.Component {
                 <h5 id='s2.1'>2.1. Processed Food Selection</h5>
                 <p>To identify the dietary components of processed foods, we chose three candidates for extraction and analysis: Wonder® Classic Hot Dog Buns (“white bread”), Pepperidge Farm® Whole Grain 15-Grain Bread (“multigrain bread”), and Oscar Meyer® Uncured Bun-Length Wieners (“hot dogs”). The relevant ingredients reported for these foods, as well as the food species expected to be present in each, are listed below in <Table n='1' />.</p>
                 <figure class='table' id='table1'>
-                    <figcaption><b>Table 1</b> | <b>Ingredients and expected food species from processed foods.</b></figcaption>
+                    <figcaption class='table-title'><b>Table 1</b> | <b>Ingredients and expected food species from processed foods.</b></figcaption>
                     <img
                         src={images("./table1.png")}
                         alt={"Table 1"}
@@ -35,7 +35,7 @@ class NgsResearch2019 extends React.Component {
                 <p>To extract DNA from the processed foods, each food was finely diced with a sterile razor blade and processed through the appropriate DNA extraction protocol—the Qiagen DNeasy PowerPlant Pro Kit for the white and multigrain breads, and the Qiagen DNeasy Blood & Tissue Kit for the hot dog. The extracted samples were then PCR-amplified with different primer sets. The white and multigrain breads extractions were amplified with the plant primer sets trnLCD and trnLGH. The hot dog extraction was amplified with the animal primer sets 12S and 12SV5; the animal/plant primer sets nucLSUD and Short28S; and the plant primer sets trnLCD, trnLGH, and UniPlant. In addition to the animal primer sets, the plant primers were also used to detect the trace genetic material from the plants listed in the hot dog’s ingredients. The primer sets are described in greater detail in <Table n='2' />.</p>
                 <p>The first-round PCR products of the processed food DNA were then purified through 1:100 dilution in water, and a second round of PCR was conducted to append the amplicons with Illumina MiniSeq adapters and barcode them with dual indices. The barcodings for each processed PCR product are also shown in <Table n='2' />.</p>
                 <figure class='table' id='table2'>
-                    <figcaption><b>Table 2</b> | <b>Primer sets and dual indices used for processed food amplicons.</b></figcaption>
+                    <figcaption class='table-title'><b>Table 2</b> | <b>Primer sets and dual indices used for processed food amplicons.</b></figcaption>
                     <img
                         src={images("./table2.png")}
                         alt={"Table 2"}

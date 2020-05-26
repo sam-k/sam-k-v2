@@ -18,7 +18,7 @@ class TfbsResearch2020 extends React.Component {
                 <h4 id='s1'>1. Introduction</h4>
                 <p>There has been a recent surge in publicly available cancer genomic data—driven by increased computational capacities and fast high-throughput technologies such as next-generation sequencing—in projects such as the International Cancer Genome Consortium (ICGC) and the Cancer Genome Atlas (TCGA),<Ref n='1' /><sup>,</sup><Ref n='2' /> which can help improve our understanding of the fundamental mechanisms behind the genetic mutations responsible for cancer.</p>
                 <p>For example, mutation rates are very heterogeneous across the genome,<Ref n='3' /><sup>,</sup><Ref n='4' /> and we still do not fully understand how mutations arise in noncoding regions, specifically within transcription factor binding sites (TFBSs)—regions in the genome where proteins called transcription factors (TFs) bind to turn genes on or off. Previous studies have independently found elevated mutation rates within TFBSs of melanoma patient genomes,<Ref n='5' /><sup>,</sup><Ref n='6' /> a general observation whose mechanism remains unclear. One proposed mechanism has attributed this phenomenon to competitive binding between TFs and the machinery involved in nucleotide excision repair (NER),<Ref n='5' /> while another has tied this phenomenon directly to transcription initiation at promoters.<Ref n='6' /> In either mechanism, unrepaired somatic mutations accumulate in these regions and increase the risk of cancer (<Fig n='1' />).<Ref n='5' /><sup>,</sup><Ref n='6' /> Because TFs are crucial for gene expression and therefore cell function, the correlation may represent a meaningful driver of mutagenesis.</p>
-                <figure id='fig1'>
+                <figure class='fig' id='fig1'>
                     <img
                         src={images("./fig1.png")}
                         alt={"Figure 1"}
@@ -42,7 +42,7 @@ class TfbsResearch2020 extends React.Component {
                 <p>There were clear peaks in mutation enrichment at the centers of TFBSs for LUSC, MELA and SKCA (<Fig n='2' l='a' />), and a small peak for BRCA. The other cancer types—COAD, COCA, LUAD, READ and SKCM—actually saw a dip in enrichment at the centers of TFBSs, creating M-shaped curves (<Fig n='2' l='b' />).</p>
                 <p>The peak shape observed for MELA matched the results for melanoma by Sabarinathan <i>et al.</i> (<Fig n='2' l='c' />).<Ref n='5' /> The cancer types that did display the characteristic peak have different mutational signatures and did not appear to share many characteristics,<Ref n='13' /> save for one: their data’s large sizes compared to the cancer types without a center peak in their mutational profiles (Extended Data Table 2).</p>
                 <p>It is unclear why some of the cancer types showed M-shaped mutation profiles, where mutation enrichment levels are low at the center of TFBSs and in the flanking regions, but high at around ±250 bp from the center (<Fig n='2' l='b' />). Though BRCA appears to show a small center peak, the slightly M-shaped profile in the promoter regions puts this peak in doubt (Extended Data Fig. 1b).</p>
-                <figure id='fig2'>
+                <figure class='fig' id='fig2'>
                     <img
                         src={images("./fig2.png")}
                         alt={"Figure 2"}
@@ -58,7 +58,7 @@ class TfbsResearch2020 extends React.Component {
                 <p>I intersected the somatic mutations with promoter regions, defined as 2,000 bp upstream and 1,000 bp downstream from each RefSeq TSS,<Ref n='10' /> then with cancer-specific active proximal TFBSs, the results of which I dubbed “TSS” (<Fig n='3' l='e' />).</p>
                 <p>I intersected the somatic mutations with the FANTOM enhancers,<Ref n='12' /> then with cancer-specific active proximal TFBSs, the results of which I dubbed “Enhancers” (<Fig n='3' l='f' />).</p>
                 <p>I also repeated the “All” experiment with inactive proximal TFBSs (<Fig n='3' l='g' />), and the “All” and “Enhancers” experiments with active distal TFBSs (<Fig n='3' l='h,i' />).<Ref n='5' /></p>
-                <figure id='fig3'>
+                <figure class='fig' id='fig3'>
                     <img
                         src={images("./fig3.png")}
                         alt={"Figure 3"}
@@ -88,8 +88,8 @@ class TfbsResearch2020 extends React.Component {
                 <p>I tested the methods on a basic yet expensive operation common to all experiments in this project: intersecting the melanoma somatic mutations with active proximal TFBSs for skin cancers. The melanoma dataset was used in its entirety (42 GB), as a random 50% sample (about 21 GB), and as a random 25% sample (about 11 GB). Due to the sheer size of the dataset, traditional sampling tools such as <code>shuf</code>—which loads the entire file in memory—could not be used, so I opted for a probabilistic method of subsetting the data using Perl instead.</p>
                 <h5 id='s4.2'>4.2. Results</h5>
                 <p>The runtimes appeared to scale roughly linearly with data size. Compared to the sorted implementation of BEDTools, BEDOPS, which brands itself as the faster of the two,16 had negligible effect on smaller samples but had a small yet noticeable effect on the very large dataset in its entirety (<Table n='1' />).</p>
-                <figure id='table1'>
-                    <figcaption><b>Table 1</b> | <b>Benchmark Runtimes for Melanoma Mutation–Skin Cancer TFBS Intersections.</b></figcaption>
+                <figure class='table' id='table1'>
+                    <figcaption class='table-title'><b>Table 1</b> | <b>Benchmark Runtimes for Melanoma Mutation–Skin Cancer TFBS Intersections.</b></figcaption>
                     <img
                         src={images("./table1.png")}
                         alt={"Table 1"}

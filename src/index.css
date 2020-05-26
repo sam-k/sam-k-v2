@@ -680,20 +680,21 @@ sup {
   margin: 1.5em auto 1em auto;
 }
 
-#post .fig img {
-  margin: 1.5em auto 1em auto;
+#post figure figcaption {
+  font-size: 0.8em;
 }
 
-#post .fig figcaption {
-  font-size: 0.8em;
+#post .fig img {
+  margin: 1.5em auto 1em auto;
 }
 
 #post .table img {
   margin: 1em auto 1em auto;
 }
 
-#post .table figcaption {
+#post .table-title {
   margin-top: 1.5em;
+  font-size: 0.9em;
   text-align: center;
 }
 
