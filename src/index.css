@@ -1,18 +1,22 @@
 :root {
-  --bright-blue: rgb(0, 123, 255);
   --duke-blue: rgb(0, 83, 155);
   --dark-gray: hsl(0, 0%, 30%);
   --text-black: hsl(0, 0%, 20%);
+  --inverted-color: white;
+  --shadow-color: rgba(0, 0, 0, 50%);
+  --link-blue: rgb(0, 123, 255);
+  --link-orange: rgb(236, 140, 36);
+
   --duke-bg-color: rgb(27, 47, 80);
   --light-bg-color: hsl(0, 0%, 96%);
   --bg-card-color: rgb(234, 242, 254);
-  --inverted-color: white;
-  --shadow-color: rgba(0, 0, 0, 50%);
+
   --shadow-blur: 20px;
   --shadow-spread: 5px;
   --small-v-padding: 8vh;
   --large-v-padding: 16vh;
   --side-margin: 2.25vw;
+
   --ff-body: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
@@ -84,7 +88,7 @@ span.code {
 }
 
 sup {
-  font-size: x-small;
+  font-size: 70%;
   vertical-align: super;
 }
 
@@ -144,7 +148,7 @@ sup {
 }
 
 #nav-home a:hover {
-  color: var(--bright-blue);
+  color: var(--link-blue);
 }
 
 #nav-other {
@@ -163,7 +167,7 @@ sup {
 }
 
 #nav-other a:hover {
-  color: var(--bright-blue);
+  color: var(--link-blue);
 }
 
 .nav-item-start a {
@@ -275,7 +279,7 @@ sup {
   display: block;
   width: 80%;
   margin: 0 auto 1.2em auto;
-  border: 0.5em outset var(--bright-blue);
+  border: 0.5em outset var(--link-blue);
   border-radius: 100%;
 }
 
@@ -357,7 +361,7 @@ sup {
 }
 
 #about-header-wrapper p:not(#desc) a {
-  color: var(--bright-blue);
+  color: var(--link-blue);
 }
 
 #about-header-wrapper a:hover {
@@ -577,7 +581,7 @@ sup {
 
 .writing-card .desc a {
   text-decoration: none;
-  color: var(--bright-blue);
+  color: var(--link-blue);
 }
 
 .writing-card .desc a:hover {
@@ -622,7 +626,7 @@ sup {
 
 #post a {
   text-decoration: none;
-  color: var(--bright-blue);
+  color: var(--link-blue);
 }
 
 #post a:hover {
@@ -671,13 +675,28 @@ sup {
   padding-left: 1em;
 }
 
-#post .ref {
+#post figure img {
+  display: block;
+  margin: 0.25em auto;
+}
+
+#post figcaption {
+  font-size: 0.8em;
+}
+
+#post .ref,
+#post .fig,
+#post .table,
+#post .section {
   text-decoration: none;
-  color: var(--bright-blue);
+  color: var(--link-blue);
   cursor: pointer;
 }
 
-#post .ref:hover {
+#post .ref:hover,
+#post .fig:hover,
+#post .table:hover,
+#post .section:hover {
   text-decoration: underline;
 }
 
@@ -726,7 +745,7 @@ sup {
 }
 
 #writings-list td,
-th {
+#writings-list th {
   vertical-align: middle;
   padding: 1.25em 1em;
 }
@@ -760,7 +779,7 @@ th {
 
 #writings-list a:hover {
   text-decoration: underline;
-  color: var(--bright-blue);
+  color: var(--link-blue);
 }
 
 #writings-list .year {
@@ -837,10 +856,6 @@ th {
   #writings-list td:nth-child(4) {
     display: none;
   }
-
-  #writings-list .post {
-    /* font-weight: 400; */
-  }
 }
 
 /*********************
@@ -908,7 +923,7 @@ th {
 }
 
 .project-card h4 a {
-  color: var(--bright-blue);
+  color: var(--link-blue);
   text-decoration: none;
 }
 
@@ -921,7 +936,7 @@ th {
 }
 
 .project-card p a {
-  color: rgb(236, 140, 36);
+  color: var(--link-orange);
   text-decoration: none;
 }
 
@@ -1028,7 +1043,7 @@ th {
 }
 
 #projects-list td,
-th {
+#projects-list th {
   vertical-align: middle;
   padding: 1.25em 1em;
 }
@@ -1062,7 +1077,7 @@ th {
 
 #projects-list a:hover {
   text-decoration: underline;
-  color: var(--bright-blue);
+  color: var(--link-blue);
 }
 
 #projects-list .year {
@@ -1356,7 +1371,7 @@ th {
 }
 
 #footer-content a:hover {
-  color: var(--bright-blue);
+  color: var(--link-blue);
 }
 
 #copyright-icons li {
@@ -1386,7 +1401,7 @@ th {
 }
 
 #copyright-icons i:hover {
-  color: var(--bright-blue);
+  color: var(--link-blue);
 }
 
 #copyright-lines {
@@ -1482,7 +1497,7 @@ th {
 
 #not-found-header-wrapper a {
   text-decoration: none;
-  color: var(--bright-blue);
+  color: var(--link-blue);
 }
 
 #not-found-header-wrapper a:hover {

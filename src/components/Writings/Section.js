@@ -1,6 +1,6 @@
 import React from "react"
 
-class Ref extends React.Component {
+class Section extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -10,15 +10,15 @@ class Ref extends React.Component {
 
     render() {
         return (
-            <sup class='ref' onClick={
-                () => document.getElementById("ref" + this.state.num).scrollIntoView({
+            <span class='section' onClick={
+                () => document.getElementById("s" + this.state.num).scrollIntoView({
                     behavior: "smooth"
                 })
             }>
-                {this.state.num}
-            </sup>
+                {"Section " + this.state.num}
+            </span>
         )
     }
 }
 
-export default Ref
+export default Section

@@ -45,12 +45,12 @@ class NgsResearch2019 extends React.Component {
             <div class='refs'>
                 <h4>References</h4>
                 <ol>
-                    <li id='1'>Gohl, D. M., Vangay, P., Garbe, J., MacLean, A., Hauge, A., Becker, A., … Beckman, K. B. (2016). Systematic improvement of amplicon marker gene methods for increased accuracy in microbiome studies. <i>Nature Biotechnology</i>, 34(9), 942–949.</li>
-                    <li id='2'>Kartzinel, T. R., Chen, P. A., Coverdale, T. C., Erickson, D. L., Kress, W. J., Kuzmina, M. L., … Pringle, R. M. (2015). DNA metabarcoding illuminates dietary niche partitioning by African large herbivores. <i>Proceedings of the National Academy of Sciences</i>, 112(26), 8019–8024.</li>
-                    <li id='3'>Galimberti, A., De Mattia, F., Losa, A., Bruni, I., Federici, S., Casiraghi, M., … Labra, M. (2013). DNA barcoding as a new tool for food traceability. <i>Food Research International</i>, 50(1), 55–63.</li>
-                    <li id='4'>Gryson, N. (2010). Effect of food processing on plant DNA degradation and PCR-based GMO analysis: A review. <i>Analytical and Bioanalytical Chemistry</i>, 396(6), 2003–2022.</li>
-                    <li id='5'>Martin, M. (2011). Cutadapt removes adapter sequences from high-throughput sequencing reads. <i>EMBnet.Journal</i>, 17(1), 10–12.</li>
-                    <li id='6'>Callahan, B. J., McMurdie, P. J., Rosen, M. J., Han, A. W., Johnson, A. J. A., & Holmes, S. P. (2016). DADA2: High-resolution sample inference from Illumina amplicon data. <i>Nature Methods</i>, 13(7), 581–583.</li>
+                    <li id='ref1'>Gohl, D. M., Vangay, P., Garbe, J., MacLean, A., Hauge, A., Becker, A., … Beckman, K. B. (2016). Systematic improvement of amplicon marker gene methods for increased accuracy in microbiome studies. <i>Nature Biotechnology</i>, 34(9), 942–949.</li>
+                    <li id='ref2'>Kartzinel, T. R., Chen, P. A., Coverdale, T. C., Erickson, D. L., Kress, W. J., Kuzmina, M. L., … Pringle, R. M. (2015). DNA metabarcoding illuminates dietary niche partitioning by African large herbivores. <i>Proceedings of the National Academy of Sciences</i>, 112(26), 8019–8024.</li>
+                    <li id='ref3'>Galimberti, A., De Mattia, F., Losa, A., Bruni, I., Federici, S., Casiraghi, M., … Labra, M. (2013). DNA barcoding as a new tool for food traceability. <i>Food Research International</i>, 50(1), 55–63.</li>
+                    <li id='ref4'>Gryson, N. (2010). Effect of food processing on plant DNA degradation and PCR-based GMO analysis: A review. <i>Analytical and Bioanalytical Chemistry</i>, 396(6), 2003–2022.</li>
+                    <li id='ref5'>Martin, M. (2011). Cutadapt removes adapter sequences from high-throughput sequencing reads. <i>EMBnet.Journal</i>, 17(1), 10–12.</li>
+                    <li id='ref6'>Callahan, B. J., McMurdie, P. J., Rosen, M. J., Han, A. W., Johnson, A. J. A., & Holmes, S. P. (2016). DADA2: High-resolution sample inference from Illumina amplicon data. <i>Nature Methods</i>, 13(7), 581–583.</li>
                 </ol>
             </div>
         </>)
