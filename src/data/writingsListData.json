@@ -31,19 +31,6 @@
         "summary": "Designing, building and hosting a website from scratch can seem like a daunting task. I wrote this guide to explain how I created mine, and to help others do the same.",
         "img": ""
     }, {
-        "imported": true,
-        "id": "yokai-watch-2019",
-        "title": "Magical Lures and Capitalist Capture: Effects and Counter-Effects in ‘Yo-Kai Watch’",
-        "date": {
-            "month": "Dec.",
-            "year": "2019"
-        },
-        "description": {
-            "type": "Term Paper",
-            "institution": "Duke University",
-            "institutionShort": "Duke"
-        }
-    }, {
         "id": "three-domains-2019",
         "title": "The Eocyte Hypothesis: Experimental and Computational Techniques Allow Rejection of the Three-Domain System",
         "date": {
@@ -127,19 +114,6 @@
         },
         "summary": "I disputed an opponent’s ad against the N.C. state Senate leader, “the most powerful man in state politics.” But, along the way, I also discovered paper trails to potentially unlawful spending by his campaign—paying himself thousands of dollars each month in “rent” to his own shell company.",
         "img": "./llc-report.jpg"
-    }, {
-        "id": "house-bills-claim-2018",
-        "title": "Did Only 11 of G.K. Butterfield’s 92 Bills Become Law?",
-        "date": {
-            "month": "Oct.",
-            "year": "2018"
-        },
-        "description": {
-            "type": "Fact Check",
-            "institution": "Duke Sanford School of Public Policy",
-            "institutionShort": "Duke Sanford School",
-            "institutionLink": "https://sanford.duke.edu/"
-        }
     }, {
         "id": "numeral-classifiers-2018",
         "title": "Comparison of Numeral Classifiers in Japanese and Korean",
