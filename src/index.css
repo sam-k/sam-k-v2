@@ -83,6 +83,11 @@ span.code {
   font-size: 0.9em;
 }
 
+sup {
+  font-size: x-small;
+  vertical-align: super;
+}
+
 @media (max-width: 600px) {
   body {
     max-width: none;
@@ -214,7 +219,6 @@ span.code {
       IntroCard
       AboutHeader
       AboutFavs
-      AboutWritings
  *********************/
 
 #bio {
@@ -420,100 +424,6 @@ span.code {
   grid-template-rows: auto-fill;
 }
 
-#about-writings {
-  padding: var(--large-v-padding) 0;
-}
-
-#about-writings-wrapper {
-  margin: 0 auto;
-  max-width: 70vw;
-}
-
-#about-writings-wrapper h2 {
-  padding-bottom: calc(var(--small-v-padding) - 15px);
-}
-
-#about-writings-wrapper #desc {
-  padding: 1em 0 calc(2em - 10px) 0;
-}
-
-.writing-card {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-  padding: 1.5vw;
-
-  box-shadow: 3px 3px 3px -1px var(--dark-gray);
-  /* box-shadow: 0 0 6px rgba(0, 0, 0, 25%), 0 0 12px rgba(0, 0, 0, 5%); */
-  border-radius: 10px;
-  border: 1px solid;
-  border-color: hsl(0, 0%, 85%);
-}
-
-.writing-card .title-link {
-  font-size: 1.1em;
-  font-weight: 700;
-  color: black;
-  text-decoration: none;
-}
-
-.writing-card .title-link:hover {
-  text-decoration: underline;
-}
-
-.writing-card .desc-link {
-  text-decoration: none;
-}
-
-.writing-card .desc-link p {
-  margin: 0.25em 0;
-}
-
-.writing-card li {
-  list-style: none;
-  display: inline-block;
-}
-
-.writing-card .purpose {
-  font-weight: 300;
-  color: var(--text-black);
-}
-
-.writing-card .purpose a {
-  text-decoration: none;
-  color: var(--bright-blue);
-}
-
-.writing-card .purpose a:hover {
-  text-decoration: underline;
-}
-
-.writing-card .flex-sep {
-  padding: 0 1em;
-}
-
-.writing-card img {
-  height: 9em;
-}
-
-@media (max-width: 900px) {
-  .writing-card {
-    display: block;
-    margin: 15px 0;
-    padding: 5vw;
-  }
-
-  .writing-card img {
-    height: auto;
-    width: 100%;
-    margin-top: 15px;
-  }
-
-  .writing-card .desc-link p {
-    margin: 0.65em 0;
-  }
-}
-
 @media (max-width: 600px) {
   #bio {
     padding: calc(var(--large-v-padding) * 0.75) 0;
@@ -565,16 +475,205 @@ span.code {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: auto-fill;
   }
+}
 
-  #about-writings {
+/*********************
+    WritingsFeatured
+    WritingCard
+    Writing
+    WritingsPage
+ *********************/
+
+#writings-featured {
+  padding: var(--large-v-padding) 0;
+}
+
+#writings-featured-wrapper {
+  margin: 0 auto;
+  max-width: 70vw;
+}
+
+#writings-featured-wrapper h2 {
+  padding-bottom: calc(var(--small-v-padding) - 15px);
+}
+
+#writings-featured-wrapper #desc {
+  padding: 1em 0 calc(2em - 10px) 0;
+}
+
+.writing-card {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 1.5vw;
+
+  box-shadow: 3px 3px 3px -1px var(--dark-gray);
+  /* box-shadow: 0 0 6px rgba(0, 0, 0, 25%), 0 0 12px rgba(0, 0, 0, 5%); */
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: hsl(0, 0%, 85%);
+}
+
+.writing-card .title-link {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+
+.writing-card .title-link:hover {
+  text-decoration: underline;
+}
+
+.writing-card .desc {
+  text-decoration: none;
+  margin: 0.25em 0;
+}
+
+.writing-card li {
+  list-style: none;
+  display: inline-block;
+}
+
+.writing-card .purpose {
+  font-weight: 300;
+  color: var(--text-black);
+}
+
+.writing-card .purpose a {
+  text-decoration: none;
+  color: var(--bright-blue);
+}
+
+.writing-card .purpose a:hover {
+  text-decoration: underline;
+}
+
+.writing-card .flex-sep {
+  padding: 0 1em;
+}
+
+.writing-card img {
+  display: block;
+  height: 9em;
+}
+
+#post {
+  padding: var(--large-v-padding) 0;
+  margin: 0 auto;
+  max-width: 50vw;
+}
+
+#post h2 {
+  font-family: var(--ff-headline);
+}
+
+#post h4 {
+  margin-top: 1.5em;
+}
+
+#post h5 {
+  margin-top: 1.25em;
+  font-size: 1.1em;
+}
+
+#post p,
+#post li {
+  line-height: 1.5;
+  margin: 1em 0;
+}
+
+#post a {
+  text-decoration: none;
+  color: var(--bright-blue);
+}
+
+#post a:hover {
+  text-decoration: underline;
+}
+
+#post .purpose {
+  margin: 1em 0;
+}
+
+#post .date {
+  margin-bottom: 1em;
+}
+
+#post .line-break {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin: 2em 0;
+}
+
+#post .content p {
+  margin: 1em 0;
+}
+
+#post .content code {
+  font-size: 0.9em;
+  font-family: var(--ff-code);
+}
+
+#post .content ul {
+  list-style-position: outside;
+  padding-left: 2em;
+}
+
+#post .content li {
+  margin: 1em 0;
+  padding-left: 1em;
+}
+
+#post .ref {
+  text-decoration: none;
+  color: var(--bright-blue);
+  cursor: pointer;
+}
+
+#post .ref:hover {
+  text-decoration: underline;
+}
+
+#post .refs ul,
+#post .refs ol {
+  list-style-position: outside;
+  padding-left: 1.75em;
+}
+
+#post .refs li {
+  margin: 0.5em 0;
+}
+
+@media (max-width: 900px) {
+  .writing-card {
+    display: block;
+    margin: 15px 0;
+    padding: 5vw;
+  }
+
+  .writing-card img {
+    height: auto;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .writing-card .desc-link p {
+    margin: 0.65em 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #writings-featured {
     padding: calc(var(--large-v-padding) * 0.75) 0;
   }
 
-  #about-writings-wrapper {
+  #writings-featured-wrapper {
     margin: 0 20px;
   }
 
-  #about-writings-wrapper {
+  #writings-featured-wrapper {
     max-width: 100%;
   }
 }

@@ -2,7 +2,7 @@ import React from "react"
 
 import AboutHeader from "./components/AboutHeader"
 import AboutFavs from "./components/AboutFavs"
-import AboutWritings from "./components/AboutWritings"
+import WritingsFeatured from "./components/WritingsFeatured"
 
 class AboutPage extends React.Component {
     render() {
@@ -10,7 +10,7 @@ class AboutPage extends React.Component {
             <div>
                 <AboutHeader />
                 <AboutFavs />
-                <AboutWritings />
+                <WritingsFeatured />
             </div>
         )
     }

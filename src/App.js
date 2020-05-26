@@ -8,18 +8,25 @@ import AboutPage from "./AboutPage"
 import WritingPage from "./WritingPage"
 import Footer from "./components/Footer"
 
-// Each entry needs its own page
-import writingsData from "./data/writingsFeaturedData.json"
+// Each post needs its own page.
+import writingsData from "./data/writingsListData.json"
 
 class App extends React.Component {
   render() {
     const writingsRoutes = writingsData.writings.map(
       item => <Route
         path={"/posts/" + item.id}
-        render={(props) => <WritingPage {...props}
-          id={item.id}
-          title={item.title}
-        />}
+        render={
+          (props) => <WritingPage {...props}
+            id={item.id}
+            title={item.title}
+            date={item.date}
+            purpose={item.purpose}
+            description={item.description}
+            img={item.img}
+            text={item.text}
+          />
+        }
       />
     )
 
@@ -30,9 +37,7 @@ class App extends React.Component {
           <Switch>
             <Route path="/projects" component={ProjectsPage} />
             <Route path="/about" component={AboutPage} />
-
             {writingsRoutes}
-
             <Route exact path="/" component={HomePage} />
           </Switch>
           <Footer />

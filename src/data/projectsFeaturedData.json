@@ -4,7 +4,7 @@
         "subtitle": "<span>Research project at <a href='http://gordanlab.cs.duke.edu/'>Duke Center for Genomic and Computational Biology</a></span>",
         "text": [
             "Analyzing genome data to confirm if transcription factor binding prevents repair enzymes from accessing damaged DNA, causing mutations.",
-            "I am working under Prof. Raluca Gordân in her lab."
+            "I am working under <a href='http://gordanlab.cs.duke.edu/'>Prof. Raluca Gordân</a> in her lab."
         ],
         "tools": {
             "Python": "https://www.python.org/",

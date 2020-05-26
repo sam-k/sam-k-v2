@@ -15,23 +15,20 @@ class WritingCard extends React.Component {
     }
 
     render() {
-        const directory = "/posts/"
         const images = require.context("../images")
 
         return (
             <div class='writing-card'>
                 <div class='writing-card-text'>
-                    <Link class='title-link' to={directory + this.state.id}>
+                    <Link class='title-link' to={"/posts/" + this.state.id}>
                         <p>{this.state.title}</p>
                     </Link>
-                    <Link class='desc-link' to={directory + this.state.id}>
-                        <p>{this.state.description}</p>
-                    </Link>
+                    <p class='desc'>{this.state.description}</p>
                     {(this.state.purpose && this.state.date) &&
                         <p
                             class='purpose'
                             dangerouslySetInnerHTML={{
-                                __html: this.state.purpose + " &nbsp;&nbsp;|&nbsp;&nbsp; " + this.state.date
+                                __html: this.state.purpose + " &nbsp;|&nbsp; " + this.state.date
                             }}
                         />
                     }
@@ -39,7 +36,7 @@ class WritingCard extends React.Component {
                 {this.state.img &&
                     <>
                         <div class='flex-sep' />
-                        <Link class='img' to={directory + this.state.id}>
+                        <Link class='img' to={"/posts/" + this.state.id}>
                             <img src={images(this.state.img)} alt={this.state.title} />
                         </Link>
                     </>
