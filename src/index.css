@@ -1459,3 +1459,44 @@ th {
     font-size: 0.75em;
   }
 }
+
+/*********************
+    NotFoundHeader
+    NotFoundPage
+ ********************/
+
+#not-found-header {
+  padding: var(--large-v-padding) 0;
+  margin: 0 auto;
+  max-width: 70vw;
+}
+
+#not-found-header-wrapper {
+  margin: 0 7.5vw;
+}
+
+#not-found-header-wrapper p {
+  padding: 1em 0 0 0;
+  font-size: 1.2em;
+}
+
+#not-found-header-wrapper a {
+  text-decoration: none;
+  color: var(--bright-blue);
+}
+
+#not-found-header-wrapper a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  #not-found-header {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: calc(var(--large-v-padding) * 0.75) 0;
+  }
+
+  #not-found-header-wrapper {
+    margin: 0 20px;
+  }
+}

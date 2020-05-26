@@ -1,5 +1,5 @@
 import React from "react"
-import { HashRouter, Route, Switch } from "react-router-dom"
+import { HashRouter, Redirect, Route, Switch } from "react-router-dom"
 
 import Navbar from "./components/Navbar"
 import HomePage from "./pages/HomePage"
@@ -7,6 +7,7 @@ import ProjectsPage from "./pages/ProjectsPage"
 import AboutPage from "./pages/AboutPage"
 import WritingsPage from "./pages/WritingsPage"
 import PostPage from "./pages/PostPage"
+import NotFoundPage from "./pages/NotFoundPage"
 import Footer from "./components/Footer"
 
 // Each post needs its own page.
@@ -41,6 +42,8 @@ class App extends React.Component {
             <Route path="/posts" component={WritingsPage} />
             {postRoutes}
             <Route exact path="/" component={HomePage} />
+            <Route path="/404" component={NotFoundPage} />
+            <Redirect to="/404" />
           </Switch>
           <Footer />
         </div>
