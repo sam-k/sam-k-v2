@@ -677,26 +677,39 @@ sup {
 
 #post figure img {
   display: block;
-  margin: 0.25em auto;
+  margin: 1.5em auto 1em auto;
 }
 
-#post figcaption {
+#post .fig img {
+  margin: 1.5em auto 1em auto;
+}
+
+#post .fig figcaption {
   font-size: 0.8em;
 }
 
+#post .table img {
+  margin: 1em auto 1em auto;
+}
+
+#post .table figcaption {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
 #post .ref,
-#post .fig,
-#post .table,
-#post .section {
+#post .fig-ref,
+#post .table-ref,
+#post .section-ref {
   text-decoration: none;
   color: var(--link-blue);
   cursor: pointer;
 }
 
 #post .ref:hover,
-#post .fig:hover,
-#post .table:hover,
-#post .section:hover {
+#post .fig-ref:hover,
+#post .table-ref:hover,
+#post .section-ref:hover {
   text-decoration: underline;
 }
 

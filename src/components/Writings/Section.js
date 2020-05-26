@@ -10,7 +10,7 @@ class Section extends React.Component {
 
     render() {
         return (
-            <span class='section' onClick={
+            <span class='section-ref' onClick={
                 () => document.getElementById("s" + this.state.num).scrollIntoView({
                     behavior: "smooth"
                 })

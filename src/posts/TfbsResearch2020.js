@@ -11,6 +11,7 @@ class TfbsResearch2020 extends React.Component {
 
         return (<>
             <div class='content'>
+                <p><b>Mentor:</b> Harshit Sahay</p>
                 <p class='abstract'><b>Abstract:</b> There has been a recent surge in publicly available cancer genomic data, which can help reveal the fundamental mechanisms behind the genetic mutations responsible for cancer. Despite this data, however, we still do not fully understand how mutations within TFBSs arise. By generating mutation profiles observed for these binding sites and comparing them to expected mutation profiles (generated based on sequence), we can better understand the mutagenesis in these regions. In this project, I aimed to replicate and confirm previous findings correlating TFBSs with elevated mutation rates, and to expand their methodology to include other cancer-related genomic datasets. I also aimed to optimize the runtime involved in the computationally expensive task of creating these mutation profiles by exploring various existing bioinformatics tools and parallelization methods for the intersection of mutation files with binding sites. With these results, we hope to better understand the role of TF binding in DNA damage and repair, specifically in the context of cancer genomes.</p>
                 <div class='line-break' />
 
@@ -88,11 +89,11 @@ class TfbsResearch2020 extends React.Component {
                 <h5 id='s4.2'>4.2. Results</h5>
                 <p>The runtimes appeared to scale roughly linearly with data size. Compared to the sorted implementation of BEDTools, BEDOPS, which brands itself as the faster of the two,16 had negligible effect on smaller samples but had a small yet noticeable effect on the very large dataset in its entirety (<Table n='1' />).</p>
                 <figure id='table1'>
-                    <span><b>Table 1</b> | <b>Benchmark Runtimes for Melanoma Mutation–Skin Cancer TFBS Intersections.</b></span>
+                    <figcaption><b>Table 1</b> | <b>Benchmark Runtimes for Melanoma Mutation–Skin Cancer TFBS Intersections.</b></figcaption>
                     <img
                         src={images("./table1.png")}
                         alt={"Table 1"}
-                        style={{ width: "100%" }}
+                        style={{ width: "85%" }}
                     />
                     <figcaption>* The somatic mutations data for melanoma, in its entirety, has a file size of about 42 GB with 83,030,183 entries.</figcaption>
                     <figcaption>† The “unsorted” and “sorted” refer to the default and the <code>--sort</code> implementations of BEDTools intersect.</figcaption>

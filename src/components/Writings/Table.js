@@ -10,7 +10,7 @@ class Table extends React.Component {
 
     render() {
         return (
-            <span class='table' onClick={
+            <span class='table-ref' onClick={
                 () => document.getElementById("table" + this.state.num).scrollIntoView({
                     behavior: "smooth"
                 })

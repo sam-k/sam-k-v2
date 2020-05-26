@@ -11,7 +11,7 @@ class Fig extends React.Component {
 
     render() {
         return (
-            <span class='fig' onClick={
+            <span class='fig-ref' onClick={
                 () => document.getElementById("fig" + this.state.num).scrollIntoView({
                     behavior: "smooth"
                 })
