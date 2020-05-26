@@ -33,6 +33,22 @@ class YokaiWatch2019 extends React.Component {
                 <p>At first glance, it can be easy to dismiss the anime of the <i>Yo-kai Watch</i> media mix as “‘30-minute commercials’ or ‘program-length commercials,’” designed to sell products to an unwitting audience (Steinberg 244). While partially true, a magical interpretation of capitalism allows us to understand the inner workings of such a strategy. By entangling all available platforms—anime, game, merchandise and more—in a self-referential web of capitalist capture, the media mix creates out of physical and virtual worlds a blended reality, in which children can be taught to spend and compelled to consume. To aid in this capture, the media mix also deploys social lures, which encourage sociality with yōkai and let viewers immerse themselves into the character and world of Keita.</p>
                 <p>However, these lures in <i>Yo-kai Watch</i> have unexpectedly non-capitalist effects, as the promotion of sociality gives way to the encouragement of collaboration and sharing. And the collection of yōkai medals—those symbols of sociality and testaments to friendship with other yōkai—leads to the rise of alternative barter economies that compete with and even subvert the official capitalist system. When the manga–game–anime–toy media mix of <i>Yo-kai Watch</i> was first released in 2014, it completely consumed Japan, creating queues and shortages and sold-out stores. In our consumerist and commodified era of media mixes, detecting such non-capitalist countercurrents may allow us to become more aware and protect ourselves from the sorcery of capture and lures and capitalism.</p>
             </div>
+            <div class='line-break' />
+
+            <div class='refs'>
+                <h4>References</h4>
+                <p>Abel, C. F. “What’s Left of Capitalism and What We Should Do about It: A Polemic.” <i>Administrative Theory & Praxis</i>, vol. 32, no. 2, 2010, pp. 161–90.</p>
+                <p>Ashcraft, Brian. “The Video Game Anime That’s Taking Japan by Storm.” <i>Kotaku</i>, 4 Apr. 2014, https://kotaku.com/the-anime-thats-taking-japan-by-storm-1558122724.</p>
+                <p>Bassiry, G. R., and Marc Jones. “Adam Smith and the Ethics of Contemporary Capitalism.” <i>Journal of Business Ethics</i>, vol. 12, no. 8, Aug. 1993, pp. 621–27.</p>
+                <p>Carter, Owen B. J., et al. “Children’s Understanding of the Selling versus Persuasive Intent of Junk Food Advertising: Implications for Regulation.” <i>Social Science & Medicine</i>, vol. 72, no. 6, Mar. 2011, pp. 962–68.</p>
+                <p>Figal, Gerald. “Words and Changing Things: Grasping Fushigi in Meiji Japan.” <i>Civilization and Monsters: Spirits of Modernity in Meiji Japan</i>, Duke University Press, 1999, pp. 38–73.</p>
+                <p>Ivy, Marilyn. “Formations of Mass Culture.” <i>Postwar Japan as History</i>, edited by Andrew Gordon, University of California Press, 1993.</p>
+                <p>Pignarre, Philippe, and Isabelle Stengers. “Do You Believe in Sorcery?” <i>Capitalist Sorcery: Breaking the Spell</i>, Palgrave Macmillan UK, 2007, pp. 39–45.</p>
+                <p>Steinberg, Marc. “Media Mix Mobilization: Social Mobilization and Yo-kai Watch.” <i>Animation</i>, vol. 12, no. 3, Nov. 2017, pp. 244–58.</p>
+                <p>Stengers, Isabelle. “Reclaiming Animism.” <i>e-Flux Journal</i>, vol. 36, July 2012.</p>
+                <p>Ushiro, Shinji. <i>Yo-kai Watch.</i> OLM, Inc., 2014.</p>
+                <p>Werhane, Patricia H. “The Role of Self-Interest in Adam Smith’s Wealth of Nations.” <i>The Journal of Philosophy</i>, vol. 86, no. 11, 1989, pp. 669–80.</p>
+            </div>
         </>)
     }
 }
