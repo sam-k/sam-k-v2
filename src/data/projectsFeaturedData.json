@@ -14,7 +14,7 @@
         "links": {
             "github": "https://github.com/sam-k/dna-repair-tf"
         },
-        "img": "./genome.jpg",
+        "img": "./projects/genome.jpg",
         "mainLink": "https://drive.google.com/file/d/1X1BRZ5uJyIXnf7QLxU4nY6n9UEEKE0CR/view"
     }, {
         "title": "Describing the NIH-funded research workforce",
@@ -32,7 +32,7 @@
             "bio": "https://blog.codingitforward.com/meet-the-2019-fellows-national-institutes-of-health-c5cba191eb39",
             "video": "https://govmatters.tv/exploring-civic-tech-at-the-coding-it-forward-demo-day/"
         },
-        "img": "./enumeration.jpg",
+        "img": "./projects/enumeration.jpg",
         "mainLink": "https://github.com/codingitforward/cdfdemoday2019/blob/master/Characterizing_the_NIH_Research_Workforce.pdf"
     }, {
         "title": "Ridesharing web app",
@@ -46,7 +46,7 @@
             "Mapbox API": "https://www.mapbox.com/",
             "Proto.io": "https://proto.io/"
         },
-        "img": "./handoff.png",
+        "img": "./projects/handoff.png",
         "mainLink": "http://handoff.online/"
     }]
 }

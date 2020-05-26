@@ -15,7 +15,7 @@
             "institutionLink": "http://gordanlab.cs.duke.edu/"
         },
         "summary": "We still do not understand how mutations arise within transcription factor binding sites, implicated as a cause of some cancers. I aimed to replicate previous findings correlating these regions with higher mutation rates, and to optimize the computationally expensive task of creating mutation profiles.",
-        "img": "./genome.jpg"
+        "img": "./projects/genome.jpg"
     }, {
         "featured": true,
         "imported": false,
@@ -70,7 +70,7 @@
             "institutionLink": "http://el.ladlab.org:8080/"
         },
         "summary": "Targeted amplicon sequencing can be used to qualitatively identify species components of a pooled DNA sample. I evaluated whether the food-species components of processed foods can be identified, and if the next-generation sequencing strategy is useful in quantification.",
-        "img": "./pcr.jpg"
+        "img": "./posts/ngs-research-2019/cover.jpg"
     }, {
         "id": "christmas-trees-2018",
         "title": "How to Hire a Migrant: Christmas Tree Growers Demand Visa Reform",
@@ -113,7 +113,7 @@
             "institutionLink": "https://sanford.duke.edu/"
         },
         "summary": "I disputed an opponent’s ad against the N.C. state Senate leader, “the most powerful man in state politics.” But, along the way, I also discovered paper trails to potentially unlawful spending by his campaign—paying himself thousands of dollars each month in “rent” to his own shell company.",
-        "img": "./llc-report.jpg"
+        "img": "./posts/nc-senate-spending-2018/cover.jpg"
     }, {
         "id": "numeral-classifiers-2018",
         "title": "Comparison of Numeral Classifiers in Japanese and Korean",
@@ -167,7 +167,7 @@
             "institutionLink": "https://sanford.duke.edu/"
         },
         "summary": "Installed almost 30 years ago, the fountain outside the local center’s front doors have caused its administrators headaches for years, plagued by continual breakage and expensive repairs. City politics, expert interviews, oral history—I stopped at nothing to tap into this incredibly pressing issue.",
-        "img": "./fountain.jpg"
+        "img": "./posts/dcc-fountain-2017/cover.jpg"
     }, {
         "id": "mayoral-demographics-2017",
         "title": "The Elusive Youth Vote: Why Freelon Lost, and Other Mayoral Primary Demographics",
