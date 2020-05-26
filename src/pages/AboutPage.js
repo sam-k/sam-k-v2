@@ -1,8 +1,8 @@
 import React from "react"
 
-import AboutHeader from "../components/AboutHeader"
-import AboutFavs from "../components/AboutFavs"
-import WritingsFeatured from "../components/WritingsFeatured"
+import AboutHeader from "../components/About/AboutHeader"
+import AboutFavs from "../components/About/AboutFavs"
+import WritingsFeatured from "../components/Writings/WritingsFeatured"
 
 class AboutPage extends React.Component {
     componentDidMount() {

@@ -1,5 +1,6 @@
 import React from "react"
-import Ref from "../components/Ref"
+
+import Ref from "../components/Writings/Ref"
 
 class NgsResearch2019 extends React.Component {
     render() {

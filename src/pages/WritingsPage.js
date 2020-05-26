@@ -1,9 +1,9 @@
 import React from "react"
 import ScrollToTop from "../components/ScrollToTop"
 
-import WritingsHeader from "../components/WritingsHeader"
-import WritingsFeatured from "../components/WritingsFeatured"
-import WritingsList from "../components/WritingsList"
+import WritingsHeader from "../components/Writings/WritingsHeader"
+import WritingsFeatured from "../components/Writings/WritingsFeatured"
+import WritingsList from "../components/Writings/WritingsList"
 
 class WritingsPage extends React.Component {
     componentDidMount() {

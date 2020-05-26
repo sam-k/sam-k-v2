@@ -1,6 +1,6 @@
 import React from "react"
 
-import NotFoundHeader from "../components/NotFoundHeader"
+import NotFoundHeader from "../components/NotFound/NotFoundHeader"
 
 class NotFoundPage extends React.Component {
     componentDidMount() {
