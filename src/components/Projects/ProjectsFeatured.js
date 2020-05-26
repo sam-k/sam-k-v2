@@ -1,8 +1,9 @@
 import React from "react"
-import ProjectCard from "./ProjectCard"
-import Button from "./Button"
 
-import data from "../data/projectsFeaturedData.json"
+import ProjectCard from "./ProjectCard"
+import Button from "../Button"
+
+import data from "../../data/projectsFeaturedData.json"
 
 function renderText(text) {
     return text.map(line =>

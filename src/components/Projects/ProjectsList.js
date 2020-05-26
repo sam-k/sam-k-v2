@@ -1,6 +1,6 @@
 import React from "react"
 
-import data from "../data/projectsListData.json"
+import data from "../../data/projectsListData.json"
 
 function buildToolsList(tools, sep = "·") {
     const list = []

@@ -1,8 +1,9 @@
 import React from "react"
-import WritingCard from "./WritingCard"
-import Button from "./Button"
 
-import data from "../data/writingsListData.json"
+import WritingCard from "./WritingCard"
+import Button from "../Button"
+
+import data from "../../data/writingsListData.json"
 
 class WritingsFeatured extends React.Component {
     constructor(props) {

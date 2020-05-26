@@ -1,7 +1,8 @@
 import React from "react"
+
 import WorkIcon from "./WorkIcon"
 
-import data from "../data/workData.json"
+import data from "../../data/workData.json"
 
 class Work extends React.Component {
     render() {

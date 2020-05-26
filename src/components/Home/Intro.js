@@ -1,7 +1,8 @@
 import React from "react"
 import Typed from "typed.js"
+
 import IntroCard from "./IntroCard"
-import Button from "./Button"
+import Button from "../Button"
 
 class Typewriter extends React.Component {
     componentDidMount() {

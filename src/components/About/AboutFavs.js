@@ -1,6 +1,6 @@
 import React from "react"
 
-import data from "../data/favsData.json"
+import data from "../../data/favsData.json"
 
 function buildList(favs) {
     const favsList = favs.map(item => {

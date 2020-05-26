@@ -11,7 +11,7 @@ class WorkIcon extends React.Component {
     }
 
     render() {
-        const images = require.context("../images")
+        const images = require.context("../../images")
 
         return (
             <div class='work-icon-img'>

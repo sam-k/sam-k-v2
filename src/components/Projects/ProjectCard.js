@@ -1,5 +1,6 @@
 import React from "react"
-import Button from "./Button"
+
+import Button from "../Button"
 
 class ProjectCard extends React.Component {
     constructor(props) {
@@ -17,7 +18,7 @@ class ProjectCard extends React.Component {
     }
 
     render() {
-        const images = require.context("../images")
+        const images = require.context("../../images")
 
         if (this.state.tools) {
             var toolItems = Object.entries(this.state.tools).map(([tool, link]) =>

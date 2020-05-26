@@ -1,7 +1,8 @@
 import React from "react"
-import Button from "./Button"
 
-import data from "../data/skillsData.json"
+import Button from "../Button"
+
+import data from "../../data/skillsData.json"
 
 function buildList(skills, color) {
     const skillsList = skills.map((item, i) =>

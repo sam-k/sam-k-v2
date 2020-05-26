@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-import data from "../data/writingsListData.json"
+import data from "../../data/writingsListData.json"
 
 function buildInstitution(description) {
     const institution = (description.institutionShort ?
