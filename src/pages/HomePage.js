@@ -13,7 +13,7 @@ class Home extends React.Component {
         return (
             <div id='home-page'>
                 <Intro />
-                <Projects showButton="true" />
+                <Projects showButton={true} />
                 <Experience />
             </div>
         )
