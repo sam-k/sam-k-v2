@@ -10,11 +10,11 @@ function renderText(text) {
     )
 }
 
-class Projects extends React.Component {
+class ProjectsFeatured extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            inIntro: props.inIntro
+            showButton: props.showButton
         }
     }
 
@@ -35,7 +35,7 @@ class Projects extends React.Component {
         return (
             <div id='projects-featured'>
                 <div id='projects-featured-wrapper'>
-                    {!this.state.inIntro &&
+                    {!this.state.showButton &&
                         <h2>Featured Projects</h2>
                     }
                     <div id='project-card-wrapper'>
@@ -44,7 +44,7 @@ class Projects extends React.Component {
                             <ProjectCard id='placeholder' />}
                     </div>
 
-                    {this.state.inIntro &&
+                    {this.state.showButton &&
                         <Button
                             className='all-projects-button'
                             text="See All Projects"
@@ -65,4 +65,4 @@ class Projects extends React.Component {
     }
 }
 
-export default Projects
+export default ProjectsFeatured

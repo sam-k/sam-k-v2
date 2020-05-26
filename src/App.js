@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar"
 import HomePage from "./HomePage"
 import ProjectsPage from "./ProjectsPage"
 import AboutPage from "./AboutPage"
-import WritingPage from "./WritingPage"
+import PostPage from "./PostPage"
 import Footer from "./components/Footer"
 
 // Each post needs its own page.
@@ -13,11 +13,11 @@ import writingsData from "./data/writingsListData.json"
 
 class App extends React.Component {
   render() {
-    const writingsRoutes = writingsData.writings.map(
+    const postRoutes = writingsData.writings.map(
       item => <Route
         path={"/posts/" + item.id}
         render={
-          (props) => <WritingPage {...props}
+          (props) => <PostPage {...props}
             id={item.id}
             title={item.title}
             date={item.date}
@@ -37,7 +37,7 @@ class App extends React.Component {
           <Switch>
             <Route path="/projects" component={ProjectsPage} />
             <Route path="/about" component={AboutPage} />
-            {writingsRoutes}
+            {postRoutes}
             <Route exact path="/" component={HomePage} />
           </Switch>
           <Footer />

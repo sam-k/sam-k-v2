@@ -8,7 +8,7 @@ import NcSenateSpending2018 from "./posts/NcSenateSpending2018"
 import DccFountain2017 from "./posts/DccFountain2017"
 import NgsResearch2019 from "./posts/NgsResearch2019"
 
-class Writing extends React.Component {
+class PostPage extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -49,4 +49,4 @@ class Writing extends React.Component {
     }
 }
 
-export default Writing
+export default PostPage

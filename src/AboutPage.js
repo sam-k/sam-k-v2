@@ -10,7 +10,7 @@ class AboutPage extends React.Component {
             <div>
                 <AboutHeader />
                 <AboutFavs />
-                <WritingsFeatured />
+                <WritingsFeatured showButton="true" />
             </div>
         )
     }
