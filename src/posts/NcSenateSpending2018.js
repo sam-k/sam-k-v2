@@ -71,9 +71,9 @@ class TfbsResearch2020 extends React.Component {
 
             <div class='refs'>
                 <h4>Sources</h4>
-                <p>“<a href="https://www.newsobserver.com/news/politics-government/article219776045.html">NC leaders face challenges in their home elections. How scared should they be?</a>” News & Observer, Oct. 18, 2018.</p>
+                <p>“<a href="https://www.newsobserver.com/news/politics-government/article219776045.html">N.C. leaders face challenges in their home elections. How scared should they be?</a>” News & Observer, Oct. 18, 2018.</p>
                 <p><a href="https://www.facebook.com/ads/archive/">Facebook Ad Archive</a>, accessed from Oct. 26 to Oct. 31, 2018.</p>
-                <p>Jen Mangrum for NC Senate, “<a href="https://www.facebook.com/forncsenate/videos/2149906461899457/">I Believe in Government Transparency</a>,” video accessed Oct. 14, 2018.</p>
+                <p>Jen Mangrum for N.C. Senate, “<a href="https://www.facebook.com/forncsenate/videos/2149906461899457/">I Believe in Government Transparency</a>,” video accessed Oct. 14, 2018.</p>
                 <p>N.C. FreeEnterprise Foundation, “<a href="https://docs.wixstatic.com/ugd/903dec_f4b11047d14b4f24b1e55d40672dc622.pdf">2018 Candidate Tracker</a>,” updated April 13, 2018.</p>
                 <p>North Carolina General Assembly, <a href="https://www.ncleg.net/Sessions/2017/s691maps/S691 4th Ed.Combined.pdf">2017 Senate floor redistricting plan</a>, 4th ed., Aug. 28, 2017.</p>
                 <p>Philip E. Berger Committee, <a href="https://cf.ncsbe.gov/CFOrgLkup/DocumentGeneralResult/?SID=STA-C0854N-C-001&OGID=1159">political committee disclosure reports, records</a> accessed from Oct. 23 to Nov. 1, 2018.</p>
@@ -96,7 +96,7 @@ class TfbsResearch2020 extends React.Component {
                 <div class='line-break' />
 
                 <h4>Missed Connections</h4>
-                <p>Phil Berger, president pro tempore of the North Carolina General Assembly and a legislator for the 26th State Senate District, did not immediately respond to calls for comment.</p>
+                <p>Phil Berger, president pro tempore of the North Carolina General Assembly and a legislator for the 26th state Senate District, did not immediately respond to calls for comment.</p>
                 <p>Guy-Uriel Charles, Edward and Ellen Schwarzman law professor at Duke Law School who studies election law and campaign finance, did not respond to an interview request about state election laws.</p>
                 <p>Tyler Dukes, WRAL investigative reporter who analyzed political donations made during the 2018 legislative session, did not respond to an interview request about “soft money” in state politics.</p>
                 <p>Vish Viswanathan, F.M. Kirby professor of investment banking at Duke University’s Fuqua School of Business, did not respond to an interview request about corporate finance practices.</p>
