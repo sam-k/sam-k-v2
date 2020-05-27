@@ -1456,10 +1456,6 @@ sup {
     margin-left: 0;
     margin-right: 1em;
   }
-
-  #copyright-lines li {
-    display: inline;
-  }
 }
 
 @media (max-width: 600px) {
@@ -1475,9 +1471,13 @@ sup {
     padding: 0;
   }
 
+  #contact p {
+    margin-bottom: 1em;
+  }
+
   #copyright {
     display: block;
-    margin-top: 2.72em;
+    margin-top: 1.75em;
   }
 
   #copyright-icons {
@@ -1489,9 +1489,13 @@ sup {
   }
 
   #copyright-lines {
-    margin-top: 0.68em;
+    margin-top: 0.75em;
     text-align: center;
     font-size: 0.75em;
+  }
+
+  #copyright-lines li {
+    margin: 0.15em 0;
   }
 }
 
