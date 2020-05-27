@@ -1435,6 +1435,7 @@ sup {
 
 #copyright-lines #heart {
   color: rgb(214, 40, 57);
+  cursor: help;
 }
 
 @media (max-width: 900px) {
