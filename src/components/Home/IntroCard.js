@@ -16,11 +16,6 @@ class IntroCardItem extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            type: props.type,
-            row: props.row,
-            icon: props.icon,
-            text: props.text,
-            link: props.link,
             color: "hsl(0, 0%, 20%)" //default color
         }
 
@@ -36,17 +31,17 @@ class IntroCardItem extends React.Component {
             <>
                 <CardComponent
                     type='icon'
-                    row={this.state.row}
-                    content={<i class={this.state.icon} />}
-                    link={this.state.link}
+                    row={this.props.row}
+                    content={<i class={this.props.icon} />}
+                    link={this.props.link}
                     color={this.state.color}
                     updateColor={this.updateColor}
                 />
                 <CardComponent
                     type='text'
-                    row={this.state.row}
-                    content={this.state.text}
-                    link={this.state.link}
+                    row={this.props.row}
+                    content={this.props.text}
+                    link={this.props.link}
                     color={this.state.color}
                     updateColor={this.updateColor}
                 />

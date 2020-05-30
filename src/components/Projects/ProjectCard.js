@@ -3,25 +3,11 @@ import React from "react"
 import Button from "../Button"
 
 class ProjectCard extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            id: props.id,
-            title: props.title,
-            subtitle: props.subtitle,
-            text: props.text,
-            tools: props.tools,
-            links: props.links,
-            img: props.img,
-            mainLink: props.mainLink
-        }
-    }
-
     render() {
         const images = require.context("../../images")
 
-        if (this.state.tools) {
-            var toolItems = Object.entries(this.state.tools).map(([tool, link]) =>
+        if (this.props.tools) {
+            var toolItems = Object.entries(this.props.tools).map(([tool, link]) =>
                 <li key={tool}>
                     <Button
                         className='project-tool-item'
@@ -37,18 +23,18 @@ class ProjectCard extends React.Component {
         }
 
         return (
-            <div className='project-card' id={this.state.id}>
-                {this.state.id !== 'placeholder' && <>
-                    <a class='title' href={this.state.mainLink}>
-                        <h3 dangerouslySetInnerHTML={{ __html: this.state.title }} />
+            <div className='project-card' id={this.props.id}>
+                {this.props.id !== 'placeholder' && <>
+                    <a class='title' href={this.props.mainLink}>
+                        <h3 dangerouslySetInnerHTML={{ __html: this.props.title }} />
                     </a>
-                    <h4 dangerouslySetInnerHTML={{ __html: this.state.subtitle }} />
-                    {this.state.text}
+                    <h4 dangerouslySetInnerHTML={{ __html: this.props.subtitle }} />
+                    {this.props.text}
                     <div className='project-tools'>
                         {toolItems}
                     </div>
-                    <a class='img' href={this.state.mainLink}>
-                        <img src={images(this.state.img)} alt={this.state.title} />
+                    <a class='img' href={this.props.mainLink}>
+                        <img src={images(this.props.img)} alt={this.props.title} />
                     </a>
                 </>}
             </div>

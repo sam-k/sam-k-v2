@@ -14,44 +14,32 @@ function buildDescription(date, description) {
 }
 
 class WritingCard extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            id: props.id,
-            title: props.title,
-            date: props.date,
-            description: props.description,
-            summary: props.summary,
-            img: props.img
-        }
-    }
-
     render() {
         const images = require.context("../../images")
 
         return (
             <div class='writing-card'>
                 <div class='writing-card-text'>
-                    <Link class='title-link' to={"/post/" + this.state.id}>
-                        <p>{this.state.title}</p>
+                    <Link class='title-link' to={"/post/" + this.props.id}>
+                        <p>{this.props.title}</p>
                     </Link>
-                    <p class='summary'>{this.state.summary}</p>
-                    {(this.state.description && this.state.date) &&
+                    <p class='summary'>{this.props.summary}</p>
+                    {(this.props.description && this.props.date) &&
                         <p
                             class='desc'
                             dangerouslySetInnerHTML={{
                                 __html: buildDescription(
-                                    this.state.date, this.state.description
+                                    this.props.date, this.props.description
                                 )
                             }}
                         />
                     }
                 </div>
-                {this.state.img &&
+                {this.props.img &&
                     <>
                         <div class='flex-sep' />
-                        <Link class='img' to={"/post/" + this.state.id}>
-                            <img src={images(this.state.img)} alt={this.state.title} />
+                        <Link class='img' to={"/post/" + this.props.id}>
+                            <img src={images(this.props.img)} alt={this.props.title} />
                         </Link>
                     </>
                 }

@@ -1,22 +1,14 @@
 import React from "react"
 
 class Fig extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            num: props.n,
-            letters: (props.l ? props.l : "")
-        }
-    }
-
     render() {
         return (
             <span class='fig-ref' onClick={
-                () => document.getElementById("fig" + this.state.num).scrollIntoView({
+                () => document.getElementById("fig" + this.props.num).scrollIntoView({
                     behavior: "smooth"
                 })
             }>
-                {"Fig. " + this.state.num + this.state.letters}
+                {"Fig. " + this.props.num + (this.props.l ? this.props.l : "")}
             </span>
         )
     }

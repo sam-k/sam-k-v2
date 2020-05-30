@@ -12,13 +12,6 @@ function renderText(text) {
 }
 
 class ProjectsFeatured extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            showButton: props.showButton
-        }
-    }
-
     render() {
         const projectsFeaturedItems = data.projects.map(
             item => <ProjectCard
@@ -36,7 +29,7 @@ class ProjectsFeatured extends React.Component {
         return (
             <div id='projects-featured'>
                 <div id='projects-featured-wrapper'>
-                    {!this.state.showButton &&
+                    {!this.props.showButton &&
                         <h2>Featured Projects</h2>
                     }
                     <div id='project-card-wrapper'>
@@ -45,7 +38,7 @@ class ProjectsFeatured extends React.Component {
                             <ProjectCard id='placeholder' />}
                     </div>
 
-                    {this.state.showButton &&
+                    {this.props.showButton &&
                         <Button
                             className='all-projects-button'
                             text="See All Projects"

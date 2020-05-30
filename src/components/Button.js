@@ -5,12 +5,6 @@ class Button extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            className: props.className,
-            text: props.text,
-            link: props.link,
-            linkType: props.linkType,
-            icon: props.icon,
-
             color: props.color,
             colorHover: props.colorHover,
             colorLeave: props.color,
@@ -52,42 +46,42 @@ class Button extends React.Component {
         }
 
         let buttonElement = null
-        if (this.state.linkType === 'router') {
+        if (this.props.linkType === 'router') {
             buttonElement =
                 <Link
-                    to={this.state.link}
+                    to={this.props.link}
                     style={buttonProps.style}
                     onMouseEnter={buttonProps.onMouseEnter}
                     onMouseLeave={buttonProps.onMouseLeave}
                 >
-                    {this.state.icon &&
+                    {this.props.icon &&
                         <i
-                            className={this.state.icon}
+                            className={this.props.icon}
                             style={{ color: this.state.iconColor }}
                         />
                     }
-                    <span>{this.state.text}</span>
+                    <span>{this.props.text}</span>
                 </Link>
         } else {
             buttonElement =
                 <a
-                    href={this.state.link}
+                    href={this.props.link}
                     style={buttonProps.style}
                     onMouseEnter={buttonProps.onMouseEnter}
                     onMouseLeave={buttonProps.onMouseLeave}
                 >
-                    {this.state.icon &&
+                    {this.props.icon &&
                         <i
-                            className={this.state.icon}
+                            className={this.props.icon}
                             style={{ color: this.state.iconColor }}
                         />
                     }
-                    <span>{this.state.text}</span>
+                    <span>{this.props.text}</span>
                 </a>
         }
 
         return (
-            <div className={this.state.className}>
+            <div className={this.props.className}>
                 {buttonElement}
             </div >
         )

@@ -1,21 +1,14 @@
 import React from "react"
 
 class Section extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            num: props.n
-        }
-    }
-
     render() {
         return (
             <span class='section-ref' onClick={
-                () => document.getElementById("s" + this.state.num).scrollIntoView({
+                () => document.getElementById("s" + this.props.num).scrollIntoView({
                     behavior: "smooth"
                 })
             }>
-                {"Section " + this.state.num}
+                {"Section " + this.props.num}
             </span>
         )
     }

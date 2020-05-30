@@ -6,13 +6,6 @@ import Button from "../Button"
 import data from "../../data/writingsListData.json"
 
 class WritingsFeatured extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            showButton: props.showButton
-        }
-    }
-
     render() {
         const writingsFeaturedItems = data.writings.map(
             item => (item.featured && item.imported &&
@@ -35,7 +28,7 @@ class WritingsFeatured extends React.Component {
                         {writingsFeaturedItems}
                     </div>
 
-                    {this.state.showButton &&
+                    {this.props.showButton &&
                         <Button
                             className='all-writings-button'
                             text="See All Writings"
