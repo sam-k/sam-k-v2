@@ -14,7 +14,7 @@
                 "link": "https://www.gnu.org/software/bash/"
             }],
             "links": [{
-                "name": "Website",
+                "name": "Research Report",
                 "icon": "fa fa-external-link-alt",
                 "link": "https://drive.google.com/file/d/1X1BRZ5uJyIXnf7QLxU4nY6n9UEEKE0CR/view"
             }, {
@@ -236,8 +236,9 @@
                 "link": "https://www.ncsbe.gov/index.html"
             }],
             "links": [{
-                "name": "none",
-                "desc": "Coming soon!"
+                "name": "Investigative Article",
+                "icon": "fa fa-external-link-alt",
+                "link": "https://www.samkim.io/#/post/nc-senate-spending-2018"
             }]
         }
     ]
