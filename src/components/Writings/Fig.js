@@ -4,11 +4,11 @@ class Fig extends React.Component {
     render() {
         return (
             <span class='fig-ref' onClick={
-                () => document.getElementById("fig" + this.props.num).scrollIntoView({
+                () => document.getElementById("fig" + this.props.n).scrollIntoView({
                     behavior: "smooth"
                 })
             }>
-                {"Fig. " + this.props.num + (this.props.l ? this.props.l : "")}
+                {"Fig. " + this.props.n + (this.props.l ? this.props.l : "")}
             </span>
         )
     }

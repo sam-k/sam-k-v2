@@ -22,6 +22,7 @@ class App extends React.Component {
           (props) => <PostPage {...props}
             id={item.id}
             title={item.title}
+            subtitle={item.subtitle}
             date={item.date}
             purpose={item.purpose}
             description={item.description}

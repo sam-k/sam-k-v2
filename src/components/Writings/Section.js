@@ -4,11 +4,11 @@ class Section extends React.Component {
     render() {
         return (
             <span class='section-ref' onClick={
-                () => document.getElementById("s" + this.props.num).scrollIntoView({
+                () => document.getElementById("s" + this.props.n).scrollIntoView({
                     behavior: "smooth"
                 })
             }>
-                {"Section " + this.props.num}
+                {"Section " + this.props.n}
             </span>
         )
     }

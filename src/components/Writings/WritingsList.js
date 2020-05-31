@@ -27,8 +27,12 @@ function buildRows(projects) {
             <td className='year'>{item.date.year}</td>
             <td className='post'>
                 {item.imported ?
-                    <Link to={"/post/" + item.id}>{item.title}</Link> :
-                    <span style={{ color: "hsl(0, 0%, 80%)" }}>{item.title}</span>
+                    <Link to={"/post/" + item.id}>
+                        {item.title + (item.subtitle ? ": " + item.subtitle : "")}
+                    </Link> :
+                    <span style={{ color: "hsl(0, 0%, 80%)" }}>
+                        {item.title + (item.subtitle ? ": " + item.subtitle : "")}
+                    </span>
                 }
             </td>
             <td className='type'>{item.description.type}</td>

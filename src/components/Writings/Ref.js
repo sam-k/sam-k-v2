@@ -4,11 +4,11 @@ class Ref extends React.Component {
     render() {
         return (
             <sup class='ref' onClick={
-                () => document.getElementById("ref" + this.props.num).scrollIntoView({
+                () => document.getElementById("ref" + this.props.n).scrollIntoView({
                     behavior: "smooth"
                 })
             }>
-                {this.props.num}
+                {this.props.n}
             </sup>
         )
     }

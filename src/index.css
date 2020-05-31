@@ -607,6 +607,10 @@ sup {
   font-family: var(--ff-headline);
 }
 
+#post h3 {
+  font-family: var(--ff-headline);
+}
+
 #post h4 {
   margin-top: 1.5em;
 }
@@ -673,6 +677,16 @@ sup {
 #post .content li {
   margin: 1em 0;
   padding-left: 1em;
+}
+
+#post .content .quote {
+  margin: 1em 4em 0 4em;
+  font-style: italic;
+}
+
+#post .content .quote-author {
+  margin: 0 4em 1em 4em;
+  text-align: right;
 }
 
 #post figure img {

@@ -31,8 +31,10 @@
         "summary": "Designing, building and hosting a website from scratch can seem like a daunting task. I wrote this guide to explain how I created mine, and to help others do the same.",
         "img": ""
     }, {
+        "imported": true,
         "id": "three-domains-2019",
-        "title": "The Eocyte Hypothesis: Experimental and Computational Techniques Allow Rejection of the Three-Domain System",
+        "title": "The Eocyte Hypothesis",
+        "subtitle": "Experimental and Computational Techniques Allow Rejection of the Three-Domain System",
         "date": {
             "month": "Dec.",
             "year": "2019"
@@ -72,8 +74,10 @@
         "summary": "Targeted amplicon sequencing can be used to qualitatively identify species components of a pooled DNA sample. I evaluated whether the food-species components of processed foods can be identified, and if the next-generation sequencing strategy is useful in quantification.",
         "img": "./posts/ngs-research-2019/cover.jpg"
     }, {
+        "imported": true,
         "id": "christmas-trees-2018",
-        "title": "How to Hire a Migrant: Christmas Tree Growers Demand Visa Reform",
+        "title": "How to Hire a Migrant",
+        "subtitle": "Christmas Tree Growers Demand Visa Reform",
         "date": {
             "month": "Dec.",
             "year": "2018"
@@ -86,7 +90,7 @@
         }
     }, {
         "id": "house-campaign-2018",
-        "title": "G.K. Butterfield’s Seat Was Safe. So why Did He Raise and Spend So Much Money?",
+        "title": "G.K. Butterfield’s Seat Was Safe. So Why Did He Raise and Spend So Much Money?",
         "date": {
             "month": "Nov.",
             "year": "2018"
@@ -170,7 +174,8 @@
         "img": "./posts/dcc-fountain-2017/cover.jpg"
     }, {
         "id": "mayoral-demographics-2017",
-        "title": "The Elusive Youth Vote: Why Freelon Lost, and Other Mayoral Primary Demographics",
+        "title": "The Elusive Youth Vote",
+        "subtitle": "Why Freelon Lost, and Other Mayoral Primary Demographics",
         "date": {
             "month": "Oct.",
             "year": "2017"
@@ -183,7 +188,8 @@
         }
     }, {
         "id": "freelon-campaign-2017",
-        "title": "See Pierce Freelon Run: A Political Newcomer’s Experience in Campaign Life",
+        "title": "See Pierce Freelon Run",
+        "subtitle": "A Political Newcomer’s Experience in Campaign Life",
         "date": {
             "month": "Oct.",
             "year": "2017"

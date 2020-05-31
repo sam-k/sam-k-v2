@@ -4,11 +4,11 @@ class Table extends React.Component {
     render() {
         return (
             <span class='table-ref' onClick={
-                () => document.getElementById("table" + this.props.num).scrollIntoView({
+                () => document.getElementById("table" + this.props.n).scrollIntoView({
                     behavior: "smooth"
                 })
             }>
-                {"Table " + this.props.num}
+                {"Table " + this.props.n}
             </span>
         )
     }
