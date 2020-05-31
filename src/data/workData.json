@@ -1,28 +1,23 @@
 {
     "work": [{
-            "name": "Epic Systems",
-            "img": "./logos/epic.png",
-            "link": "https://www.epic.com/"
-        },
-        {
-            "name": "National Institutes of Health",
-            "img": "./logos/nih.png",
-            "link": "https://www.nih.gov/"
-        },
-        {
-            "name": "Duke University School of Medicine",
-            "img": "./logos/dukemed.png",
-            "link": "https://medschool.duke.edu/"
-        },
-        {
-            "name": "National Security Innovation Network",
-            "img": "./logos/nsin.png",
-            "link": "https://www.nsin.us/"
-        },
-        {
-            "name": "Duke Center for Genomic and Computational Biology",
-            "img": "./logos/gcb.png",
-            "link": "https://genome.duke.edu/"
-        }
-    ]
+        "name": "Epic Systems",
+        "img": "./logos/epic.png",
+        "link": "https://www.epic.com/"
+    }, {
+        "name": "National Institutes of Health",
+        "img": "./logos/nih.png",
+        "link": "https://www.nih.gov/"
+    }, {
+        "name": "Duke University School of Medicine",
+        "img": "./logos/dukemed.png",
+        "link": "https://medschool.duke.edu/"
+    }, {
+        "name": "National Security Innovation Network",
+        "img": "./logos/nsin.png",
+        "link": "https://www.nsin.us/"
+    }, {
+        "name": "Duke Center for Genomic and Computational Biology",
+        "img": "./logos/gcb.png",
+        "link": "https://genome.duke.edu/"
+    }]
 }
