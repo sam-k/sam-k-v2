@@ -11,7 +11,7 @@
         "description": {
             "type": "Research Report",
             "institution": "Duke Center for Genomic & Computational Biology",
-            "institutionShort": "Duke GCM",
+            "institutionShort": "Duke GCB",
             "institutionLink": "http://gordanlab.cs.duke.edu/"
         },
         "summary": "We still do not understand how mutations arise within transcription factor binding sites, implicated as a cause of some cancers. I aimed to replicate previous findings correlating these regions with higher mutation rates, and to optimize the computationally expensive task of creating mutation profiles.",
@@ -89,6 +89,7 @@
             "institutionLink": "https://sanford.duke.edu/"
         }
     }, {
+        "imported": true,
         "id": "house-campaign-2018",
         "title": "G.K. Butterfield’s Seat Was Safe. So Why Did He Raise and Spend So Much Money?",
         "date": {

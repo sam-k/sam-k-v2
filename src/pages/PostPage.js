@@ -6,6 +6,7 @@ import HowTo2020 from "../posts/HowTo2020"
 import ThreeDomains2019 from "../posts/ThreeDomains2019"
 import NgsResearch2019 from "../posts/NgsResearch2019"
 import ChristmasTrees2018 from "../posts/ChristmasTrees2018"
+import HouseCampaign2018 from "../posts/HouseCampaign2018"
 import NcSenateSpending2018 from "../posts/NcSenateSpending2018"
 import DccFountain2017 from "../posts/DccFountain2017"
 
@@ -15,6 +16,7 @@ const Posts = {
     "three-domains-2019": <ThreeDomains2019 />,
     "ngs-research-2019": <NgsResearch2019 />,
     "christmas-trees-2018": <ChristmasTrees2018 />,
+    "house-campaign-2018": <HouseCampaign2018 />,
     "nc-senate-spending-2018": <NcSenateSpending2018 />,
     "dcc-fountain-2017": <DccFountain2017 />
 }
