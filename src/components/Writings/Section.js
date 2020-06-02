@@ -4,7 +4,7 @@ import React from "react"
 class Section extends React.Component {
     render() {
         return (
-            <span class='section-anchor' onClick={
+            <span className='section-anchor' onClick={
                 () => document.getElementById("s" + this.props.n).scrollIntoView({
                     behavior: "smooth"
                 })

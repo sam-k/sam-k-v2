@@ -4,7 +4,7 @@ import React from "react"
 class Ref extends React.Component {
     render() {
         return (
-            <sup class='ref-anchor' onClick={
+            <sup className='ref-anchor' onClick={
                 () => document.getElementById("ref" + this.props.n).scrollIntoView({
                     behavior: "smooth"
                 })

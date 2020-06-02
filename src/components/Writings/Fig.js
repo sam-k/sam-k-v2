@@ -4,7 +4,7 @@ import React from "react"
 class Fig extends React.Component {
     render() {
         return (
-            <span class='fig-anchor' onClick={
+            <span className='fig-anchor' onClick={
                 () => document.getElementById("fig" + this.props.n).scrollIntoView({
                     behavior: "smooth"
                 })

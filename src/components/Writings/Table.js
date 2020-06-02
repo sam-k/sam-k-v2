@@ -4,7 +4,7 @@ import React from "react"
 class Table extends React.Component {
     render() {
         return (
-            <span class='table-anchor' onClick={
+            <span className='table-anchor' onClick={
                 () => document.getElementById("table" + this.props.n).scrollIntoView({
                     behavior: "smooth"
                 })

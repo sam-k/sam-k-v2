@@ -32,32 +32,32 @@ class AboutFavs extends React.Component {
                     <p id='desc'>Let’s skip the icebreakers. These are a few of my favorite things.</p>
                     <div id='favs-grid'>
                         <div id='news'>
-                            <p class='title'>News</p>
+                            <p className='title'>News</p>
                             <ul>
                                 {buildList(data.news.items)}
                             </ul>
                         </div>
                         <div id='tvShows'>
-                            <p class='title'>TV Shows</p>
+                            <p className='title'>TV Shows</p>
                             <ul>
                                 {buildList(data.tvShows.items)}
                             </ul>
                         </div>
                         <div id='music'>
-                            <p class='title'>Music</p>
+                            <p className='title'>Music</p>
                             <ul>
                                 {buildList(data.music.items)}
                             </ul>
                         </div>
                         <div id='coffees'>
-                            <p class='title'>Coffees</p>
+                            <p className='title'>Coffees</p>
                             <ul>
                                 {buildList(data.coffees.items)}
                             </ul>
                         </div>
                     </div>
                     {/* <div id='books'>
-                        <p class='title'>Books</p>
+                        <p className='title'>Books</p>
                         <ul>
                             {buildList(data.books.items)}
                         </ul>

@@ -18,15 +18,15 @@ class WritingCard extends React.Component {
         const images = require.context("../../images")
 
         return (
-            <div class='writing-card'>
-                <div class='writing-card-text'>
-                    <Link class='title-link' to={"/post/" + this.props.id}>
+            <div className='writing-card'>
+                <div className='writing-card-text'>
+                    <Link className='title-link' to={"/post/" + this.props.id}>
                         <p>{this.props.title}</p>
                     </Link>
-                    <p class='summary'>{this.props.summary}</p>
+                    <p className='summary'>{this.props.summary}</p>
                     {(this.props.description && this.props.date) &&
                         <p
-                            class='desc'
+                            className='desc'
                             dangerouslySetInnerHTML={{
                                 __html: buildDescription(
                                     this.props.date, this.props.description
@@ -37,8 +37,8 @@ class WritingCard extends React.Component {
                 </div>
                 {this.props.img &&
                     <>
-                        <div class='flex-sep' />
-                        <Link class='img' to={"/post/" + this.props.id}>
+                        <div className='flex-sep' />
+                        <Link className='img' to={"/post/" + this.props.id}>
                             <img src={images(this.props.img)} alt={this.props.title} />
                         </Link>
                     </>

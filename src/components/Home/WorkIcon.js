@@ -5,7 +5,7 @@ class WorkIcon extends React.Component {
         const images = require.context("../../images")
 
         return (
-            <div class='work-icon-img'>
+            <div className='work-icon-img'>
                 <a href={this.props.link}>
                     <img src={images(this.props.img)} alt={this.props.name} />
                 </a>

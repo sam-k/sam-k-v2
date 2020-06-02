@@ -49,10 +49,10 @@ class PostPage extends React.Component {
                     <h2>{this.props.title}</h2>
                     <h3>{this.props.subtitle}</h3>
 
-                    <p class='purpose' dangerouslySetInnerHTML={{
+                    <p className='purpose' dangerouslySetInnerHTML={{
                         __html: buildDescription(this.props.description)
                     }} />
-                    <p class='date'>
+                    <p className='date'>
                         {this.props.date.month + " " + this.props.date.year}
                     </p>
 

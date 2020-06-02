@@ -4,7 +4,7 @@ import React from "react"
 class Anchor extends React.Component {
     render() {
         return (
-            <span class='anchor' onClick={
+            <span className='anchor' onClick={
                 () => document.getElementById("anchor" + this.props.n).scrollIntoView({
                     behavior: "smooth"
                 })

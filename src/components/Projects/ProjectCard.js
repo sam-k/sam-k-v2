@@ -25,7 +25,7 @@ class ProjectCard extends React.Component {
         return (
             <div className='project-card' id={this.props.id}>
                 {this.props.id !== 'placeholder' && <>
-                    <a class='title' href={this.props.mainLink}>
+                    <a className='title' href={this.props.mainLink}>
                         <h3 dangerouslySetInnerHTML={{ __html: this.props.title }} />
                     </a>
                     <h4 dangerouslySetInnerHTML={{ __html: this.props.subtitle }} />
@@ -33,7 +33,7 @@ class ProjectCard extends React.Component {
                     <div className='project-tools'>
                         {toolItems}
                     </div>
-                    <a class='img' href={this.props.mainLink}>
+                    <a className='img' href={this.props.mainLink}>
                         <img src={images(this.props.img)} alt={this.props.title} />
                     </a>
                 </>}

@@ -3,7 +3,7 @@ import React from "react"
 import headshot from "../../images/profile.jpg"
 
 const CardComponent = (props) =>
-    <p class={props.type} style={{ gridRow: props.row }}>
+    <p className={props.type} style={{ gridRow: props.row }}>
         <a href={props.link}
             style={{ color: props.color }}
             onMouseEnter={() => props.updateColor("rgb(0, 123, 255)")}
@@ -32,7 +32,7 @@ class IntroCardItem extends React.Component {
                 <CardComponent
                     type='icon'
                     row={this.props.row}
-                    content={<i class={this.props.icon} />}
+                    content={<i className={this.props.icon} />}
                     link={this.props.link}
                     color={this.state.color}
                     updateColor={this.updateColor}
