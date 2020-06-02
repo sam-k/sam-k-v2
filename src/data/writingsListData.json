@@ -120,6 +120,7 @@
         "summary": "I disputed an opponent’s ad against the N.C. state Senate leader, “the most powerful man in state politics.” But, along the way, I also discovered paper trails to potentially unlawful spending by his campaign—paying himself thousands of dollars each month in “rent” to his own shell company.",
         "img": "./posts/nc-senate-spending-2018/cover.jpg"
     }, {
+        "imported": true,
         "id": "numeral-classifiers-2018",
         "title": "Comparison of Numeral Classifiers in Japanese and Korean",
         "date": {
@@ -132,6 +133,7 @@
             "institutionShort": "Duke"
         }
     }, {
+        "imported": true,
         "id": "loanword-phonology-2018",
         "title": "Vowel Phonology of American English Loanwords in Korean",
         "date": {

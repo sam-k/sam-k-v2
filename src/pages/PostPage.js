@@ -8,6 +8,8 @@ import NgsResearch2019 from "../posts/NgsResearch2019"
 import ChristmasTrees2018 from "../posts/ChristmasTrees2018"
 import HouseCampaign2018 from "../posts/HouseCampaign2018"
 import NcSenateSpending2018 from "../posts/NcSenateSpending2018"
+import NumeralClassifiers2018 from "../posts/NumeralClassifiers2018"
+import LoanwordPhonology2018 from "../posts/LoanwordPhonology2018"
 import DccFountain2017 from "../posts/DccFountain2017"
 
 const Posts = {
@@ -18,6 +20,8 @@ const Posts = {
     "christmas-trees-2018": <ChristmasTrees2018 />,
     "house-campaign-2018": <HouseCampaign2018 />,
     "nc-senate-spending-2018": <NcSenateSpending2018 />,
+    "loanword-phonology-2018": <LoanwordPhonology2018 />,
+    "numeral-classifiers-2018": <NumeralClassifiers2018 />,
     "dcc-fountain-2017": <DccFountain2017 />
 }
 
