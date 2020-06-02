@@ -1,9 +1,10 @@
 import React from "react"
 
+// Separate component for each anchor type to ease importing from rich formatted text to JSX.
 class Fig extends React.Component {
     render() {
         return (
-            <span class='fig-ref' onClick={
+            <span class='fig-anchor' onClick={
                 () => document.getElementById("fig" + this.props.n).scrollIntoView({
                     behavior: "smooth"
                 })

@@ -1,9 +1,10 @@
 import React from "react"
 
+// Separate component for each anchor type to ease importing from rich formatted text to JSX.
 class Ref extends React.Component {
     render() {
         return (
-            <sup class='ref' onClick={
+            <sup class='ref-anchor' onClick={
                 () => document.getElementById("ref" + this.props.n).scrollIntoView({
                     behavior: "smooth"
                 })

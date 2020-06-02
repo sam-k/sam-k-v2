@@ -664,7 +664,8 @@ sup {
   margin: 1em 0;
 }
 
-#post .content code {
+#post .content code,
+#post .content pre {
   font-size: 0.9em;
   font-family: var(--ff-code);
 }
@@ -712,19 +713,21 @@ sup {
   text-align: center;
 }
 
-#post .ref,
-#post .fig-ref,
-#post .table-ref,
-#post .section-ref {
+#post .anchor,
+#post .ref-anchor,
+#post .fig-anchor,
+#post .table-anchor,
+#post .section-anchor {
   text-decoration: none;
   color: var(--link-blue);
   cursor: pointer;
 }
 
-#post .ref:hover,
-#post .fig-ref:hover,
-#post .table-ref:hover,
-#post .section-ref:hover {
+#post .anchor:hover,
+#post .ref-anchor:hover,
+#post .fig-anchor:hover,
+#post .table-anchor:hover,
+#post .section-anchor:hover {
   text-decoration: underline;
 }
 
