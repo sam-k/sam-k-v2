@@ -763,12 +763,12 @@ emph {
 }
 
 #post .ext-data-button {
-  margin: 5vh auto 0 auto;
-  padding: 0.625em 0;
+  margin: 0 auto;
   text-align: center;
 }
 
 #post .ext-data-button p {
+  margin: 0;
   padding: 0.625em 2.75em;
   /* box-shadow: 0 0 6px rgba(0, 0, 0, 25%), 0 0 12px rgba(0, 0, 0, 5%); */
   border: 1px solid;
