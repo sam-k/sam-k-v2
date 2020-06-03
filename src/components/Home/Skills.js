@@ -10,6 +10,7 @@ function buildList(skills, color) {
             <Button
                 className="skill-item"
                 text={item.name}
+                linkType="link"
                 link={item.link}
                 icon={item.icon}
                 iconColor="hsl(0, 0%, 50%)"
