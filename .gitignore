@@ -1,5 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# data
+/src/data
+/src/posts
+/src/images-original
+
 # dependencies
 /node_modules
 /.pnp
@@ -7,11 +12,9 @@
 
 # testing
 /coverage
-/src/images-original
 
 # production
 /build
-/src/posts
 
 # misc
 .DS_Store
