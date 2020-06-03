@@ -32,8 +32,8 @@ class WritingsFeatured extends React.Component {
                         <Button
                             className='all-writings-button'
                             text="See All Writings"
-                            link="/posts"
                             linkType='router'
+                            link="/posts"
 
                             color="hsl(0, 0%, 27%)"
                             colorHover="rgb(0, 123, 255)"

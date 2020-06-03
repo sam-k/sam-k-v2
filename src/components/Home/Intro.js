@@ -47,6 +47,7 @@ class Intro extends React.Component {
                             <Button
                                 className='resume-button'
                                 text="Resume"
+                                linkType='link'
                                 link="https://drive.google.com/file/d/1M0rskmHcZrd6pbAoDjvfuzy3e2dXhaO9/view"
 
                                 color="hsl(0, 0%, 27%)"

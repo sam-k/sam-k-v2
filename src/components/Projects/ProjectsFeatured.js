@@ -42,8 +42,8 @@ class ProjectsFeatured extends React.Component {
                         <Button
                             className='all-projects-button'
                             text="See All Projects"
-                            link="/projects"
                             linkType='router'
+                            link="/projects"
 
                             color="hsl(0, 0%, 27%)"
                             colorHover="rgb(0, 123, 255)"

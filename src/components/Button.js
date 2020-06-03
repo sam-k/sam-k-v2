@@ -60,9 +60,9 @@ class Button extends React.Component {
                             style={{ color: this.state.iconColor }}
                         />
                     }
-                    <span>{this.props.text}</span>
+                    <span id='buttonText'>{this.props.text}</span>
                 </Link>
-        } else {
+        } else if (this.props.linkType === 'link') {
             buttonElement =
                 <a
                     href={this.props.link}
@@ -76,8 +76,29 @@ class Button extends React.Component {
                             style={{ color: this.state.iconColor }}
                         />
                     }
-                    <span>{this.props.text}</span>
+                    <span id='buttonText'>{this.props.text}</span>
                 </a>
+        } else {
+            buttonElement =
+                <p
+                    onClick={this.props.function}
+                    style={buttonProps.style}
+                    onMouseEnter={buttonProps.onMouseEnter}
+                    onMouseLeave={buttonProps.onMouseLeave}
+                >
+                    {this.props.icon &&
+                        <i
+                            className={this.props.icon}
+                            style={{ color: this.state.iconColor }}
+                        />
+                    }
+                    <span id={this.props.buttonTextIdOn} style={{ display: "none" }}>
+                        {this.props.buttonTextOn}
+                    </span>
+                    <span id={this.props.buttonTextIdOff}>
+                        {this.props.buttonTextOff}
+                    </span>
+                </p>
         }
 
         return (
