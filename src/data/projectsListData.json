@@ -207,8 +207,9 @@
             "link": "https://www.fec.gov/"
         }],
         "links": [{
-            "name": "none",
-            "desc": "Coming soon!"
+            "name": "Investigative Article",
+            "icon": "fa fa-external-link-alt",
+            "llink": "https://www.samkim.io/#/post/house-campaign-2018"
         }]
     }, {
         "name": "Investigating Unlawful Spending by N.C. State Senator",
@@ -225,7 +226,7 @@
             "link": "https://www.ncsbe.gov/index.html"
         }],
         "links": [{
-            "name": "Investigative Article",
+            "name": "Fact-Check Article",
             "icon": "fa fa-external-link-alt",
             "link": "https://www.samkim.io/#/post/nc-senate-spending-2018"
         }]
