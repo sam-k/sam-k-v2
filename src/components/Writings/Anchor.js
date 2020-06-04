@@ -6,8 +6,12 @@ class Anchor extends React.Component {
         return (
             <span className='anchor' onClick={
                 () => {
-                    this.props.function()
-                    document.getElementById("anchor" + this.props.n).scrollIntoView({ behavior: "smooth" })
+                    if (this.props.function) {
+                        this.props.function()
+                    }
+                    document.getElementById("anchor" + this.props.n).scrollIntoView({
+                        behavior: "smooth"
+                    })
                 }
             }>
                 {this.props.text}
