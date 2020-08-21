@@ -1,5 +1,5 @@
 import React from "react"
-import ScrollToTop from "../components/ScrollToTop"
+// import ScrollToTop from "../components/ScrollToTop"
 
 import WritingsHeader from "../components/Writings/WritingsHeader"
 import WritingsFeatured from "../components/Writings/WritingsFeatured"
@@ -7,13 +7,13 @@ import WritingsList from "../components/Writings/WritingsList"
 
 class WritingsPage extends React.Component {
     componentDidMount() {
-        document.title = "Sam Kim | Writings";
+        document.title = "Sam Kim | Writings"
     }
 
     render() {
         return (
             <div id='writings-page'>
-                <ScrollToTop />
+                {/* <ScrollToTop /> */}
                 <WritingsHeader />
                 <WritingsFeatured />
                 <WritingsList />

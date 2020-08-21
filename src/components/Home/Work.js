@@ -1,23 +1,23 @@
-import React from "react"
+import React from "react";
 
-import WorkIcon from "./WorkIcon"
+import WorkIcon from "./WorkIcon";
 
-import data from "../../data/workData.json"
+import data from "../../data/workData.json";
 
 class Work extends React.Component {
-    render() {
-        return (
-            <div id='work-icons'>
-                {data.work.map(item =>
-                    <WorkIcon
-                        name={item.name}
-                        img={item.img}
-                        link={item.link}
-                    />
-                )}
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div id='work-icons'>
+        {data.work.map(item =>
+          <WorkIcon
+            name={item.name}
+            img={item.img}
+            link={item.link}
+          />
+        )}
+      </div>
+    );
+  }
 }
 
-export default Work
+export default Work;

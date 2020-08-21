@@ -1,20 +1,26 @@
-import React from "react"
-import { HashRouter, Redirect, Route, Switch } from "react-router-dom"
+import React from "react";
+import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
+import withTracker from './components/withTracker';
 
-import Navbar from "./components/Navbar"
-import HomePage from "./pages/HomePage"
-import ProjectsPage from "./pages/ProjectsPage"
-import AboutPage from "./pages/AboutPage"
-import WritingsPage from "./pages/WritingsPage"
-import PostPage from "./pages/PostPage"
-import NotFoundPage from "./pages/NotFoundPage"
-import Footer from "./components/Footer"
+import Navbar from "./components/Navbar";
+import HomePage from "./pages/HomePage";
+import ProjectsPage from "./pages/ProjectsPage";
+import AboutPage from "./pages/AboutPage";
+import WritingsPage from "./pages/WritingsPage";
+import PostPage from "./pages/PostPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import Footer from "./components/Footer";
 
 // Each post needs its own page.
-import writingsData from "./data/writingsListData.json"
+import writingsData from "./data/writingsListData.json";
+
+import ReactGA from "react-ga";
 
 class App extends React.Component {
   render() {
+    ReactGA.initialize("UA-176007616-1");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     const postRoutes = writingsData.writings.map(
       item => <Route
         path={"/post/" + item.id}
@@ -31,26 +37,28 @@ class App extends React.Component {
           />
         }
       />
-    )
+    );
 
     return (
       <HashRouter basename="/">
         <div id='App'>
           <Navbar />
+
           <Switch>
-            <Route path="/projects" component={ProjectsPage} />
-            <Route path="/about" component={AboutPage} />
-            <Route path="/posts" component={WritingsPage} />
+            <Route path="/projects" component={withTracker(ProjectsPage)} />
+            <Route path="/about" component={withTracker(AboutPage)} />
+            <Route path="/posts" component={withTracker(WritingsPage)} />
             {postRoutes}
-            <Route exact path="/" component={HomePage} />
-            <Route path="/404" component={NotFoundPage} />
+            <Route exact path="/" component={withTracker(HomePage)} />
+            <Route path="/404" component={withTracker(NotFoundPage)} />
             <Redirect to="/404" />
           </Switch>
+
           <Footer />
         </div>
-      </HashRouter >
-    )
+      </HashRouter>
+    );
   }
 }
 
-export default App
+export default App;

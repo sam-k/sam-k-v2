@@ -1,5 +1,5 @@
 import React from "react"
-import ScrollToTop from "../components/ScrollToTop"
+// import ScrollToTop from "../components/ScrollToTop"
 
 import ProjectsHeader from "../components/Projects/ProjectsHeader"
 import ProjectsFeatured from "../components/Projects/ProjectsFeatured"
@@ -13,7 +13,7 @@ class ProjectsPage extends React.Component {
     render() {
         return (
             <div id='projects-page'>
-                <ScrollToTop />
+                {/* <ScrollToTop /> */}
                 <ProjectsHeader />
                 <ProjectsFeatured />
                 <ProjectsList />

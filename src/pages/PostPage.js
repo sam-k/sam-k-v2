@@ -1,5 +1,5 @@
 import React from "react"
-import ScrollToTop from "../components/ScrollToTop"
+// import ScrollToTop from "../components/ScrollToTop"
 
 import TfbsResearch2020 from "../posts/TfbsResearch2020"
 import HowTo2020 from "../posts/HowTo2020"
@@ -44,7 +44,7 @@ class PostPage extends React.Component {
     render() {
         return (
             <div id='post'>
-                <ScrollToTop />
+                {/* <ScrollToTop /> */}
                 <div id='post-wrapper'>
                     <h2>{this.props.title}</h2>
                     <h3>{this.props.subtitle}</h3>
