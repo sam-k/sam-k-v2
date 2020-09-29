@@ -13,6 +13,7 @@ class ProjectCard extends React.Component {
             className='project-tool-item'
             text={tool}
             link={link}
+            linkType="link"
             color="hsl(0, 0%, 55%)"
             colorHover="rgb(0, 123, 255)"
             bgColor="hsl(0, 0%, 92%)"
@@ -24,18 +25,29 @@ class ProjectCard extends React.Component {
 
     return (
       <div className='project-card' id={this.props.id}>
+        <p class="project-date">
+          {this.props.date}
+        </p>
         {this.props.id !== 'placeholder' && <>
-          <a className='title' href={this.props.mainLink}>
-            <h3 dangerouslySetInnerHTML={{ __html: this.props.title }} />
-          </a>
+          {this.props.mainLink ?
+            <a className='title' href={this.props.mainLink}>
+              <h3 dangerouslySetInnerHTML={{ __html: this.props.title }} />
+            </a> :
+            <p className='title'>
+              <h3 dangerouslySetInnerHTML={{ __html: this.props.title }} />
+            </p>}
           <h4 dangerouslySetInnerHTML={{ __html: this.props.subtitle }} />
           {this.props.text}
           <div className='project-tools'>
             {toolItems}
           </div>
-          <a className='img' href={this.props.mainLink}>
-            <img src={images(this.props.img)} alt={this.props.title} />
-          </a>
+          {this.props.mainLink ?
+            <a className='img' href={this.props.mainLink}>
+              <img src={images(this.props.img)} alt={this.props.title} />
+            </a> :
+            <div className='img' href={this.props.mainLink}>
+              <img src={images(this.props.img)} alt={this.props.title} />
+            </div>}
         </>}
       </div>
     );

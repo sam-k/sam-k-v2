@@ -1076,6 +1076,11 @@ emph {
   margin-top: 0.25em;
 }
 
+.project-date {
+  font-weight: 300;
+  font-style: italic;
+}
+
 .project-tools {
   display: flex;
   flex-wrap: wrap;

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 class Button extends React.Component {
   constructor(props) {
-    super(props);
+    super();
     this.state = {
       color: props.color,
       colorHover: props.colorHover,
@@ -102,9 +102,9 @@ class Button extends React.Component {
     }
 
     return (
-      <div className={this.props.className}>
+      <div id="abc" className={this.props.className}>
         {buttonElement}
-      </div >
+      </div>
     );
   }
 }

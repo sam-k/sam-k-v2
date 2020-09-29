@@ -18,6 +18,7 @@ class ProjectsFeatured extends React.Component {
         key={item.title}
         title={item.title}
         subtitle={item.subtitle}
+        date={item.date}
         text={renderText(item.text)}
         tools={item.tools}
         links={item.links}

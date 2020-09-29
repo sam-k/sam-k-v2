@@ -49,7 +49,7 @@ function buildLinkContent(item) {
     case "private":
       content =
         <span className='private' title={item.desc}>
-          <i className="fa fa-code" />
+          <i className="fa fa-unlink" />
         </span>;
       break;
     default:
