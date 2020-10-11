@@ -359,9 +359,9 @@ emph {
   text-decoration: none;
 }
 
-#about-header-wrapper p#desc a {
+#about-header-wrapper p#desc span {
   font-weight: 700;
-  color: #ed3532;
+  color: var(--duke-blue);
 }
 
 #about-header-wrapper p:not(#desc) a {
