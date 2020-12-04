@@ -43,7 +43,7 @@ class Intro extends React.Component {
                 "<span style='color: #6ebede'>write</span>.",
                 "<span style='color: #4ec866'>research</span>."
               ]} /></h2>
-              <p>I’m a <span className='code'>computational</span> <span className='code'>biologist</span>, a <span className='code'>software</span> <span className='code'>engineer</span> and a fourth-year student at Duke University. I believe that technology is the answer to treating and curing more people, and at a much lower cost.</p>
+              <p>I’m a <span className='code'>software</span> <span className='code'>engineer</span>, a <span className='code'>computational</span> <span className='code'>biologist</span> and a fourth-year student at Duke University. I believe that technology is the answer to treating and curing more people, and at a much lower cost.</p>
               <Button
                 className='resume-button'
                 text="Resume"
