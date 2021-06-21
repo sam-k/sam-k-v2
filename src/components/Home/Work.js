@@ -10,6 +10,7 @@ class Work extends React.Component {
       <div id='work-icons'>
         {data.work.map(item =>
           <WorkIcon
+            key={item.name}
             name={item.name}
             img={item.img}
             link={item.link}

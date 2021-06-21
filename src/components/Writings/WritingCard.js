@@ -15,8 +15,6 @@ function buildDescription(date, description) {
 
 class WritingCard extends React.Component {
   render() {
-    const images = require.context("../../images");
-
     return (
       <div className='writing-card'>
         <div className='writing-card-text'>
@@ -39,7 +37,7 @@ class WritingCard extends React.Component {
           <>
             <div className='flex-sep' />
             <Link className='img' to={"/post/" + this.props.id}>
-              <img src={images(this.props.img)} alt={this.props.title} />
+              <img src={require("../../images" + this.props.img).default} alt={this.props.title} />
             </Link>
           </>
         }

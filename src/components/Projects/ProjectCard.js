@@ -4,8 +4,6 @@ import Button from "../Button";
 
 class ProjectCard extends React.Component {
   render() {
-    const images = require.context("../../images");
-
     if (this.props.tools) {
       var toolItems = Object.entries(this.props.tools).map(([tool, link]) =>
         <li key={tool}>
@@ -25,7 +23,7 @@ class ProjectCard extends React.Component {
 
     return (
       <div className='project-card' id={this.props.id}>
-        <p class="project-date">
+        <p className="project-date">
           {this.props.date}
         </p>
         {this.props.id !== 'placeholder' && <>
@@ -43,10 +41,10 @@ class ProjectCard extends React.Component {
           </div>
           {this.props.mainLink ?
             <a className='img' href={this.props.mainLink}>
-              <img src={images(this.props.img)} alt={this.props.title} />
+              <img src={require("../../images" + this.props.img).default} alt={this.props.title} />
             </a> :
             <div className='img' href={this.props.mainLink}>
-              <img src={images(this.props.img)} alt={this.props.title} />
+              <img src={require("../../images" + this.props.img).default} alt={this.props.title} />
             </div>}
         </>}
       </div>

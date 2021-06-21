@@ -261,7 +261,15 @@ emph {
   font-size: 1.2em;
 }
 
-#profile span.code {
+#profile a {
+  text-decoration: none;
+}
+
+#profile a:hover {
+  text-decoration: underline;
+}
+
+#profile span.blue {
   color: var(--duke-blue);
 }
 

@@ -60,6 +60,7 @@ class IntroCard extends React.Component {
     for (var i = 0; i < links.length; i++) {
       items.push(
         <IntroCardItem
+          key={texts[i]}
           row={i + 1}
           icon={icons[i]}
           text={texts[i]}

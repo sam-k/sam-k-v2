@@ -23,6 +23,7 @@ class App extends React.Component {
 
     const postRoutes = writingsData.writings.map(
       item => <Route
+        key={item.id + "Page"}
         path={"/post/" + item.id}
         render={
           (props) => <PostPage {...props}
@@ -45,12 +46,12 @@ class App extends React.Component {
           <Navbar />
 
           <Switch>
-            <Route path="/projects" component={withTracker(ProjectsPage)} />
-            <Route path="/about" component={withTracker(AboutPage)} />
-            <Route path="/posts" component={withTracker(WritingsPage)} />
+            <Route key="projectsPage" path="/projects" component={withTracker(ProjectsPage)} />
+            <Route key="aboutPage" path="/about" component={withTracker(AboutPage)} />
+            <Route key="writingsPage" path="/posts" component={withTracker(WritingsPage)} />
             {postRoutes}
-            <Route exact path="/" component={withTracker(HomePage)} />
-            <Route path="/404" component={withTracker(NotFoundPage)} />
+            <Route key="homePage" exact path="/" component={withTracker(HomePage)} />
+            <Route key="notFoundPage" path="/404" component={withTracker(NotFoundPage)} />
             <Redirect to="/404" />
           </Switch>
 
