@@ -79,7 +79,7 @@ class IntroCard extends React.Component {
           <p className='icon' style={{ gridRow: i + 1 }}>
             <i className="fa fa-location-arrow" />
           </p>
-          <p className='text' style={{ gridRow: i + 1 }}>Durham, N.C.</p>
+          <p className='text' style={{ gridRow: i + 1 }}>San Francisco, CA</p>
         </div>
       </div>
     );

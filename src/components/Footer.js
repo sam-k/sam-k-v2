@@ -8,7 +8,7 @@ class Footer extends React.Component {
           <div id='footer-content'>
             <div id='contact'>
               <h2>Get in Touch</h2>
-              <p>I’m always open to new challenges and opportunities.</p>
+              <p>I’m always open to new projects and challenges.</p>
               <p>Feel free to shoot me an email at <a href="mailto:sam.kim@duke.edu">sam.kim@duke.edu</a>!</p>
             </div>
             <div id='copyright'>
