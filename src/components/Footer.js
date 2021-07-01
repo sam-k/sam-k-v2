@@ -9,7 +9,7 @@ class Footer extends React.Component {
             <div id='contact'>
               <h2>Get in Touch</h2>
               <p>I’m always open to new projects and challenges.</p>
-              <p>Feel free to shoot me an email at <a href="mailto:sam.kim@duke.edu">sam.kim@duke.edu</a>!</p>
+              <p>Feel free to shoot me an email at <a href="mailto:samkim@alumni.duke.edu">samkim@alumni.duke.edu</a>!</p>
             </div>
             <div id='copyright'>
               <ul id='copyright-icons'>

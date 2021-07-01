@@ -53,8 +53,8 @@ class IntroCardItem extends React.Component {
 class IntroCard extends React.Component {
   render() {
     const icons = ["fa fa-envelope", "fab fa-linkedin-in", "fa fa-code-branch"];
-    const texts = ["sam.kim@duke.edu", "linkedin.com/in/sdk", "github.com/sam-k"];
-    const links = ["mailto:sam.kim@duke.edu", "https://www.linkedin.com/in/sdk/", "https://github.com/sam-k/"];
+    const texts = ["samkim@alumni.duke.edu", "linkedin.com/in/sdk", "github.com/sam-k"];
+    const links = ["mailto:samkim@alumni.duke.edu", "https://www.linkedin.com/in/sdk/", "https://github.com/sam-k/"];
 
     const items = [];
     for (var i = 0; i < links.length; i++) {
@@ -79,7 +79,7 @@ class IntroCard extends React.Component {
           <p className='icon' style={{ gridRow: i + 1 }}>
             <i className="fa fa-location-arrow" />
           </p>
-          <p className='text' style={{ gridRow: i + 1 }}>San Francisco, CA</p>
+          <p className='text' style={{ gridRow: i + 1 }}>San Francisco, Calif.</p>
         </div>
       </div>
     );
