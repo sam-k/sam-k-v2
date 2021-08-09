@@ -14,7 +14,7 @@ class Footer extends React.Component {
             <div id='copyright'>
               <ul id='copyright-icons'>
                 <li>
-                  <a href="mailto:sam.kim@duke.edu">
+                  <a href="mailto:samkim@alumni.duke.edu">
                     <i className="fa fa-lg fa-envelope" />
                   </a>
                 </li>
